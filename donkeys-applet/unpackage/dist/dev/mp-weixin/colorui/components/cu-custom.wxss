@@ -1,0 +1,9 @@
+
+.go-to-home-icon {
+	background-color: rgba(248,248,248, 0.8);
+	color: black;
+	width: 80rpx;
+	text-align: center;
+	border-radius: 90rpx;
+}
+

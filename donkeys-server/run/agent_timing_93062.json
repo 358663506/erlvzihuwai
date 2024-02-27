@@ -1,0 +1,354 @@
+[
+  {
+    "name": "Process Start",
+    "start": 1708958114277,
+    "end": 1708958120448,
+    "duration": 6171,
+    "pid": 93062,
+    "index": 0
+  },
+  {
+    "name": "Application Start",
+    "start": 1708958120449,
+    "end": 1708958120731,
+    "duration": 282,
+    "pid": 93062,
+    "index": 1
+  },
+  {
+    "name": "Load Plugin",
+    "start": 1708958120454,
+    "end": 1708958120473,
+    "duration": 19,
+    "pid": 93062,
+    "index": 2
+  },
+  {
+    "name": "Load Config",
+    "start": 1708958120473,
+    "end": 1708958120506,
+    "duration": 33,
+    "pid": 93062,
+    "index": 3
+  },
+  {
+    "name": "Require(0) config/config.default.ts",
+    "start": 1708958120473,
+    "end": 1708958120473,
+    "duration": 0,
+    "pid": 93062,
+    "index": 4
+  },
+  {
+    "name": "Require(1) config/config.local.ts",
+    "start": 1708958120474,
+    "end": 1708958120474,
+    "duration": 0,
+    "pid": 93062,
+    "index": 5
+  },
+  {
+    "name": "Require(2) /Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg-session/config/config.default.js",
+    "start": 1708958120478,
+    "end": 1708958120479,
+    "duration": 1,
+    "pid": 93062,
+    "index": 6
+  },
+  {
+    "name": "Require(3) /Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg-security/config/config.default.js",
+    "start": 1708958120479,
+    "end": 1708958120480,
+    "duration": 1,
+    "pid": 93062,
+    "index": 7
+  },
+  {
+    "name": "Require(4) /Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg-jsonp/config/config.default.js",
+    "start": 1708958120480,
+    "end": 1708958120481,
+    "duration": 1,
+    "pid": 93062,
+    "index": 8
+  },
+  {
+    "name": "Require(5) /Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg-onerror/config/config.default.js",
+    "start": 1708958120481,
+    "end": 1708958120482,
+    "duration": 1,
+    "pid": 93062,
+    "index": 9
+  },
+  {
+    "name": "Require(6) /Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg-i18n/config/config.default.js",
+    "start": 1708958120482,
+    "end": 1708958120484,
+    "duration": 2,
+    "pid": 93062,
+    "index": 10
+  },
+  {
+    "name": "Require(7) /Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg-schedule/config/config.default.js",
+    "start": 1708958120484,
+    "end": 1708958120485,
+    "duration": 1,
+    "pid": 93062,
+    "index": 11
+  },
+  {
+    "name": "Require(8) /Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg-multipart/config/config.default.js",
+    "start": 1708958120486,
+    "end": 1708958120487,
+    "duration": 1,
+    "pid": 93062,
+    "index": 12
+  },
+  {
+    "name": "Require(9) /Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg-static/config/config.default.js",
+    "start": 1708958120487,
+    "end": 1708958120488,
+    "duration": 1,
+    "pid": 93062,
+    "index": 13
+  },
+  {
+    "name": "Require(10) /Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg/config/config.default.js",
+    "start": 1708958120489,
+    "end": 1708958120490,
+    "duration": 1,
+    "pid": 93062,
+    "index": 14
+  },
+  {
+    "name": "Require(11) /Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/@midwayjs/web/config/config.default.js",
+    "start": 1708958120491,
+    "end": 1708958120500,
+    "duration": 9,
+    "pid": 93062,
+    "index": 15
+  },
+  {
+    "name": "Require(12) config/config.default.ts",
+    "start": 1708958120501,
+    "end": 1708958120501,
+    "duration": 0,
+    "pid": 93062,
+    "index": 16
+  },
+  {
+    "name": "Require(13) /Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg-security/config/config.local.js",
+    "start": 1708958120502,
+    "end": 1708958120503,
+    "duration": 1,
+    "pid": 93062,
+    "index": 17
+  },
+  {
+    "name": "Require(14) /Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg/config/config.local.js",
+    "start": 1708958120504,
+    "end": 1708958120504,
+    "duration": 0,
+    "pid": 93062,
+    "index": 18
+  },
+  {
+    "name": "Require(15) config/config.local.ts",
+    "start": 1708958120505,
+    "end": 1708958120505,
+    "duration": 0,
+    "pid": 93062,
+    "index": 19
+  },
+  {
+    "name": "Before Start in node_modules/@midwayjs/web/dist/framework/web.js:45:22",
+    "start": 1708958120506,
+    "end": 1708958120566,
+    "duration": 60,
+    "pid": 93062,
+    "index": 20
+  },
+  {
+    "name": "Before Start in node_modules/@midwayjs/web/dist/base.js:231:22",
+    "start": 1708958120507,
+    "end": 1708958120683,
+    "duration": 176,
+    "pid": 93062,
+    "index": 21
+  },
+  {
+    "name": "Load extend/agent.js",
+    "start": 1708958120574,
+    "end": 1708958120589,
+    "duration": 15,
+    "pid": 93062,
+    "index": 22
+  },
+  {
+    "name": "Require(16) /Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg-security/app/extend/agent.js",
+    "start": 1708958120575,
+    "end": 1708958120578,
+    "duration": 3,
+    "pid": 93062,
+    "index": 23
+  },
+  {
+    "name": "Require(17) /Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg-schedule/app/extend/agent.js",
+    "start": 1708958120578,
+    "end": 1708958120584,
+    "duration": 6,
+    "pid": 93062,
+    "index": 24
+  },
+  {
+    "name": "Require(18) /Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg-mock/app/extend/agent.js",
+    "start": 1708958120584,
+    "end": 1708958120586,
+    "duration": 2,
+    "pid": 93062,
+    "index": 25
+  },
+  {
+    "name": "Require(19) /Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/@midwayjs/web/app/extend/agent.js",
+    "start": 1708958120587,
+    "end": 1708958120588,
+    "duration": 1,
+    "pid": 93062,
+    "index": 26
+  },
+  {
+    "name": "Load extend/context.js",
+    "start": 1708958120589,
+    "end": 1708958120673,
+    "duration": 84,
+    "pid": 93062,
+    "index": 27
+  },
+  {
+    "name": "Require(20) /Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg-security/app/extend/context.js",
+    "start": 1708958120589,
+    "end": 1708958120604,
+    "duration": 15,
+    "pid": 93062,
+    "index": 28
+  },
+  {
+    "name": "Require(21) /Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg-jsonp/app/extend/context.js",
+    "start": 1708958120604,
+    "end": 1708958120607,
+    "duration": 3,
+    "pid": 93062,
+    "index": 29
+  },
+  {
+    "name": "Require(22) /Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg-i18n/app/extend/context.js",
+    "start": 1708958120607,
+    "end": 1708958120608,
+    "duration": 1,
+    "pid": 93062,
+    "index": 30
+  },
+  {
+    "name": "Require(23) /Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg-multipart/app/extend/context.js",
+    "start": 1708958120608,
+    "end": 1708958120669,
+    "duration": 61,
+    "pid": 93062,
+    "index": 31
+  },
+  {
+    "name": "Require(24) /Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg/app/extend/context.js",
+    "start": 1708958120669,
+    "end": 1708958120671,
+    "duration": 2,
+    "pid": 93062,
+    "index": 32
+  },
+  {
+    "name": "Require(25) /Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/@midwayjs/web/app/extend/context.js",
+    "start": 1708958120671,
+    "end": 1708958120672,
+    "duration": 1,
+    "pid": 93062,
+    "index": 33
+  },
+  {
+    "name": "Load agent.js",
+    "start": 1708958120673,
+    "end": 1708958120682,
+    "duration": 9,
+    "pid": 93062,
+    "index": 34
+  },
+  {
+    "name": "Require(26) /Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg-security/agent.js",
+    "start": 1708958120674,
+    "end": 1708958120674,
+    "duration": 0,
+    "pid": 93062,
+    "index": 35
+  },
+  {
+    "name": "Require(27) /Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg-onerror/agent.js",
+    "start": 1708958120675,
+    "end": 1708958120675,
+    "duration": 0,
+    "pid": 93062,
+    "index": 36
+  },
+  {
+    "name": "Require(28) /Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg-schedule/agent.js",
+    "start": 1708958120676,
+    "end": 1708958120678,
+    "duration": 2,
+    "pid": 93062,
+    "index": 37
+  },
+  {
+    "name": "Require(29) /Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/midway-schedule/agent.js",
+    "start": 1708958120678,
+    "end": 1708958120680,
+    "duration": 2,
+    "pid": 93062,
+    "index": 38
+  },
+  {
+    "name": "Require(30) /Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg/agent.js",
+    "start": 1708958120680,
+    "end": 1708958120681,
+    "duration": 1,
+    "pid": 93062,
+    "index": 39
+  },
+  {
+    "name": "Require(31) /Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/@midwayjs/web/agent.js",
+    "start": 1708958120681,
+    "end": 1708958120681,
+    "duration": 0,
+    "pid": 93062,
+    "index": 40
+  },
+  {
+    "name": "Before Start in /Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg-schedule/agent.js:12:9",
+    "start": 1708958120682,
+    "end": 1708958120701,
+    "duration": 19,
+    "pid": 93062,
+    "index": 41
+  },
+  {
+    "name": "Did Load in /Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/@midwayjs/web/agent.js:didLoad",
+    "start": 1708958120682,
+    "end": 1708958120701,
+    "duration": 19,
+    "pid": 93062,
+    "index": 42
+  },
+  {
+    "name": "Will Ready in /Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/@midwayjs/web/agent.js:willReady",
+    "start": 1708958120731,
+    "end": 1708958120731,
+    "duration": 0,
+    "pid": 93062,
+    "index": 43
+  }
+]

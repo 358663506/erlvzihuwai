@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "关于二驴子",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "like-fx": "/components/likeFx/likeFx"
+  }
+}

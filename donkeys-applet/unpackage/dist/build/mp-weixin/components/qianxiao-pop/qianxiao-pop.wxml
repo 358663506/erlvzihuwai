@@ -1,0 +1,1 @@
+<block wx:if="{{isMyPopup}}"><view data-event-opts="{{[['touchmove',[['',['$event']]]]]}}" class="myPopup" style="{{'height:'+(phoneHeight+'px')+';'}}" catchtouchmove="__e"><view class="myPopup_box"><slot></slot></view></view></block>

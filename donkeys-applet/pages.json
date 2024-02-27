@@ -1,0 +1,108 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/tabbar",
+			"style": {
+				"navigationBarTitleText": "二驴子户外",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/me/aboutMe",
+			"style": {
+				"navigationBarTitleText": "关于二驴子",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/post/post",
+			"style": {
+				"navigationBarTitleText": "编辑活动",
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "pages/post/detail",
+			"style": {
+				"navigationBarTitleText": "活动详情",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "pages/medias/detail",
+			"style": {
+				"navigationBarTitleText": "影像详情",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+		}
+	    ,{
+            "path" : "pages/me/post",
+            "style" :                                                                                    
+            {
+               "navigationBarTitleText": "活动列表",
+               "enablePullDownRefresh": false,
+               "navigationStyle": "custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/me/history",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "浏览记录",
+                "enablePullDownRefresh": false,
+                "navigationStyle": "custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/me/collect",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "收藏列表",
+                "enablePullDownRefresh": false,
+                "navigationStyle": "custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/search/search",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "搜索",
+                "enablePullDownRefresh": false,
+                "navigationStyle": "custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/me/medias",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "照片墙管理",
+                "enablePullDownRefresh": false,
+                "navigationStyle": "custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/agreement/detai",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "协议",
+                "enablePullDownRefresh": false,
+                "navigationStyle": "custom"
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}

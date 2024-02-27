@@ -1,0 +1,1 @@
+.myPopup{width:750rpx;background-color:rgba(0,0,0,.36);position:fixed;left:0;top:0;height:100vh;z-index:1000}.myPopup_box{width:100%;left:0;bottom:0;bottom:constant(safe-area-inset-bottom);bottom:env(safe-area-inset-bottom);position:fixed;z-index:2000}

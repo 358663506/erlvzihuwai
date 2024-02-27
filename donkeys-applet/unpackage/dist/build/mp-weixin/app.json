@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/index/tabbar",
+    "pages/me/aboutMe",
+    "pages/post/post",
+    "pages/post/detail",
+    "pages/medias/detail",
+    "pages/me/post",
+    "pages/me/history",
+    "pages/me/collect",
+    "pages/search/search",
+    "pages/me/medias",
+    "pages/agreement/detai"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "plugins": {},
+  "permission": {},
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom",
+    "tn-custom": "/components/TnCustom/TnCustom"
+  },
+  "sitemapLocation": "sitemap.json"
+}

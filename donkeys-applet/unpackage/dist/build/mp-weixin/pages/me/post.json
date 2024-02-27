@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "活动列表",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "u-icon": "/uview-ui/components/u-icon/u-icon",
+    "u-search": "/uview-ui/components/u-search/u-search",
+    "u-loadmore": "/uview-ui/components/u-loadmore/u-loadmore"
+  }
+}

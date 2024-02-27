@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "二驴子户外",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "u-loading": "/uview-ui/components/u-loading/u-loading",
+    "index": "/pages/index/inedx",
+    "medias": "/pages/index/medias",
+    "me": "/pages/index/me",
+    "login": "/pages/index/login"
+  }
+}
