@@ -33,8 +33,7 @@
 			console.log('App Hide')
 		}
 	}
-</script>
-
+</script>ss
 <style lang="scss">
 	@import "colorui/main.css";
 	@import "colorui/icon.css";
