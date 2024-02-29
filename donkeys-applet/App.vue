@@ -40,5 +40,4 @@
 	@import "colorui/icon.css";
 	@import "uview-ui/index.scss";
 	@import "@/style/layout.scss"
-
 </style>
