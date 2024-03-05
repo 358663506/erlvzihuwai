@@ -69,13 +69,14 @@ export default (appInfo: EggAppInfo) => {
             domain: ''
         },
         redis: {
-            port: 16379,
+            port: 6379,
             //host: '127.0.0.1',
-            host:'124.221.68.99',
+            host:'47.92.88.104',
             //password: '123456',
-             password: 'Sj15221198655@',
+            password: 'Sj15221198655@',
             db: 0
         }
+
     } as unknown as CoolConfig;
     config.applets = {
         appId: 'wxf41e69c8460d77e5',

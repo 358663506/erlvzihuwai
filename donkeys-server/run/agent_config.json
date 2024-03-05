@@ -692,8 +692,8 @@
         "domain": ""
       },
       "redis": {
-        "port": 16379,
-        "host": "124.221.68.99",
+        "port": 6379,
+        "host": "47.92.88.104",
         "password": "<String len: 14>",
         "db": 0
       }
