@@ -1,7 +1,7 @@
 {
   "config": {
     "view": {
-      "root": "/Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/src/app/view",
+      "root": "/Users/ztq/dawei/ates/ates-project/erlvzihuwai/donkeys-server/src/app/view",
       "cache": false,
       "defaultExtension": ".html",
       "defaultViewEngine": "nunjucks",
@@ -780,7 +780,7 @@
     "onerror": {
       "errorPageUrl": "",
       "appErrorFilter": null,
-      "templatePath": "/Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg-onerror/lib/onerror_page.mustache"
+      "templatePath": "/Users/ztq/dawei/ates/ates-project/erlvzihuwai/donkeys-server/node_modules/egg-onerror/lib/onerror_page.mustache"
     },
     "i18n": {
       "defaultLocale": "en_US",
@@ -819,7 +819,7 @@
     },
     "static": {
       "prefix": "",
-      "dir": "/Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/public",
+      "dir": "/Users/ztq/dawei/ates/ates-project/erlvzihuwai/donkeys-server/public",
       "dynamic": true,
       "preload": false,
       "buffer": false,
@@ -923,9 +923,9 @@
       "author": "cool-js.com",
       "license": "MIT"
     },
-    "baseDir": "/Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/src",
+    "baseDir": "/Users/ztq/dawei/ates/ates-project/erlvzihuwai/donkeys-server/src",
     "HOME": "/Users/ztq",
-    "rundir": "/Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/run",
+    "rundir": "/Users/ztq/dawei/ates/ates-project/erlvzihuwai/donkeys-server/run",
     "dump": {
       "ignore": "<Set>"
     },
@@ -957,7 +957,7 @@
       "onerror": "<Function onerror>"
     },
     "logger": {
-      "dir": "/Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/logs/cool-admin",
+      "dir": "/Users/ztq/dawei/ates/ates-project/erlvzihuwai/donkeys-server/logs/cool-admin",
       "encoding": "utf8",
       "env": "local",
       "level": "INFO",
@@ -1028,11 +1028,11 @@
     "alinode": {
       "logdir": "/tmp",
       "error_log": [
-        "/Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/logs/cool-admin/common-error.log",
-        "/Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/logs/stderr.log"
+        "/Users/ztq/dawei/ates/ates-project/erlvzihuwai/donkeys-server/logs/cool-admin/common-error.log",
+        "/Users/ztq/dawei/ates/ates-project/erlvzihuwai/donkeys-server/logs/stderr.log"
       ],
       "packages": [
-        "/Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/package.json"
+        "/Users/ztq/dawei/ates/ates-project/erlvzihuwai/donkeys-server/package.json"
       ]
     },
     "middleware": [],
@@ -1054,8 +1054,8 @@
         "jsonp"
       ],
       "env": [],
-      "from": "/Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg/config/plugin.js",
-      "path": "/Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg-onerror",
+      "from": "/Users/ztq/dawei/ates/ates-project/erlvzihuwai/donkeys-server/node_modules/egg/config/plugin.js",
+      "path": "/Users/ztq/dawei/ates/ates-project/erlvzihuwai/donkeys-server/node_modules/egg-onerror",
       "version": "2.1.0"
     },
     "session": {
@@ -1065,8 +1065,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg/config/plugin.js",
-      "path": "/Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg-session",
+      "from": "/Users/ztq/dawei/ates/ates-project/erlvzihuwai/donkeys-server/node_modules/egg/config/plugin.js",
+      "path": "/Users/ztq/dawei/ates/ates-project/erlvzihuwai/donkeys-server/node_modules/egg-session",
       "version": "3.3.0"
     },
     "i18n": {
@@ -1076,8 +1076,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg/config/plugin.js",
-      "path": "/Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg-i18n",
+      "from": "/Users/ztq/dawei/ates/ates-project/erlvzihuwai/donkeys-server/node_modules/egg/config/plugin.js",
+      "path": "/Users/ztq/dawei/ates/ates-project/erlvzihuwai/donkeys-server/node_modules/egg-i18n",
       "version": "2.1.1"
     },
     "watcher": {
@@ -1087,8 +1087,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/@midwayjs/web/config/plugin.js",
-      "path": "/Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg-watcher",
+      "from": "/Users/ztq/dawei/ates/ates-project/erlvzihuwai/donkeys-server/node_modules/@midwayjs/web/config/plugin.js",
+      "path": "/Users/ztq/dawei/ates/ates-project/erlvzihuwai/donkeys-server/node_modules/egg-watcher",
       "version": "3.1.1"
     },
     "multipart": {
@@ -1100,8 +1100,8 @@
         "schedule"
       ],
       "env": [],
-      "from": "/Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg/config/plugin.js",
-      "path": "/Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg-multipart",
+      "from": "/Users/ztq/dawei/ates/ates-project/erlvzihuwai/donkeys-server/node_modules/egg/config/plugin.js",
+      "path": "/Users/ztq/dawei/ates/ates-project/erlvzihuwai/donkeys-server/node_modules/egg-multipart",
       "version": "2.13.1"
     },
     "security": {
@@ -1113,8 +1113,8 @@
         "session"
       ],
       "env": [],
-      "from": "/Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg/config/plugin.js",
-      "path": "/Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg-security",
+      "from": "/Users/ztq/dawei/ates/ates-project/erlvzihuwai/donkeys-server/node_modules/egg/config/plugin.js",
+      "path": "/Users/ztq/dawei/ates/ates-project/erlvzihuwai/donkeys-server/node_modules/egg-security",
       "version": "2.9.0"
     },
     "development": {
@@ -1128,8 +1128,8 @@
       "env": [
         "local"
       ],
-      "from": "/Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/@midwayjs/web/config/plugin.js",
-      "path": "/Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg-development",
+      "from": "/Users/ztq/dawei/ates/ates-project/erlvzihuwai/donkeys-server/node_modules/@midwayjs/web/config/plugin.js",
+      "path": "/Users/ztq/dawei/ates/ates-project/erlvzihuwai/donkeys-server/node_modules/egg-development",
       "version": "2.7.0"
     },
     "logrotator": {
@@ -1141,8 +1141,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/src/config/plugin.ts",
-      "path": "/Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg-logrotator",
+      "from": "/Users/ztq/dawei/ates/ates-project/erlvzihuwai/donkeys-server/src/config/plugin.ts",
+      "path": "/Users/ztq/dawei/ates/ates-project/erlvzihuwai/donkeys-server/node_modules/egg-logrotator",
       "version": "3.1.0"
     },
     "schedule": {
@@ -1152,8 +1152,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/src/config/plugin.ts",
-      "path": "/Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg-schedule",
+      "from": "/Users/ztq/dawei/ates/ates-project/erlvzihuwai/donkeys-server/src/config/plugin.ts",
+      "path": "/Users/ztq/dawei/ates/ates-project/erlvzihuwai/donkeys-server/node_modules/egg-schedule",
       "version": "3.6.6"
     },
     "static": {
@@ -1163,8 +1163,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/src/config/plugin.ts",
-      "path": "/Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg-static",
+      "from": "/Users/ztq/dawei/ates/ates-project/erlvzihuwai/donkeys-server/src/config/plugin.ts",
+      "path": "/Users/ztq/dawei/ates/ates-project/erlvzihuwai/donkeys-server/node_modules/egg-static",
       "version": "2.2.0"
     },
     "jsonp": {
@@ -1176,8 +1176,8 @@
         "security"
       ],
       "env": [],
-      "from": "/Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg/config/plugin.js",
-      "path": "/Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg-jsonp",
+      "from": "/Users/ztq/dawei/ates/ates-project/erlvzihuwai/donkeys-server/node_modules/egg/config/plugin.js",
+      "path": "/Users/ztq/dawei/ates/ates-project/erlvzihuwai/donkeys-server/node_modules/egg-jsonp",
       "version": "2.0.0"
     },
     "view": {
@@ -1187,8 +1187,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/src/config/plugin.ts",
-      "path": "/Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg-view",
+      "from": "/Users/ztq/dawei/ates/ates-project/erlvzihuwai/donkeys-server/src/config/plugin.ts",
+      "path": "/Users/ztq/dawei/ates/ates-project/erlvzihuwai/donkeys-server/node_modules/egg-view",
       "version": "2.1.3"
     },
     "schedulePlus": {
@@ -1200,8 +1200,8 @@
         "schedule"
       ],
       "env": [],
-      "from": "/Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/@midwayjs/web/config/plugin.js",
-      "path": "/Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/midway-schedule",
+      "from": "/Users/ztq/dawei/ates/ates-project/erlvzihuwai/donkeys-server/node_modules/@midwayjs/web/config/plugin.js",
+      "path": "/Users/ztq/dawei/ates/ates-project/erlvzihuwai/donkeys-server/node_modules/midway-schedule",
       "version": "2.14.6"
     },
     "egg-mock": {
@@ -1211,7 +1211,7 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "path": "/Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/egg-mock",
+      "path": "/Users/ztq/dawei/ates/ates-project/erlvzihuwai/donkeys-server/node_modules/egg-mock",
       "version": "3.26.0"
     },
     "midway-mock": {
@@ -1221,7 +1221,7 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "path": "/Users/ztq/dawei/ates/erlvzihuwai/donkeys-server/node_modules/@midwayjs/mock",
+      "path": "/Users/ztq/dawei/ates/ates-project/erlvzihuwai/donkeys-server/node_modules/@midwayjs/mock",
       "version": "2.14.6"
     }
   }
