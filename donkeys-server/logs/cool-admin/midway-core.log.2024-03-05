@@ -1,0 +1,151 @@
+2024-03-05 23:49:14,539 INFO 28680 [egg:logger] init all loggers with options: {"dir":"E:\\newELv\\erlvzihuwai\\donkeys-server\\logs\\cool-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"midway-web.log","coreLogName":"midway-core.log","agentLogName":"midway-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"INFO"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"type":"application"}
+2024-03-05 23:49:14,540 INFO 28680 [egg:core] dump config after load, 13ms
+2024-03-05 23:49:15,170 INFO 28680 [egg-multipart] file mode enable
+2024-03-05 23:49:15,170 INFO 28680 [egg-multipart] will save temporary files to "C:\\Users\\刘渊火\\AppData\\Local\\Temp\\egg-multipart-tmp\\cool-admin", cleanup job cron: "0 30 4 * * *"
+2024-03-05 23:49:15,966 INFO 28680 [@midwayjs/view-nunjucks] loading templates from ["E:\\newELv\\erlvzihuwai\\donkeys-server\\src\\app\\view"]
+2024-03-05 23:49:16,438 INFO 28680 [36m [cool:core] midwayjs cool core func handler [0m
+2024-03-05 23:49:16,479 INFO 28680 [36m [cool:core] midwayjs cool core cache register [0m
+2024-03-05 23:49:16,641 INFO 28680 [36m [cool:core] midwayjs cool core router prefix handler [0m
+2024-03-05 23:49:16,644 INFO 28680 [36m [cool:core] midwayjs cool core eps ready [0m
+2024-03-05 23:49:16,645 INFO 28680 [36m [cool:core] midwayjs cool core eps ready [0m
+2024-03-05 23:49:16,645 INFO 28680 [36m [cool:core] auto router prefix "/admin/demo/user"  [0m
+2024-03-05 23:49:16,647 INFO 28680 [36m [cool:core] auto router prefix "/admin/applets/agreement"  [0m
+2024-03-05 23:49:16,648 INFO 28680 [36m [cool:core] auto router prefix "/admin/applets/autograph"  [0m
+2024-03-05 23:49:16,648 INFO 28680 [36m [cool:core] auto router prefix "/admin/applets/carousel"  [0m
+2024-03-05 23:49:16,648 INFO 28680 [36m [cool:core] auto router prefix "/admin/applets/photoWall"  [0m
+2024-03-05 23:49:16,649 INFO 28680 [36m [cool:core] auto router prefix "/admin/applets/photoWallType"  [0m
+2024-03-05 23:49:16,649 INFO 28680 [36m [cool:core] auto router prefix "/admin/applets/post"  [0m
+2024-03-05 23:49:16,649 INFO 28680 [36m [cool:core] auto router prefix "/admin/applets/user"  [0m
+2024-03-05 23:49:16,650 INFO 28680 [36m [cool:core] auto router prefix "/admin/base/sys/department"  [0m
+2024-03-05 23:49:16,650 INFO 28680 [36m [cool:core] auto router prefix "/admin/base/sys/log"  [0m
+2024-03-05 23:49:16,650 INFO 28680 [36m [cool:core] auto router prefix "/admin/base/sys/menu"  [0m
+2024-03-05 23:49:16,651 INFO 28680 [36m [cool:core] auto router prefix "/admin/base/sys/param"  [0m
+2024-03-05 23:49:16,651 INFO 28680 [36m [cool:core] auto router prefix "/admin/base/sys/role"  [0m
+2024-03-05 23:49:16,651 INFO 28680 [36m [cool:core] auto router prefix "/admin/base/sys/user"  [0m
+2024-03-05 23:49:16,651 INFO 28680 [36m [cool:core] auto router prefix "/admin/demo/goods"  [0m
+2024-03-05 23:49:16,652 INFO 28680 [36m [cool:core] auto router prefix "/app/demo/goods"  [0m
+2024-03-05 23:49:16,652 INFO 28680 [36m [cool:core] auto router prefix "/admin/space/info"  [0m
+2024-03-05 23:49:16,652 INFO 28680 [36m [cool:core] auto router prefix "/admin/space/type"  [0m
+2024-03-05 23:49:16,653 INFO 28680 [36m [cool:core] auto router prefix "/admin/task/info"  [0m
+2024-03-05 23:49:16,653 INFO 28680 [36m [cool:core] midwayjs cool core crud handler [0m
+2024-03-05 23:49:16,653 INFO 28680 [36m [cool:core] midwayjs cool core component ready [0m
+2024-03-05 23:49:16,690 INFO 28680 [egg-static] starting static serve  -> E:\newELv\erlvzihuwai\donkeys-server\public
+2024-03-05 23:49:16,701 INFO 28680 [egg-security] use methodnoallow middleware
+2024-03-05 23:49:16,708 INFO 28680 [egg-security] use noopen middleware
+2024-03-05 23:49:16,717 INFO 28680 [egg-security] use nosniff middleware
+2024-03-05 23:49:16,723 INFO 28680 [egg-security] use xssProtection middleware
+2024-03-05 23:49:16,732 INFO 28680 [egg-security] use xframe middleware
+2024-03-05 23:49:16,740 INFO 28680 [egg-security] use dta middleware
+2024-03-05 23:49:16,740 INFO 28680 [egg-security] compose 6 middlewares into one security middleware
+2024-03-05 23:49:16,766 INFO 28680 [egg:core] dump config after ready, 8ms
+2024-03-05 23:49:16,861 INFO 28680 [36m [cool:core] midwayjs cool redis connect [0m
+2024-03-05 23:49:16,869 INFO 28680 [36m [cool:core] midwayjs cool redis connect [0m
+2024-03-05 23:49:16,873 INFO 28680 [36m [cool:core] midwayjs cool qiniu component ready [0m
+2024-03-05 23:49:16,874 INFO 28680 [36m [cool:core] midwayjs cool redis connect [0m
+2024-03-05 23:49:16,969 INFO 28680 [36m [cool:core] midwayjs cool redis component ready [0m
+2024-03-05 23:49:17,017 INFO 28680 [36m [cool:core] midwayjs cool queue component status 1 [0m
+2024-03-05 23:49:17,990 INFO 28680 [36m [cool:core] create demoCommQueue queue  [0m
+2024-03-05 23:49:17,991 INFO 28680 [36m [cool:core] create demoGetterQueue queue  [0m
+2024-03-05 23:49:18,010 INFO 28680 [36m [cool:core] create taskInfoQueue queue  [0m
+2024-03-05 23:49:26,666 INFO 28680 [36m [cool:core] location clean [0m
+2024-03-05 23:56:16,352 ERROR 28680 [36m [cool:core] midwayjs cool redis error [0m
+2024-03-05 23:56:16,353 ERROR 28680 Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+2024-03-05 23:56:16,654 ERROR 28680 QueryFailedError: write ECONNRESET
+    at QueryFailedError.TypeORMError [as constructor] (E:\newELv\erlvzihuwai\donkeys-server\src\error\TypeORMError.ts:7:9)
+    at new QueryFailedError (E:\newELv\erlvzihuwai\donkeys-server\src\error\QueryFailedError.ts:9:9)
+    at Query.onResult (E:\newELv\erlvzihuwai\donkeys-server\src\driver\mysql\MysqlQueryRunner.ts:183:37)
+    at PoolConnection._notifyError (E:\newELv\erlvzihuwai\donkeys-server\node_modules\mysql2\lib\connection.js:212:21)
+    at PoolConnection._handleFatalError (E:\newELv\erlvzihuwai\donkeys-server\node_modules\mysql2\lib\connection.js:167:10)
+    at PoolConnection._handleNetworkError (E:\newELv\erlvzihuwai\donkeys-server\node_modules\mysql2\lib\connection.js:180:10)
+    at E:\newELv\erlvzihuwai\donkeys-server\node_modules\mysql2\lib\connection.js:247:14
+    at onwriteError (node:internal/streams/writable:417:3)
+    at processTicksAndRejections (node:internal/process/task_queues:85:21) {
+  query: 'UPDATE `core_plugin` SET `status` = ?, `updateTime` = CURRENT_TIMESTAMP WHERE `name` = ?',
+  parameters: [ 3, 'Redis缓存' ],
+  driverError: Error: write ECONNRESET
+      at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+      at writeGeneric (node:internal/stream_base_commons:151:3)
+      at Socket._writeGeneric (node:net:905:11)
+      at Socket._write (node:net:917:8)
+      at writeOrBuffer (node:internal/streams/writable:391:12)
+      at _write (node:internal/streams/writable:332:10)
+      at Socket.Writable.write (node:internal/streams/writable:336:10)
+      at PoolConnection.write (E:\newELv\erlvzihuwai\donkeys-server\node_modules\mysql2\lib\connection.js:245:32)
+      at PoolConnection.writePacket (E:\newELv\erlvzihuwai\donkeys-server\node_modules\mysql2\lib\connection.js:294:12)
+      at Query.start (E:\newELv\erlvzihuwai\donkeys-server\node_modules\mysql2\lib\commands\query.js:60:16) {
+    errno: -4077,
+    code: 'ECONNRESET',
+    syscall: 'write',
+    fatal: true
+  },
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'write',
+  fatal: true
+}
+2024-03-05 23:56:16,664 ERROR 28680 Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  name: 'unhandledExceptionError'
+}
+2024-03-05 23:56:16,668 ERROR 28680 [36m [cool:core] midwayjs cool redis error [0m
+2024-03-05 23:56:16,669 ERROR 28680 Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+2024-03-05 23:56:16,686 ERROR 28680 QueryFailedError: write ECONNRESET
+    at QueryFailedError.TypeORMError [as constructor] (E:\newELv\erlvzihuwai\donkeys-server\src\error\TypeORMError.ts:7:9)
+    at new QueryFailedError (E:\newELv\erlvzihuwai\donkeys-server\src\error\QueryFailedError.ts:9:9)
+    at Query.onResult (E:\newELv\erlvzihuwai\donkeys-server\src\driver\mysql\MysqlQueryRunner.ts:183:37)
+    at PoolConnection._notifyError (E:\newELv\erlvzihuwai\donkeys-server\node_modules\mysql2\lib\connection.js:212:21)
+    at PoolConnection._handleFatalError (E:\newELv\erlvzihuwai\donkeys-server\node_modules\mysql2\lib\connection.js:167:10)
+    at PoolConnection._handleNetworkError (E:\newELv\erlvzihuwai\donkeys-server\node_modules\mysql2\lib\connection.js:180:10)
+    at E:\newELv\erlvzihuwai\donkeys-server\node_modules\mysql2\lib\connection.js:247:14
+    at onwriteError (node:internal/streams/writable:417:3)
+    at processTicksAndRejections (node:internal/process/task_queues:85:21) {
+  query: 'UPDATE `core_plugin` SET `status` = ?, `updateTime` = CURRENT_TIMESTAMP WHERE `name` = ?',
+  parameters: [ 3, 'Redis缓存' ],
+  driverError: Error: write ECONNRESET
+      at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+      at writeGeneric (node:internal/stream_base_commons:151:3)
+      at Socket._writeGeneric (node:net:905:11)
+      at Socket._write (node:net:917:8)
+      at writeOrBuffer (node:internal/streams/writable:391:12)
+      at _write (node:internal/streams/writable:332:10)
+      at Socket.Writable.write (node:internal/streams/writable:336:10)
+      at PoolConnection.write (E:\newELv\erlvzihuwai\donkeys-server\node_modules\mysql2\lib\connection.js:245:32)
+      at PoolConnection.writePacket (E:\newELv\erlvzihuwai\donkeys-server\node_modules\mysql2\lib\connection.js:294:12)
+      at Query.start (E:\newELv\erlvzihuwai\donkeys-server\node_modules\mysql2\lib\commands\query.js:60:16) {
+    errno: -4077,
+    code: 'ECONNRESET',
+    syscall: 'write',
+    fatal: true
+  },
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'write',
+  fatal: true
+}
+2024-03-05 23:56:16,690 ERROR 28680 Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  name: 'unhandledExceptionError'
+}
+2024-03-05 23:56:16,691 ERROR 28680 [36m [cool:core] midwayjs cool redis error [0m
+2024-03-05 23:56:16,691 ERROR 28680 Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}

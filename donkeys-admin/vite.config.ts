@@ -17,14 +17,18 @@ export default (): UserConfig => {
     // 请求代理地址
     const proxy = {
         '/dev': {
-            target: 'http://127.0.0.1:8001',
+            target: 'http://172.16.9.131:8001/',
+            // target: 'https://admin.web3n.com',
             changeOrigin: true,
+            secure: true,
             rewrite: (path: string) => path.replace(/^\/dev/, '')
+            // rewrite: (path: string) => path.replace(/^\/pro/, '/api')
         },
 
         '/pro': {
             target: 'https://admin.web3n.com',
             changeOrigin: true,
+            secure: true,
             rewrite: (path: string) => path.replace(/^\/pro/, '/api')
         }
     };
@@ -49,6 +53,7 @@ export default (): UserConfig => {
         server: {
             port: 9100,
             proxy,
+            host: '0.0.0.0',
             hmr: {
                 overlay: true
             }

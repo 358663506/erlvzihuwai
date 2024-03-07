@@ -31,7 +31,7 @@ class Open extends BaseService {
 	 */
 	captcha({ height, width }: any) {
 		return this.request({
-			url: "/captcha",
+			url: "https://admin.elzhw.cn/api/admin/base/open/captcha",
 			params: {
 				height,
 				width

@@ -8,7 +8,6 @@ import { ElMessage } from 'element-plus';
 
 axios.defaults.timeout = 30000;
 axios.defaults.withCredentials = true;
-
 NProgress.configure({
     showSpinner: false
 });

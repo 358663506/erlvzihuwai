@@ -1,0 +1,20 @@
+{
+  "keep": {
+    "days": true,
+    "amount": 31
+  },
+  "auditLog": "E:\\newELv\\erlvzihuwai\\donkeys-server\\logs\\cool-admin\\.40e5a7fa85bbf8412938be8098fc9dfac2525598-audit.json",
+  "files": [
+    {
+      "date": 1709653753723,
+      "name": "E:\\newELv\\erlvzihuwai\\donkeys-server\\logs\\cool-admin\\midway-web.log.2024-03-05",
+      "hash": "cf852af2c71fee81e5f575989f2c72fe"
+    },
+    {
+      "date": 1709655567702,
+      "name": "E:\\newELv\\erlvzihuwai\\donkeys-server\\logs\\cool-admin\\midway-web.log.2024-03-06",
+      "hash": "27b814f84e26bdd32f23bbbc76012c27"
+    }
+  ],
+  "hashType": "md5"
+}

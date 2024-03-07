@@ -1,0 +1,20 @@
+{
+  "keep": {
+    "days": true,
+    "amount": 31
+  },
+  "auditLog": "E:\\newELv\\erlvzihuwai\\donkeys-server\\logs\\cool-admin\\.6ba93ee0fe8748713ac530ff56c4124730784e08-audit.json",
+  "files": [
+    {
+      "date": 1709653753729,
+      "name": "E:\\newELv\\erlvzihuwai\\donkeys-server\\logs\\cool-admin\\egg-schedule.log.2024-03-05",
+      "hash": "f9838c1531739fa79de82daa71c94dc2"
+    },
+    {
+      "date": 1709655567707,
+      "name": "E:\\newELv\\erlvzihuwai\\donkeys-server\\logs\\cool-admin\\egg-schedule.log.2024-03-06",
+      "hash": "8d33cd575a5e61e1c3e25bda755bda4a"
+    }
+  ],
+  "hashType": "md5"
+}

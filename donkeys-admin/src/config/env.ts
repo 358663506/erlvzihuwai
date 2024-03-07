@@ -9,8 +9,8 @@ const routerMode: String = 'history';
 const isDev: Boolean = import.meta.env.MODE === 'development';
 
 // Host
-// const host: String = 'https://show.cool-admin.com';
-const host: String = 'http://10.122.207.180';
+const host: String = 'https://show.cool-admin.com';
+// const host: String = 'http://192.168.1.3:5000/';
 
 // 请求地址
 const baseUrl: String = (function () {
