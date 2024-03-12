@@ -1,5 +1,6 @@
 <script>
 	import Vue from 'vue'
+// test
 	export default {
 		onLaunch: function() {
 			uni.getSystemInfo({
