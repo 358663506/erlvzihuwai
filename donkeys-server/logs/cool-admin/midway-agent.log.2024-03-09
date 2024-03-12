@@ -1,0 +1,14 @@
+2024-03-09 04:11:13,128 ERROR 33708 Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  name: 'unhandledExceptionError'
+}
+2024-03-09 04:11:14,180 ERROR 33708 Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  name: 'unhandledExceptionError'
+}
