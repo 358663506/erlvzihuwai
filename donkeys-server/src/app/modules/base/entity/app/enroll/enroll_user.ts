@@ -5,7 +5,7 @@ import { Column, Index } from 'typeorm';
 /**
  * 系统用户
  */
-@EntityModel('base_sys_user')
+@EntityModel('applets_enroll_user')
 export class EnrollUserEntity extends BaseEntity {
     @Index()
     @Column({ comment: '报名活动关联ID', type: 'int', nullable: true })
