@@ -33,10 +33,12 @@
 			console.log('App Hide')
 		}
 	}
-</script>ss
+</script>
+
 <style lang="scss">
 	@import "colorui/main.css";
 	@import "colorui/icon.css";
 	@import "uview-ui/index.scss";
 	@import "@/style/layout.scss"
+
 </style>

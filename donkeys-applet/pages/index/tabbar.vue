@@ -2,6 +2,7 @@
 	<view class="full flex flex-column">
 		<index @ShowNews="ShowNews" v-if="PageCur=='index'" ref="page"></index>
 		<medias v-if="PageCur=='medias'" ref="page"></medias>
+		<!-- <me v-else-if="PageCur=='me'" ref="page"></me> -->
 		<login v-if="PageCur=='me' && !token" ref="page"></login>
 		<me v-else-if="PageCur=='me' && token" ref="page"></me>
 		<view class="box">

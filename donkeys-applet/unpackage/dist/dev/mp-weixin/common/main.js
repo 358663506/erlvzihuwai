@@ -16,7 +16,7 @@ __webpack_require__(/*! uni-pages */ 26);
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 25));
 var _App = _interopRequireDefault(__webpack_require__(/*! ./App */ 27));
 var _store = _interopRequireDefault(__webpack_require__(/*! ./store */ 33));
-var _uviewUi = _interopRequireDefault(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module 'uview-ui'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())));
+var _uviewUi = _interopRequireDefault(__webpack_require__(/*! uview-ui */ 40));
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 // @ts-ignore
@@ -25,13 +25,13 @@ uni.$store = _store.default;
 // 此处为引用自定义顶部
 var cuCustom = function cuCustom() {
   Promise.all(/*! require.ensure | colorui/components/cu-custom */[__webpack_require__.e("common/vendor"), __webpack_require__.e("colorui/components/cu-custom")]).then((function () {
-    return resolve(__webpack_require__(/*! ./colorui/components/cu-custom.vue */ 130));
+    return resolve(__webpack_require__(/*! ./colorui/components/cu-custom.vue */ 165));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 _vue.default.component('cu-custom', cuCustom);
 var TnCustom = function TnCustom() {
   Promise.all(/*! require.ensure | components/TnCustom/TnCustom */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/TnCustom/TnCustom")]).then((function () {
-    return resolve(__webpack_require__(/*! ./components/TnCustom/TnCustom.vue */ 138));
+    return resolve(__webpack_require__(/*! ./components/TnCustom/TnCustom.vue */ 173));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 _vue.default.component('tn-custom', TnCustom);
@@ -45,6 +45,11 @@ _vue.default.component('tn-custom', TnCustom);
 // 引入:uView-UI
 
 _vue.default.use(_uviewUi.default);
+// 通过`console.log`打印的形式
+console.log(uni.$u.config.v);
+
+// 可以查阅uView的配置文件得知当前版本号，具体位置为：
+console.log('uni.$u.config.v', uni.$u.config.v);
 _vue.default.config.productionTip = false;
 _App.default.mpType = 'app';
 var app = new _vue.default(_objectSpread(_objectSpread({}, _App.default), {}, {
@@ -171,9 +176,11 @@ __webpack_require__.r(__webpack_exports__);
   !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--8-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-2!./node_modules/postcss-loader/src??ref--8-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/sass-loader/dist/cjs.js??ref--8-oneOf-1-4!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-5!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!E:/newELv/erlvzihuwai/donkeys-applet/App.vue?vue&type=style&index=0&lang=scss& ***!
   \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nModuleBuildError: Module build failed (from ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/sass-loader/dist/cjs.js):\nSassError: File to import not found or unreadable: uview-ui/theme.scss.\n        on line 16 of ../../../../../newELv/erlvzihuwai/donkeys-applet/uni.scss\n        from line 51 of E:\\newELv\\erlvzihuwai\\donkeys-applet\\App.vue\n>> @import \"uview-ui/theme.scss\";\n\n   ^\n\n    at E:\\安装吧\\HBuilderX.3.99.2023122611\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\webpack\\lib\\NormalModule.js:316:20\n    at E:\\安装吧\\HBuilderX.3.99.2023122611\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at E:\\安装吧\\HBuilderX.3.99.2023122611\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\loader-runner\\lib\\LoaderRunner.js:233:18\n    at context.callback (E:\\安装吧\\HBuilderX.3.99.2023122611\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\loader-runner\\lib\\LoaderRunner.js:111:13)\n    at Object.callback (E:\\安装吧\\HBuilderX.3.99.2023122611\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@dcloudio\\vue-cli-plugin-uni\\packages\\sass-loader\\dist\\index.js:75:7)\n    at Object.done [as callback] (E:\\安装吧\\HBuilderX.3.99.2023122611\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\neo-async\\async.js:8069:18)\n    at E:\\安装吧\\HBuilderX.3.99.2023122611\\HBuilderX\\plugins\\compile-node-sass\\node_modules\\node-sass-china\\lib\\index.js:294:32");
+// extracted by mini-css-extract-plugin
+    if(false) { var cssReload; }
+  
 
 /***/ })
 

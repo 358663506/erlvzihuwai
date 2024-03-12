@@ -10,6 +10,7 @@
     "pages/me/collect",
     "pages/search/search",
     "pages/me/medias",
+    "pages/signUp/index",
     "pages/agreement/detai"
   ],
   "subPackages": [],

@@ -18,6 +18,11 @@ Vue.component('tn-custom', TnCustom)
 // 引入:uView-UI
 import uView from 'uview-ui';
 Vue.use(uView);
+// 通过`console.log`打印的形式
+console.log(uni.$u.config.v);
+
+// 可以查阅uView的配置文件得知当前版本号，具体位置为：
+console.log('uni.$u.config.v', uni.$u.config.v);
 
 Vue.config.productionTip = false
 

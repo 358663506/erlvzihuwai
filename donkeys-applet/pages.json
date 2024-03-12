@@ -1,6 +1,7 @@
 {
 	"easycom": {
-		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue",
+		"^vue-file-(.*)": "packageName/path/to/vue-file-$1.vue" // 匹配node_modules内的vue文件
 	},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
@@ -88,6 +89,17 @@
             }
             
         }
+		,
+		{
+		    "path" : "pages/signUp/index",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "报名管理",
+		        "enablePullDownRefresh": false,
+		        "navigationStyle": "custom"
+		    }
+		    
+		}
         ,{
             "path" : "pages/agreement/detai",
             "style" :                                                                                    
