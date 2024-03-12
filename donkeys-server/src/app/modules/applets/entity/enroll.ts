@@ -6,7 +6,7 @@ import { Column, Index } from 'typeorm';
  * 系统用户
  */
 @EntityModel('applets_enroll')
-export class EnrollrEntity extends BaseEntity {
+export class EnrollEntity extends BaseEntity {
     @Index()
     @Column({ comment: '活动名称', nullable: true })
     name: string;
@@ -15,7 +15,7 @@ export class EnrollrEntity extends BaseEntity {
     introduce: string;
 
     @Column({ comment: '是否有效0:有效，1无效' })
-    state: number;
+    status: number;
 
     @Column({ comment: '报名开关0可，1否', nullable: true })
     registration_flg: number;
