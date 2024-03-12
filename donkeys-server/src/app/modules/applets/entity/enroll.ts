@@ -6,7 +6,7 @@ import { Column, Index } from 'typeorm';
  * 系统用户
  */
 @EntityModel('applets_enroll')
-export class EnrollrEntity extends BaseEntity {
+export class EnrollEntity extends BaseEntity {
     @Index()
     @Column({ comment: '活动名称', nullable: true })
     name: string;
