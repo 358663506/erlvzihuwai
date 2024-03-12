@@ -7,40 +7,40 @@
 		<view class="nav-header bg-white" :style="{top: customBar + 'px'}">
 			<u-form
 				labelPosition="top"
-				:model="model1"
 				:rules="rules"
+				:model="userInfo"
+				 ref="uForm"
 				labelWidth="75px"
-				ref="uForm"
-		>
+			>
 			<u-form-item
 				label="微信昵称"
-				prop="userInfo.name"
+				prop="name"
 				borderBottom
 				ref="item1">
 				<u-input
-					v-model="model1.userInfo.name"
-					border="none"
+					v-model="userInfo.name"
 					></u-input>
 			</u-form-item>
 			<u-form-item
 				label="手机号"
-				prop="userInfo.mobile"
+				prop="mobile"
 				borderBottom
 				ref="item1"
 			>
 				<u-input
-					v-model="model1.userInfo.mobile"
-					border="none"
+					v-model="userInfo.mobile"
+					
 				></u-input>
 			</u-form-item>
 			<u-form-item
 				label="集合地点"
-				prop="userInfo.enroll_muster_address_id"
+				prop="enroll_muster_address_id"
 				borderBottom
 				ref="item1"
 			>
-				<u-radio-group
-					v-model="model1.userInfo.enroll_muster_address_id"
+				<u-input v-model="userInfo.enroll_muster_address_id" type="select" @click="show = true" />
+				<!-- <u-radio-group
+					v-model="userInfo.enroll_muster_address_id"
 					placement="column"
 				  >
 					<u-radio
@@ -52,16 +52,111 @@
 					>
 					{{ item.label }}
 					</u-radio>
+				  </u-radio-group> -->
+			</u-form-item>
+			<u-form-item
+				label="是否自驾"
+				prop="driver_flg"
+				borderBottom
+				ref="item1"
+			>
+				<u-radio-group
+					v-model="userInfo.driver_flg"
+					placement="column"
+				  >
+					<u-radio
+					  :customStyle="{marginBottom: '8px'}"
+					  v-for="(item, index) in radiolist3"
+					  :key="item.name"
+					  :label="item.name"
+					  :name="item.name"
+					>
+					{{ item.name }}
+					</u-radio>
 				  </u-radio-group>
 			</u-form-item>
 			<u-form-item
+				label="自驾出发地址"
+				prop="driver_address"
+				borderBottom
+				ref="item1">
+				<u-input
+					v-model="userInfo.driver_address"
+					
+					></u-input>
+			</u-form-item>
+			<u-form-item
+				label="是否委托组织购买"
+				prop="isgm"
+				borderBottom
+				class="isgm"
+				ref="item1">
+				<view class="ticp">(需要买保险的填姓名、身份证)</view>
+				<u-radio-group
+					v-model="userInfo.isgm"
+					placement="column"
+				  >
+					<u-radio
+					  :customStyle="{marginBottom: '8px'}"
+					  v-for="(item, index) in radiolist5"
+					  :key="index"
+					  :label="item.label"
+					  :name="item.value"
+					>
+					{{ item.label }}
+					</u-radio>
+				  </u-radio-group>
+			</u-form-item>
+			<u-form-item
+				v-if="userInfo.isgm !== 1"
+				label="保险单号"
+				prop="policy_no"
+				borderBottom
+				ref="item1">
+				<u-input
+					v-model="userInfo.policy_no"
+					
+					></u-input>
+			</u-form-item>
+			<u-form-item
+				v-if="userInfo.isgm !== 1"
+				label="保险照片"
+				prop="policy_img"
+				borderBottom
+				ref="item1">
+				<u-upload :action="action" :max-size="10 * 1024 * 1024" max-count="1" :limitType="['png', 'jpg', 'jpeg', 'webp', 'gif']" :file-list="fileList" ></u-upload>
+			</u-form-item>
+			
+			<u-form-item
+				v-if="userInfo.isgm === 1"
+				label="姓名"
+				prop="real_name"
+				borderBottom
+				ref="item1">
+				<u-input
+					v-model="userInfo.real_name"
+					
+					></u-input>
+			</u-form-item>
+			<u-form-item
+			v-if="userInfo.isgm === 1"
+				label="身份证号"
+				prop="Id_card"
+				borderBottom
+				ref="item1">
+				<u-input
+					v-model="userInfo.Id_card"
+					
+					></u-input>
+			</u-form-item>
+			<u-form-item
 					label="性别"
-					prop="userInfo.sex"
+					prop="sex"
 					borderBottom
 					ref="item1"
 			>
 				<u-radio-group
-					v-model="model1.userInfo.sex"
+					v-model="userInfo.sex"
 					placement="column"
 				  >
 					<u-radio
@@ -75,11 +170,53 @@
 					</u-radio>
 				  </u-radio-group>
 			</u-form-item>
+			
+			<u-form-item
+					label="是否愿意吃晚餐"
+					prop="dinner_lfg"
+					borderBottom
+					ref="item1"
+			>
+				<u-radio-group
+					v-model="userInfo.dinner_lfg"
+					placement="column"
+				  >
+					<u-radio
+					  :customStyle="{marginBottom: '8px'}"
+					  v-for="(item, index) in radiolist4"
+					  :key="index"
+					  :label="item.label"
+					  :name="item.value"
+					>
+					{{ item.label }}
+					</u-radio>
+				  </u-radio-group>
+			</u-form-item>
+			<u-form-item
+				label="紧急联系人名"
+				prop="emergency_contact"
+				borderBottom
+				ref="item1">
+				<u-input
+					v-model="userInfo.emergency_contact"
+					
+					></u-input>
+			</u-form-item>
+			<u-form-item
+				label="紧急联系人手机号"
+				prop="emergency_contact_mobile"
+				borderBottom
+				ref="item1">
+				<u-input
+					v-model="userInfo.emergency_contact_mobile"
+					
+					></u-input>
+			</u-form-item>
 		</u-form>
+				<u-button v-if="userInfo.state === 1" @click="submit(0)">退出</u-button>
+				<u-button v-else @click="submit(1)">参加</u-button>
 		</view>
-		<view class="station-list">
-		
-		</view>
+		<u-select v-model="show"  @confirm="confirm" :list="radiolist2"></u-select>
 	</view>
 </template>
 
@@ -120,12 +257,14 @@
 		},
 		data() {
 			return {
+				show: false,
+				fileList: [],
 				showSex: false,
-				model1: {
-					userInfo: {
+				action: 'https://admin.elzhw.cn/api/',
+				userInfo: {
 						id: '',
 						enroll_id: '', // 报名活动关联ID
-						name: 'uView UI', // 微信名称
+						name: '', // 微信名称
 						mobile: '', // 手机号
 						enroll_muster_address_id: '', // 集合地点ID
 						driver_flg: '', // 是否自驾
@@ -142,8 +281,10 @@
 						state: '', // 0:参加，1:退出
 						create_time: '', // 创建时间
 						sex: '男',
+						state: 0,
+						isgm: 1
 					},
-				},
+				 // 性别
 				radiolist1: [
 					{
 						name: '男'
@@ -152,6 +293,7 @@
 						name: '女'
 					}
 				],
+				// 集合点
 				radiolist2: [
 					{
 						label: '世纪大道',
@@ -166,117 +308,73 @@
 						value: 3
 					}
 				],
-				actions: [{
-					name: '男',
+				// 是否自驾
+				radiolist3: [
+					{
+						name: '是'
 					},
 					{
-						name: '女',
+						name: '否'
+					}
+				],
+				// 是否吃晚餐
+				radiolist4: [
+					{
+						label: '吃',
+						value: 0
 					},
 					{
-						name: '保密',
+						label: '不吃',
+						value: 1
 					},
+					{
+						label: '都可以',
+						value: 2
+					}
+				],
+				// 是否需要购买保险
+				radiolist5: [
+					{
+						label: '需要',
+						value: 1
+					},
+					{
+						label: '不需要',
+						value: 2
+					}
 				],
 				rules: {
-					'userInfo.name': {
-						type: 'string',
-						required: true,
-						message: '请填写姓名',
-						trigger: ['blur', 'change']
-					},
-					'userInfo.sex': {
-						type: 'string',
-						max: 1,
-						required: true,
-						message: '请选择男或女',
-						trigger: ['blur', 'change']
-					},
+					name: [
+						{
+							required: true,
+							message: '请输入姓名',
+							trigger: ['blur', 'change']
+						}
+					]
 				},
 				radio: '',
 				switchVal: false
 			}
 		},
 		onLoad() {
-			this.$store.state.loading = true
-			this.searchApi()
+			// this.$store.state.loading = true
 		},
 
 		methods: {
-			addRandomData(list) {
-				for (let i = 0; i < list.length; i++) {
-					// 先转成字符串再转成对象，避免数组对象引用导致数据混乱
-					let item = JSON.parse(JSON.stringify(list[i]))
-					item.__id = this.$u.guid();
-					item.departureTime = item.departureTime ? dayjs(item.departureTime).format("YYYY年MM月DD日") : ''
-					this.list.push(item);
-				}
+			confirm (e) {
+				console.log(e)
+				this.userInfo.enroll_muster_address_id = e[0].label
 			},
-			onBottom() {
-				if (this.loadStatus === 'loadmore') {
-					this.onLoadMore()
-				}
-			},
-			refresherrefresh() {
-				setTimeout(() => {
-					this.triggered = false
-				}, 1000)
-			},
-			tabClick(value){
-				this.searchData.type = value
-				this.search()
-			},
-			search() {
-				this.$refs.uWaterfall.clear()
-				this.$store.state.loading = true
-				this.scrollTop = this.scrollTop == 0 ?  -1 : 0
-				this.list = []
-				this.searchData.page = 1
-				this.searchData.size = 10,
-				this.searchApi()
-			},
-			onLoadMore() {
-				this.searchApi({
-					...this.searchData,
-					page: this.isLoadErr ? this.searchData.page : (this.searchData.page + 1)
-				})
-			},
-			searchApi(searchData = this.searchData) {
-				this.loadStatus = 'loading'
-				console.log(searchData)
-				searchApi(searchData).then(res => {
-						this.isLoadErr = false
-						let list = res.data.list
-						this.addRandomData(list)
-						this.searchData = {
-							...searchData
-						}
-						this.total = res.data.pagination.total || 0
-						console.log(this.total)
-						if (this.total <= this.list.length) {
-							this.loadStatus = 'nomore'
-						} else {
-							this.loadStatus = 'loadmore'
-						}
-					})
-					.catch(() => {
-						this.isLoadErr = true
-						this.loadStatus = 'loadmore'
-					})
-					.finally(() => {
-						this.isLoad = true
-						this.$store.state.loading = false
-					})
-			},
-			goDetail(item) {
-				if(item.type == 'post') {
-					uni.navigateTo({
-						url: '/pages/post/detail?id=' + item.postId,
-					})
-				} else if(item.type== 'photoWallType'){
-					uni.navigateTo({
-						url: '/pages/medias/detail?classifyId=' + item.photoWallTypeId
-					})
-				}
-			},
+			submit (e) {
+				console.log(e)
+				this.$refs.uForm.validate(valid => {
+								if (valid) {
+									console.log('验证通过');
+								} else {
+									console.log('验证失败');
+								}
+							});
+			}
 		}
 	}
 </script>
@@ -287,32 +385,28 @@
 	}
 
 	.contaier {
-		height: 100vh;
+		height: 100%;
 	}
 
 	.nav-header {
 		border-bottom: 1px solid #gray;
 		padding: 0 20upx 20upx;
-		position: fixed;
 		left: 0;
 		width: 100%;
-		height: 180upx;
 		z-index: 99;
 
 	}
-
-
-	.imageInfo{
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		white-space: nowrap;
-		line-height: 32rpx;
-		padding: 10rpx 20rpx;
-		color: #fff;
-		background: linear-gradient(to top, #0081ff, rgba(28, 187,180, 0.01));
-		&.postInfo{
-			background: linear-gradient(to top, rgba(28, 187,180, 1), rgba(0,129,255, 0.01));
-		}
+	.isgm {
+		position: relative;
 	}
+	.ticp {
+		color: red;
+		font-size: 24upx;
+		position: absolute;
+		top: 12%;
+		left: 34%;
+	}
+
+
+	
 </style>
