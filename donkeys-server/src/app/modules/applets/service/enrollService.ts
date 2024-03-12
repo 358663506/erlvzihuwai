@@ -4,7 +4,8 @@ import {EnrollEntity} from '../entity/enroll';
 import {InjectEntityModel} from "@midwayjs/orm";
 import {Brackets, Repository} from "typeorm";
 import * as R from "ramda";
-/* 消息推送 */
+import {PostStatusDTO} from "../dto/postStatus";
+/* 报名活动 */
 @Provide()
 export class EnrollService extends BaseService {
 
@@ -106,5 +107,18 @@ export class EnrollService extends BaseService {
             throw new CoolCommException('活动不存在');
         }
         return postInfo;
+    }
+
+    /**
+     * 修改状态
+     * @param post
+     */
+    public async status(post: PostStatusDTO) {
+        const postInfo = await this.enrollEntity.findOne({ id: post.id });
+        if (!postInfo) {
+            throw new CoolCommException('数据不存在');
+        }
+        postInfo.status = post.status;
+        await this.enrollEntity.save(postInfo);
     }
 }

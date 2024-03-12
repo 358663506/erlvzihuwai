@@ -4,9 +4,10 @@ import { EnrollUserEntity } from '../entity/enrollUser';
 import {InjectEntityModel} from "@midwayjs/orm";
 
 import {Repository} from "typeorm";
+import {PostStatusDTO} from "../dto/postStatus";
 
 
-/* 消息推送 */
+/* 报名活动 */
 @Provide()
 export class EnrollUserService extends BaseService {
 
@@ -18,6 +19,8 @@ export class EnrollUserService extends BaseService {
      * @param param
      */
     async add(param) {
+        // 判断是否可以新增
+
         await this.enrollUserEntity.save(param);
         return param;
     }
@@ -29,6 +32,8 @@ export class EnrollUserService extends BaseService {
      * @param param 数据
      */
     async update(param) {
+        // 判断是否可以修改
+
         let postInfo = await this.enrollUserEntity.findOne({ id: param.id });
         if (!postInfo) {
             throw new CoolCommException('活动用户不存在');
@@ -60,5 +65,18 @@ export class EnrollUserService extends BaseService {
             throw new CoolCommException('活动用户不存在');
         }
         return postInfo;
+    }
+
+    /**
+     * 修改状态
+     * @param post
+     */
+    public async status(post: PostStatusDTO) {
+        const postInfo = await this.enrollUserEntity.findOne({ id: post.id });
+        if (!postInfo) {
+            throw new CoolCommException('数据不存在');
+        }
+        postInfo.status = post.status;
+        await this.enrollUserEntity.save(postInfo);
     }
 }
