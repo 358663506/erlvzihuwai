@@ -4,6 +4,8 @@ import {EnrollEntity} from '../entity/enroll';
 import {InjectEntityModel} from "@midwayjs/orm";
 import {Brackets, Repository} from "typeorm";
 import * as R from "ramda";
+import {AppletsEnrollMusterAddressEntity} from "../entity/enroll_muster_address";
+import {AppletsMusterAddressEntity} from "../entity/muster_address";
 
 /* 报名活动 */
 @Provide()
@@ -13,7 +15,11 @@ export class EnrollService extends BaseService {
     @InjectEntityModel(EnrollEntity)
     enrollEntity: Repository<EnrollEntity>;
 
+    @InjectEntityModel(AppletsEnrollMusterAddressEntity)
+    appletsEnrollMusterAddressEntity:Repository<AppletsEnrollMusterAddressEntity>
 
+    @InjectEntityModel(AppletsMusterAddressEntity)
+    appletsMusterAddressEntity:Repository<AppletsMusterAddressEntity>
     /**
      * 分页查询
      * @param query
@@ -63,9 +69,36 @@ export class EnrollService extends BaseService {
      * @param param
      */
     async add(param) {
-        await this.enrollEntity.save(param);
-        // 判断有没有标签
-        // await this.updateUserRole(param);
+
+
+       // const savedParam  = await this.enrollEntity.save(param);
+
+        if(param.addressList){
+
+            // 使用forEach方法遍历数组
+            for (const addressId of param.addressList) {
+                console.log("====================>"+addressId)
+                const  addressInfo = await this.appletsMusterAddressEntity.findOne({ id: addressId });
+
+                console.log("=========addressInfo===========>"+addressInfo);
+                if(addressInfo){
+
+
+
+                    const  enrollMusterAddressEntity = new AppletsEnrollMusterAddressEntity();
+                   // enrollMusterAddressEntity.enroll_id= savedParam.id;
+                    enrollMusterAddressEntity.muster_address_id = addressId;
+                    enrollMusterAddressEntity.muster_time=addressInfo.muster_time;
+                    enrollMusterAddressEntity.name = addressInfo.name;
+
+                   // console.log("====================>"+savedParam.id);
+                    console.log("====================>"+addressInfo.muster_time);
+                    await this.appletsEnrollMusterAddressEntity.save(enrollMusterAddressEntity);
+                }
+
+            }
+        }
+
         return param;
     }
 
