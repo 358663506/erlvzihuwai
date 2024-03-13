@@ -4,7 +4,7 @@ import { CoolController, BaseController } from '@cool-midway/core';
 import {EnrollService} from "../../service/enrollService";
 
 
-/* 微信用户 */
+/* 活动服务 */
 @Provide()
 @CoolController("/enroll")
 export class EnrollController extends BaseController {

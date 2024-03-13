@@ -6,7 +6,7 @@ import {EnrollUserService} from "../../service/enrollUserService";
 
 
 
-/* 微信用户 */
+/* 活动成员服务*/
 @Provide()
 @CoolController("/enrollUser")
 export class EnrollUserController extends BaseController {
