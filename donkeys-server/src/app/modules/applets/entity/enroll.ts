@@ -23,7 +23,10 @@ export class EnrollEntity extends BaseEntity {
     @Column({ comment: '修改开关0可，1否', nullable: true })
     update_flg: number;
 
-    @Column({ comment: '最大报名人数', nullable: true, length: 20 })
+    @Column({ comment: '最大报名人数', nullable: true})
     most_count: number;
+
+    @Column({ comment: '活动图片' })
+    img: string;
 
 }
