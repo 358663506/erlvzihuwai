@@ -26,7 +26,7 @@ export class EnrollEntity extends BaseEntity {
     @Column({ comment: '最大报名人数', nullable: true})
     most_count: number;
 
-    @Column({ comment: '活动图片' })
+    @Column({ comment: '活动图片' ,nullable: true })
     img: string;
 
 }

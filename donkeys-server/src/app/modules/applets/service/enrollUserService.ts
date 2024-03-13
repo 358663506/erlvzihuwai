@@ -3,8 +3,9 @@ import {BaseService, CoolCommException} from '@cool-midway/core';
 import { EnrollUserEntity } from '../entity/enrollUser';
 import {InjectEntityModel} from "@midwayjs/orm";
 
-import {Repository} from "typeorm";
-import {PostStatusDTO} from "../dto/postStatus";
+import {Brackets, Repository} from "typeorm";
+import * as R from "ramda";
+
 
 
 /* 报名活动 */
@@ -14,6 +15,50 @@ export class EnrollUserService extends BaseService {
     @InjectEntityModel(EnrollUserEntity)
     enrollUserEntity: Repository<EnrollUserEntity>;
 
+
+
+
+    /**
+     * 根据活动查询成员
+     * @param param
+     */
+    async page(query) {
+        const { size = 15, page = 1, sort } = query;
+        // 查询用户
+        let result = await this.enrollUserEntity
+            .createQueryBuilder('a')
+            .where('1 = 1')
+            .andWhere('a.enroll_id = :enroll_id', { enroll_id: query.enroll_id })
+            .andWhere(
+                new Brackets((qb) => {
+                    if (!R.isNil(query.status)) {
+                        if (query.status != -1) {
+                            // 小程序用户传 -1 可以查询全部
+                            qb.where('a.status = :status', { status: query.status });
+                        }
+                    }
+                })
+            )
+            .andWhere(
+                new Brackets((qb) => {
+                    if (query.name) {
+                        qb.where('a.name LIKE :name', { name: `%${query.name}%` });
+                    }
+                })
+            )
+            .skip((page - 1) * size) // 跳过个数
+            .take(size) //查询个数
+            .orderBy({ 'a.createTime': sort || 'DESC' })
+            .getManyAndCount();
+        return {
+            list: result[0],
+            pagination: {
+                page: page,
+                size: size,
+                total: result[1] || 0
+            }
+        };
+    }
     /**
      * 新增
      * @param param
@@ -71,12 +116,16 @@ export class EnrollUserService extends BaseService {
      * 修改状态
      * @param post
      */
-    public async status(post: PostStatusDTO) {
-        const postInfo = await this.enrollUserEntity.findOne({ id: post.id });
+    public async status(id: number) {
+        const postInfo = await this.enrollUserEntity.findOne({ id: id });
         if (!postInfo) {
             throw new CoolCommException('数据不存在');
         }
-        postInfo.status = post.status;
+        if(postInfo.status==1){
+            postInfo.status=0;
+        }else{
+            postInfo.status=1;
+        }
         await this.enrollUserEntity.save(postInfo);
     }
 }

@@ -4,7 +4,7 @@ import {EnrollEntity} from '../entity/enroll';
 import {InjectEntityModel} from "@midwayjs/orm";
 import {Brackets, Repository} from "typeorm";
 import * as R from "ramda";
-import {PostStatusDTO} from "../dto/postStatus";
+
 /* 报名活动 */
 @Provide()
 export class EnrollService extends BaseService {
@@ -19,13 +19,11 @@ export class EnrollService extends BaseService {
      * @param query
      */
     async page(query) {
-        const { size = 15, page = 1, sort = null, title, status } = query;
+        const { size = 15, page = 1, sort = null, name, status } = query;
         // 后台 admin 默认查全部
         const { userId } = this.ctx.admin || { userId: undefined };
         let result = await this.enrollEntity
             .createQueryBuilder('a')
-            .select(['a.id', 'a.title', 'a.top', 'a.status', 'a.articleCover', 'a.visitCount', 'a.updateTime', 'a.createTime', 'a.destinationPos', 'a.departureTime'])
-            .addSelect(userId ? ['a.content'] : [])
             .where('1 = 1')
             .andWhere(
                 new Brackets((qb) => {
@@ -42,8 +40,8 @@ export class EnrollService extends BaseService {
             )
             .andWhere(
                 new Brackets((qb) => {
-                    if (title) {
-                        qb.where('a.title LIKE :title', { title: `%${title}%` });
+                    if (name) {
+                        qb.where('a.name LIKE :name', { name: `%${name}%` });
                     }
                 })
             )
@@ -113,12 +111,17 @@ export class EnrollService extends BaseService {
      * 修改状态
      * @param post
      */
-    public async status(post: PostStatusDTO) {
-        const postInfo = await this.enrollEntity.findOne({ id: post.id });
+    public async status(id: number) {
+        const postInfo = await this.enrollEntity.findOne({ id: id });
         if (!postInfo) {
             throw new CoolCommException('数据不存在');
         }
-        postInfo.status = post.status;
+        if(postInfo.status==1){
+            postInfo.status=0;
+        }else{
+            postInfo.status=1;
+        }
+
         await this.enrollEntity.save(postInfo);
     }
 }

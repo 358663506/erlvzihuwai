@@ -22,14 +22,52 @@ export class EnrollController extends BaseController {
         return this.ok("123455566OK");
     }
 
-
     /**
-     * 轮播图
+     * 活动成员列表
      * @returns
      */
-    @Post('/add', { summary: '报名活动列表' })
+    @Post('/page', { summary: '活动成员列表' })
+    public async page(@Body(ALL) query) {
+
+        return this.ok(await this.enrollService.page(query));
+    }
+
+
+    /**
+     * 添加活动
+     * @returns
+     */
+    @Post('/add', { summary: '添加活动' })
     public async add(@Body(ALL) data: any = {}) {
 
         return this.ok(await this.enrollService.add(data));
+    }
+
+    /**
+     * 修改
+     * @returns
+     */
+    @Post('/update', { summary: '修改' })
+    public async update(@Body(ALL) data: any = {}) {
+
+        return this.ok(await this.enrollService.update(data));
+    }
+
+    /**
+     * 成员上下车
+     */
+    @Post('/status', { summary: '活动上下线' })
+    async order(@Body() id: number) {
+
+        return this.ok(await this.enrollService.status(id));
+    }
+
+    /**
+     * 活动信息
+     * @returns
+     */
+    @Post('/info', { summary: '用户信息' })
+    public async info(@Body() id: number) {
+        return this.ok(await this.enrollService.info(id));
     }
 }
