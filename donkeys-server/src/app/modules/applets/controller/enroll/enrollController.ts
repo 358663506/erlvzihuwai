@@ -13,17 +13,17 @@ export class EnrollController extends BaseController {
 
 
     /**
-     * 活动列表
+     * 报名活动列表get
      * @returns
      */
-    @Get('/list', { summary: '报名活动列表' })
+    @Get('/list', { summary: '报名活动列表get' })
     public async carouselList() {
 
         return this.ok("123455566OK");
     }
 
     /**
-     * 活动成员列表
+     * 报名活动列表
      * @returns
      */
     @Post('/page', { summary: '活动成员列表' })
@@ -54,7 +54,7 @@ export class EnrollController extends BaseController {
     }
 
     /**
-     * 成员上下车
+     * 活动上下线
      */
     @Post('/status', { summary: '活动上下线' })
     async order(@Body() id: number) {
@@ -66,8 +66,17 @@ export class EnrollController extends BaseController {
      * 活动信息
      * @returns
      */
-    @Post('/info', { summary: '用户信息' })
+    @Post('/info', { summary: '活动信息' })
     public async info(@Body() id: number) {
         return this.ok(await this.enrollService.info(id));
+    }
+
+    /**
+     * 删除
+     * @returns
+     */
+    @Post('/delete', { summary: '删除' })
+    public async delete(@Body() id: number) {
+        return this.ok(await this.enrollService.deleteById(id));
     }
 }

@@ -48,7 +48,7 @@ export class EnrollUserController extends BaseController {
      * 修改
      * @returns
      */
-    @Post('/update', { summary: '添加活动成员' })
+    @Post('/update', { summary: '修改活动成员' })
     public async update(@Body(ALL) data: any = {}) {
 
         return this.ok(await this.enrollUserService.update(data));
@@ -57,7 +57,7 @@ export class EnrollUserController extends BaseController {
     /**
      * 成员上下车
      */
-    @Post('/post/status', { summary: '活动上下线' })
+    @Post('/post/status', { summary: '成员上下车' })
     async order(@Body() id: number) {
 
         return this.ok(await this.enrollUserService.status(id));
@@ -65,10 +65,10 @@ export class EnrollUserController extends BaseController {
 
 
     /**
-     * 删除评论
+     * 删除成员
      * @returns
      */
-    @Post('/delete', { summary: '删除评论' })
+    @Post('/delete', { summary: '删除成员' })
     public async delete(@Body() id: number) {
         return this.ok(await this.enrollUserService.deleteById(id));
     }
