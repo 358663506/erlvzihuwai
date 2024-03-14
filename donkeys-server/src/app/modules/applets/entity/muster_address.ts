@@ -4,14 +4,14 @@ import {Column} from 'typeorm';
 
 
 /**
- * 图片文件信息
+ * 活动集合地址
  */
-@EntityModel('applets_enroll_muster_address')
+@EntityModel('applets_muster_address')
 export class AppletsMusterAddressEntity extends BaseEntity {
 
 
     @Column({ comment: '是否有效0:有效，1无效', type: 'int', nullable: true })
-    state: number;
+    status: number;
 
     @Column({ comment: '地点名称' })
     name: string;

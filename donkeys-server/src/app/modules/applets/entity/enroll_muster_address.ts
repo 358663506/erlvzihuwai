@@ -1,13 +1,14 @@
 import { EntityModel } from '@midwayjs/orm';
-import { BaseEntity } from '@cool-midway/core';
 import {Column, Index} from 'typeorm';
+import {BaseEntity} from "@cool-midway/core";
 
 
 /**
  * 活动关联地址信息
  */
 @EntityModel('applets_enroll_muster_address')
-export class AppletsEnrollMusterAddressEntity extends BaseEntity {
+export class AppletsEnrollMusterAddressEntity extends BaseEntity{
+
 
     @Index()
     @Column({ comment: '报名活动关联ID', type: 'int', nullable: true })

@@ -1,22 +1,15 @@
 import { Provide } from '@midwayjs/decorator';
 import {BaseService, CoolCommException} from '@cool-midway/core';
-import {EnrollEntity} from '../entity/enroll';
 import {InjectEntityModel} from "@midwayjs/orm";
 import {Brackets, Repository} from "typeorm";
 import * as R from "ramda";
-import {AppletsEnrollMusterAddressEntity} from "../entity/enroll_muster_address";
 import {AppletsMusterAddressEntity} from "../entity/muster_address";
 
 /* 报名活动 */
 @Provide()
-export class EnrollService extends BaseService {
+export class MusterAddressService extends BaseService {
 
 
-    @InjectEntityModel(EnrollEntity)
-    enrollEntity: Repository<EnrollEntity>;
-
-    @InjectEntityModel(AppletsEnrollMusterAddressEntity)
-    appletsEnrollMusterAddressEntity:Repository<AppletsEnrollMusterAddressEntity>
 
     @InjectEntityModel(AppletsMusterAddressEntity)
     appletsMusterAddressEntity:Repository<AppletsMusterAddressEntity>
@@ -26,9 +19,8 @@ export class EnrollService extends BaseService {
      */
     async page(query) {
         const { size = 15, page = 1, sort = null, name, status } = query;
-        // 后台 admin 默认查全部
 
-        let result = await this.enrollEntity
+        let result = await this.appletsMusterAddressEntity
             .createQueryBuilder('a')
             .where('1 = 1')
             .andWhere(
@@ -68,31 +60,7 @@ export class EnrollService extends BaseService {
     async add(param) {
 
 
-        const savedParam  = await this.enrollEntity.save(param);
-
-        if(param.addressList){
-
-            // 使用forEach方法遍历数组
-            for (const addressId of param.addressList) {
-                console.log("====================>"+addressId)
-                const  addressInfo = await this.appletsMusterAddressEntity.findOne({ id: addressId });
-
-                console.log("=========addressInfo===========>"+addressInfo);
-                if(addressInfo){
-
-                    const  enrollMusterAddressEntity = new AppletsEnrollMusterAddressEntity();
-                    enrollMusterAddressEntity.enroll_id= savedParam.id;
-                    enrollMusterAddressEntity.muster_address_id = addressId;
-                    enrollMusterAddressEntity.muster_time=addressInfo.muster_time;
-                    enrollMusterAddressEntity.name = addressInfo.name;
-
-                    console.log("====================>"+savedParam.id);
-                    console.log("====================>"+addressInfo.muster_time);
-                    await this.appletsEnrollMusterAddressEntity.save(enrollMusterAddressEntity);
-                }
-
-            }
-        }
+        await this.appletsMusterAddressEntity.save(param);
 
         return param;
     }
@@ -102,20 +70,20 @@ export class EnrollService extends BaseService {
      * @param param 数据
      */
     async update(param) {
-        let postInfo = await this.enrollEntity.findOne({ id: param.id });
+        let postInfo = await this.appletsMusterAddressEntity.findOne({ id: param.id });
         if (!postInfo) {
             throw new CoolCommException('活动不存在');
         }
 
-        await this.enrollEntity.save(param);
+        await this.appletsMusterAddressEntity.save(param);
 
         return param;
     }
 
     async deleteById(id: number) {
-        let postInfo = await this.enrollEntity.findOne({ id: id });
+        let postInfo = await this.appletsMusterAddressEntity.findOne({ id: id });
         if (postInfo) {
-            await this.enrollEntity.delete({ id });
+            await this.appletsMusterAddressEntity.delete({ id });
         }
         return '';
     }
@@ -128,7 +96,7 @@ export class EnrollService extends BaseService {
         if (!id) {
             throw new CoolCommException('非法操作~');
         }
-        let postInfo = await this.enrollEntity.findOne({ id: id });
+        let postInfo = await this.appletsMusterAddressEntity.findOne({ id: id });
         if (!postInfo) {
             throw new CoolCommException('活动不存在');
         }
@@ -140,7 +108,7 @@ export class EnrollService extends BaseService {
      * @param post
      */
     public async status(id: number) {
-        const postInfo = await this.enrollEntity.findOne({ id: id });
+        const postInfo = await this.appletsMusterAddressEntity.findOne({ id: id });
         if (!postInfo) {
             throw new CoolCommException('数据不存在');
         }
@@ -150,6 +118,6 @@ export class EnrollService extends BaseService {
             postInfo.status=1;
         }
 
-        await this.enrollEntity.save(postInfo);
+        await this.appletsMusterAddressEntity.save(postInfo);
     }
 }
