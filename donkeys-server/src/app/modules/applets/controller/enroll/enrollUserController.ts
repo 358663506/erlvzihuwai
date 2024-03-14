@@ -1,5 +1,5 @@
 /* 微信用户 */
-import {Inject, Provide, Get, Post, Body, ALL} from '@midwayjs/decorator';
+import {Inject, Provide, Get, Post, Body, ALL, Query} from '@midwayjs/decorator';
 import {CoolController, BaseController} from '@cool-midway/core';
 import {EnrollUserService} from "../../service/enrollUserService";
 
@@ -80,5 +80,25 @@ export class EnrollUserController extends BaseController {
     @Post('/info', { summary: '成员信息' })
     public async info(@Body() id: number) {
         return this.ok(await this.enrollUserService.info(id));
+    }
+
+    /**
+     * 根据活动获取成员信息
+     * @returns
+     */
+    @Get('/getByEnrollId', { summary: '根据活动获取成员信息' })
+    public async getByEnrollId(@Query('openId') openId:string,@Query('enrollId')enrollId: number) {
+
+        return this.ok(await this.enrollUserService.getByEnrollId(openId,enrollId));
+    }
+
+    /**
+     * 获取已填的身份证信息
+     * @returns
+     */
+    @Get('/getIdCardByOpenId', { summary: '获取已填的身份证信息' })
+    public async getIdCardByOpenId(@Query() openId:string) {
+
+        return this.ok(await this.enrollUserService.getIdCardByOpenId(openId));
     }
 }

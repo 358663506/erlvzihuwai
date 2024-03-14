@@ -33,7 +33,7 @@ export class EnrollUserEntity extends BaseEntity {
     real_name: string;
 
     @Column({ comment: '身份证号', nullable: true, length: 20 })
-    Id_card: string;
+    id_card: string;
 
     @Column({ comment: '保险单号', nullable: true })
     policy_no: string;
@@ -45,16 +45,16 @@ export class EnrollUserEntity extends BaseEntity {
     dinner_lfg: number;
 
 
-    @Column({ comment: 'socketId', nullable: true })
+    @Column({ comment: '紧急联系人', nullable: true })
     emergency_contact: string;
 
-    @Column({ comment: 'socketId', nullable: true })
+    @Column({ comment: '紧急联系人电话', nullable: true })
     emergency_contact_mobile: string;
 
-    @Column({ comment: 'socketId', nullable: true })
+    @Column({ comment: 'openid', nullable: true })
     openid: string;
 
-    @Column({ comment: 'socketId', nullable: true })
+    @Column({ comment: 'unionid', nullable: true })
     unionid: string;
 
     @Column({ comment: '0:参加，1:退出', default: 1, type: 'tinyint' })

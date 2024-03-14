@@ -128,4 +128,54 @@ export class EnrollUserService extends BaseService {
         }
         await this.enrollUserEntity.save(postInfo);
     }
+
+    /**
+     * 根据活动获取成员信息
+     * @param enrollId
+     * @param openId
+     */
+    // public async getByEnrollId(openId:string,enrollId: number){
+    //
+    //     let userInfo = await this.enrollUserEntity
+    //         .createQueryBuilder('c')
+    //         .where('c.openid = :openId', { openId:openId})
+    //         .andWhere('c.enroll_id = :enrollId',{enrollId: enrollId})
+    //         //.where('c.openid = :openId and c.enroll_id = :enrollId', { openId: openId, enrollId: enrollId })
+    //         //.loadRelationCountAndMap('c.collectCount', 'c.collects')
+    //         .limit(1) // 添加 LIMIT 1
+    //         .getOne();
+    //
+    //     return userInfo;
+    // }
+
+
+    public async getByEnrollId(openId: string, enrollId: number) {
+
+        let userInfo = await this.enrollUserEntity
+            .createQueryBuilder('c')
+            .where('c.openid = :openId and c.enroll_id = :enrollId', { openId ,enrollId})
+            .limit(1) // 添加 LIMIT 1
+            .getOne();
+
+        return userInfo;
+    }
+
+
+    /**
+     * 获取已填的身份证信息
+     * @param enrollId
+     * @param openId
+     */
+    public async getIdCardByOpenId(openId:string){
+
+        let userInfo = await this.enrollUserEntity
+            .createQueryBuilder('c')
+            .where('c.openid = :openId and c.id_card is not null', { openId:openId })
+            //.loadRelationCountAndMap('c.collectCount', 'c.collects')
+            .limit(1) // 添加 LIMIT 1
+            .getOne();
+
+        return userInfo;
+    }
+
 }
