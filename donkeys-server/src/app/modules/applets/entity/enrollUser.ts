@@ -62,4 +62,7 @@ export class EnrollUserEntity extends BaseEntity {
 
     @Column({ comment: '性别'})
     sex: string;
+
+    @Column({ comment: '是否委托组织购买保险，0否，1是', default: 1, type: 'tinyint' })
+    policy_flg: number;
 }
