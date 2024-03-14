@@ -1,0 +1,498 @@
+[
+  {
+    "name": "Process Start",
+    "start": 1710425652795,
+    "end": 1710425659325,
+    "duration": 6530,
+    "pid": 24996,
+    "index": 0
+  },
+  {
+    "name": "Application Start",
+    "start": 1710425659325,
+    "end": 1710425660427,
+    "duration": 1102,
+    "pid": 24996,
+    "index": 1
+  },
+  {
+    "name": "Load Plugin",
+    "start": 1710425659328,
+    "end": 1710425659341,
+    "duration": 13,
+    "pid": 24996,
+    "index": 2
+  },
+  {
+    "name": "Load Config",
+    "start": 1710425659341,
+    "end": 1710425659350,
+    "duration": 9,
+    "pid": 24996,
+    "index": 3
+  },
+  {
+    "name": "Require(0) config/config.default.ts",
+    "start": 1710425659341,
+    "end": 1710425659341,
+    "duration": 0,
+    "pid": 24996,
+    "index": 4
+  },
+  {
+    "name": "Require(1) config/config.local.ts",
+    "start": 1710425659341,
+    "end": 1710425659341,
+    "duration": 0,
+    "pid": 24996,
+    "index": 5
+  },
+  {
+    "name": "Require(2) E:/newELv/erlvzihuwai/donkeys-server/node_modules/egg-session/config/config.default.js",
+    "start": 1710425659342,
+    "end": 1710425659342,
+    "duration": 0,
+    "pid": 24996,
+    "index": 6
+  },
+  {
+    "name": "Require(3) E:/newELv/erlvzihuwai/donkeys-server/node_modules/egg-security/config/config.default.js",
+    "start": 1710425659342,
+    "end": 1710425659342,
+    "duration": 0,
+    "pid": 24996,
+    "index": 7
+  },
+  {
+    "name": "Require(4) E:/newELv/erlvzihuwai/donkeys-server/node_modules/egg-jsonp/config/config.default.js",
+    "start": 1710425659342,
+    "end": 1710425659342,
+    "duration": 0,
+    "pid": 24996,
+    "index": 8
+  },
+  {
+    "name": "Require(5) E:/newELv/erlvzihuwai/donkeys-server/node_modules/egg-onerror/config/config.default.js",
+    "start": 1710425659342,
+    "end": 1710425659342,
+    "duration": 0,
+    "pid": 24996,
+    "index": 9
+  },
+  {
+    "name": "Require(6) E:/newELv/erlvzihuwai/donkeys-server/node_modules/egg-i18n/config/config.default.js",
+    "start": 1710425659342,
+    "end": 1710425659342,
+    "duration": 0,
+    "pid": 24996,
+    "index": 10
+  },
+  {
+    "name": "Require(7) E:/newELv/erlvzihuwai/donkeys-server/node_modules/egg-schedule/config/config.default.js",
+    "start": 1710425659342,
+    "end": 1710425659342,
+    "duration": 0,
+    "pid": 24996,
+    "index": 11
+  },
+  {
+    "name": "Require(8) E:/newELv/erlvzihuwai/donkeys-server/node_modules/egg-multipart/config/config.default.js",
+    "start": 1710425659342,
+    "end": 1710425659342,
+    "duration": 0,
+    "pid": 24996,
+    "index": 12
+  },
+  {
+    "name": "Require(9) E:/newELv/erlvzihuwai/donkeys-server/node_modules/egg-static/config/config.default.js",
+    "start": 1710425659342,
+    "end": 1710425659342,
+    "duration": 0,
+    "pid": 24996,
+    "index": 13
+  },
+  {
+    "name": "Require(10) E:/newELv/erlvzihuwai/donkeys-server/node_modules/egg/config/config.default.js",
+    "start": 1710425659344,
+    "end": 1710425659344,
+    "duration": 0,
+    "pid": 24996,
+    "index": 14
+  },
+  {
+    "name": "Require(11) E:/newELv/erlvzihuwai/donkeys-server/node_modules/@midwayjs/web/config/config.default.js",
+    "start": 1710425659345,
+    "end": 1710425659345,
+    "duration": 0,
+    "pid": 24996,
+    "index": 15
+  },
+  {
+    "name": "Require(12) config/config.default.ts",
+    "start": 1710425659346,
+    "end": 1710425659346,
+    "duration": 0,
+    "pid": 24996,
+    "index": 16
+  },
+  {
+    "name": "Require(13) E:/newELv/erlvzihuwai/donkeys-server/node_modules/egg-security/config/config.local.js",
+    "start": 1710425659346,
+    "end": 1710425659346,
+    "duration": 0,
+    "pid": 24996,
+    "index": 17
+  },
+  {
+    "name": "Require(14) E:/newELv/erlvzihuwai/donkeys-server/node_modules/egg/config/config.local.js",
+    "start": 1710425659349,
+    "end": 1710425659349,
+    "duration": 0,
+    "pid": 24996,
+    "index": 18
+  },
+  {
+    "name": "Require(15) config/config.local.ts",
+    "start": 1710425659349,
+    "end": 1710425659349,
+    "duration": 0,
+    "pid": 24996,
+    "index": 19
+  },
+  {
+    "name": "Before Start in node_modules/@midwayjs/web/dist/framework/web.js:45:22",
+    "start": 1710425659350,
+    "end": 1710425659597,
+    "duration": 247,
+    "pid": 24996,
+    "index": 20
+  },
+  {
+    "name": "Load extend/application.js",
+    "start": 1710425659361,
+    "end": 1710425659380,
+    "duration": 19,
+    "pid": 24996,
+    "index": 21
+  },
+  {
+    "name": "Require(16) E:/newELv/erlvzihuwai/donkeys-server/node_modules/egg-session/app/extend/application.js",
+    "start": 1710425659362,
+    "end": 1710425659363,
+    "duration": 1,
+    "pid": 24996,
+    "index": 22
+  },
+  {
+    "name": "Require(17) E:/newELv/erlvzihuwai/donkeys-server/node_modules/egg-security/app/extend/application.js",
+    "start": 1710425659363,
+    "end": 1710425659363,
+    "duration": 0,
+    "pid": 24996,
+    "index": 23
+  },
+  {
+    "name": "Require(18) E:/newELv/erlvzihuwai/donkeys-server/node_modules/egg-jsonp/app/extend/application.js",
+    "start": 1710425659364,
+    "end": 1710425659365,
+    "duration": 1,
+    "pid": 24996,
+    "index": 24
+  },
+  {
+    "name": "Require(19) E:/newELv/erlvzihuwai/donkeys-server/node_modules/egg-mock/app/extend/application.js",
+    "start": 1710425659367,
+    "end": 1710425659371,
+    "duration": 4,
+    "pid": 24996,
+    "index": 25
+  },
+  {
+    "name": "Require(20) E:/newELv/erlvzihuwai/donkeys-server/node_modules/@midwayjs/mock/app/extend/application.js",
+    "start": 1710425659371,
+    "end": 1710425659375,
+    "duration": 4,
+    "pid": 24996,
+    "index": 26
+  },
+  {
+    "name": "Require(21) E:/newELv/erlvzihuwai/donkeys-server/node_modules/@midwayjs/web/app/extend/application.js",
+    "start": 1710425659376,
+    "end": 1710425659376,
+    "duration": 0,
+    "pid": 24996,
+    "index": 27
+  },
+  {
+    "name": "Load extend/request.js",
+    "start": 1710425659380,
+    "end": 1710425659390,
+    "duration": 10,
+    "pid": 24996,
+    "index": 28
+  },
+  {
+    "name": "Require(22) E:/newELv/erlvzihuwai/donkeys-server/node_modules/egg/app/extend/request.js",
+    "start": 1710425659384,
+    "end": 1710425659385,
+    "duration": 1,
+    "pid": 24996,
+    "index": 29
+  },
+  {
+    "name": "Load extend/response.js",
+    "start": 1710425659390,
+    "end": 1710425659401,
+    "duration": 11,
+    "pid": 24996,
+    "index": 30
+  },
+  {
+    "name": "Require(23) E:/newELv/erlvzihuwai/donkeys-server/node_modules/egg/app/extend/response.js",
+    "start": 1710425659393,
+    "end": 1710425659396,
+    "duration": 3,
+    "pid": 24996,
+    "index": 31
+  },
+  {
+    "name": "Load extend/context.js",
+    "start": 1710425659401,
+    "end": 1710425659408,
+    "duration": 7,
+    "pid": 24996,
+    "index": 32
+  },
+  {
+    "name": "Require(24) E:/newELv/erlvzihuwai/donkeys-server/node_modules/egg-security/app/extend/context.js",
+    "start": 1710425659401,
+    "end": 1710425659401,
+    "duration": 0,
+    "pid": 24996,
+    "index": 33
+  },
+  {
+    "name": "Require(25) E:/newELv/erlvzihuwai/donkeys-server/node_modules/egg-jsonp/app/extend/context.js",
+    "start": 1710425659401,
+    "end": 1710425659401,
+    "duration": 0,
+    "pid": 24996,
+    "index": 34
+  },
+  {
+    "name": "Require(26) E:/newELv/erlvzihuwai/donkeys-server/node_modules/egg-i18n/app/extend/context.js",
+    "start": 1710425659401,
+    "end": 1710425659401,
+    "duration": 0,
+    "pid": 24996,
+    "index": 35
+  },
+  {
+    "name": "Require(27) E:/newELv/erlvzihuwai/donkeys-server/node_modules/egg-multipart/app/extend/context.js",
+    "start": 1710425659402,
+    "end": 1710425659402,
+    "duration": 0,
+    "pid": 24996,
+    "index": 36
+  },
+  {
+    "name": "Require(28) E:/newELv/erlvzihuwai/donkeys-server/node_modules/egg/app/extend/context.js",
+    "start": 1710425659403,
+    "end": 1710425659403,
+    "duration": 0,
+    "pid": 24996,
+    "index": 37
+  },
+  {
+    "name": "Require(29) E:/newELv/erlvzihuwai/donkeys-server/node_modules/@midwayjs/web/app/extend/context.js",
+    "start": 1710425659403,
+    "end": 1710425659403,
+    "duration": 0,
+    "pid": 24996,
+    "index": 38
+  },
+  {
+    "name": "Load extend/helper.js",
+    "start": 1710425659408,
+    "end": 1710425659434,
+    "duration": 26,
+    "pid": 24996,
+    "index": 39
+  },
+  {
+    "name": "Require(30) E:/newELv/erlvzihuwai/donkeys-server/node_modules/egg-security/app/extend/helper.js",
+    "start": 1710425659409,
+    "end": 1710425659427,
+    "duration": 18,
+    "pid": 24996,
+    "index": 40
+  },
+  {
+    "name": "Require(31) E:/newELv/erlvzihuwai/donkeys-server/node_modules/egg/app/extend/helper.js",
+    "start": 1710425659429,
+    "end": 1710425659430,
+    "duration": 1,
+    "pid": 24996,
+    "index": 41
+  },
+  {
+    "name": "Load app.js",
+    "start": 1710425659435,
+    "end": 1710425659471,
+    "duration": 36,
+    "pid": 24996,
+    "index": 42
+  },
+  {
+    "name": "Require(32) E:/newELv/erlvzihuwai/donkeys-server/node_modules/egg-session/app.js",
+    "start": 1710425659435,
+    "end": 1710425659435,
+    "duration": 0,
+    "pid": 24996,
+    "index": 43
+  },
+  {
+    "name": "Require(33) E:/newELv/erlvzihuwai/donkeys-server/node_modules/egg-security/app.js",
+    "start": 1710425659436,
+    "end": 1710425659438,
+    "duration": 2,
+    "pid": 24996,
+    "index": 44
+  },
+  {
+    "name": "Require(34) E:/newELv/erlvzihuwai/donkeys-server/node_modules/egg-onerror/app.js",
+    "start": 1710425659438,
+    "end": 1710425659447,
+    "duration": 9,
+    "pid": 24996,
+    "index": 45
+  },
+  {
+    "name": "Require(35) E:/newELv/erlvzihuwai/donkeys-server/node_modules/egg-i18n/app.js",
+    "start": 1710425659447,
+    "end": 1710425659462,
+    "duration": 15,
+    "pid": 24996,
+    "index": 46
+  },
+  {
+    "name": "Require(36) E:/newELv/erlvzihuwai/donkeys-server/node_modules/egg-schedule/app.js",
+    "start": 1710425659462,
+    "end": 1710425659463,
+    "duration": 1,
+    "pid": 24996,
+    "index": 47
+  },
+  {
+    "name": "Require(37) E:/newELv/erlvzihuwai/donkeys-server/node_modules/egg-multipart/app.js",
+    "start": 1710425659464,
+    "end": 1710425659465,
+    "duration": 1,
+    "pid": 24996,
+    "index": 48
+  },
+  {
+    "name": "Require(38) E:/newELv/erlvzihuwai/donkeys-server/node_modules/egg-static/app.js",
+    "start": 1710425659465,
+    "end": 1710425659466,
+    "duration": 1,
+    "pid": 24996,
+    "index": 49
+  },
+  {
+    "name": "Require(39) E:/newELv/erlvzihuwai/donkeys-server/node_modules/midway-schedule/app.js",
+    "start": 1710425659466,
+    "end": 1710425659467,
+    "duration": 1,
+    "pid": 24996,
+    "index": 50
+  },
+  {
+    "name": "Require(40) E:/newELv/erlvzihuwai/donkeys-server/node_modules/egg-mock/app.js",
+    "start": 1710425659467,
+    "end": 1710425659468,
+    "duration": 1,
+    "pid": 24996,
+    "index": 51
+  },
+  {
+    "name": "Require(41) E:/newELv/erlvzihuwai/donkeys-server/node_modules/@midwayjs/web/app.js",
+    "start": 1710425659469,
+    "end": 1710425659470,
+    "duration": 1,
+    "pid": 24996,
+    "index": 52
+  },
+  {
+    "name": "Did Load in E:/newELv/erlvzihuwai/donkeys-server/node_modules/@midwayjs/web/app.js:didLoad",
+    "start": 1710425659483,
+    "end": 1710425659597,
+    "duration": 114,
+    "pid": 24996,
+    "index": 53
+  },
+  {
+    "name": "Load Service",
+    "start": 1710425659483,
+    "end": 1710425659491,
+    "duration": 8,
+    "pid": 24996,
+    "index": 54
+  },
+  {
+    "name": "Load \"service\" to Context",
+    "start": 1710425659483,
+    "end": 1710425659491,
+    "duration": 8,
+    "pid": 24996,
+    "index": 55
+  },
+  {
+    "name": "Load Middleware",
+    "start": 1710425659492,
+    "end": 1710425659596,
+    "duration": 104,
+    "pid": 24996,
+    "index": 56
+  },
+  {
+    "name": "Load \"middlewares\" to Application",
+    "start": 1710425659492,
+    "end": 1710425659596,
+    "duration": 104,
+    "pid": 24996,
+    "index": 57
+  },
+  {
+    "name": "Load Controller",
+    "start": 1710425659596,
+    "end": 1710425659597,
+    "duration": 1,
+    "pid": 24996,
+    "index": 58
+  },
+  {
+    "name": "Load \"controller\" to Application",
+    "start": 1710425659596,
+    "end": 1710425659597,
+    "duration": 1,
+    "pid": 24996,
+    "index": 59
+  },
+  {
+    "name": "Load Router",
+    "start": 1710425659597,
+    "end": 1710425659597,
+    "duration": 0,
+    "pid": 24996,
+    "index": 60
+  },
+  {
+    "name": "Will Ready in E:/newELv/erlvzihuwai/donkeys-server/node_modules/@midwayjs/web/app.js:willReady",
+    "start": 1710425659598,
+    "end": 1710425660425,
+    "duration": 827,
+    "pid": 24996,
+    "index": 61
+  }
+]

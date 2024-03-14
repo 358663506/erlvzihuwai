@@ -312,7 +312,7 @@ export const updateAutograph = (data = {}) => {
  	);
  }
 
-  // 报名参加
+  // 获取信息
   export const signUpInfo = (data = {}) => {
 	return httpTokenRequest({
 		url: "enrollUser/info",
@@ -322,3 +322,32 @@ export const updateAutograph = (data = {}) => {
 	);
 }
 
+  // 获取信息
+  export const getByEnrollId = (data = {}) => {
+	return httpTokenRequest({
+		url: "enrollUser/getByEnrollId",
+		method: "get",
+	},
+		data
+	);
+}
+
+  // 上下车
+  export const postStatus = (data = {}) => {
+	return httpTokenRequest({
+		url: "enrollUser/post/status",
+		method: "post",
+	},
+		data
+	);
+}
+
+  // 上下车
+  export const signUpAddUpdate = (data = {}) => {
+	return httpTokenRequest({
+		url: "enrollUser/update",
+		method: "post",
+	},
+		data
+	);
+}

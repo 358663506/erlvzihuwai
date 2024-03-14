@@ -1039,3 +1039,75 @@
     at Function.Module._load (node:internal/modules/cjs/loader:911:12)
     at Module.require (node:internal/modules/cjs/loader:1100:19)
     at require (node:internal/modules/cjs/helpers:119:18)
+2024-03-14 22:14:19,317 ERROR 24996 ReferenceError: window is not defined
+    at E:\newELv\erlvzihuwai\donkeys-server\src\config\config.local.ts:59:16
+    at Object.<anonymous> (E:\newELv\erlvzihuwai\donkeys-server\src\config\config.local.ts:60:3)
+    at Module._compile (node:internal/modules/cjs/loader:1198:14)
+    at Module.m._compile (E:\newELv\erlvzihuwai\donkeys-server\node_modules\ts-node\src\index.ts:1056:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (E:\newELv\erlvzihuwai\donkeys-server\node_modules\ts-node\src\index.ts:1059:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+    at require (node:internal/modules/cjs/helpers:119:18)
+2024-03-14 22:26:04,435 ERROR 39680 ReferenceError: window is not defined
+    at E:\newELv\erlvzihuwai\donkeys-server\src\config\config.local.ts:59:16
+    at Object.<anonymous> (E:\newELv\erlvzihuwai\donkeys-server\src\config\config.local.ts:60:3)
+    at Module._compile (node:internal/modules/cjs/loader:1198:14)
+    at Module.m._compile (E:\newELv\erlvzihuwai\donkeys-server\node_modules\ts-node\src\index.ts:1056:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (E:\newELv\erlvzihuwai\donkeys-server\node_modules\ts-node\src\index.ts:1059:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+    at require (node:internal/modules/cjs/helpers:119:18)
+2024-03-14 22:54:21,672 ERROR 32964 ReferenceError: window is not defined
+    at E:\newELv\erlvzihuwai\donkeys-server\src\config\config.local.ts:59:16
+    at Object.<anonymous> (E:\newELv\erlvzihuwai\donkeys-server\src\config\config.local.ts:60:3)
+    at Module._compile (node:internal/modules/cjs/loader:1198:14)
+    at Module.m._compile (E:\newELv\erlvzihuwai\donkeys-server\node_modules\ts-node\src\index.ts:1056:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (E:\newELv\erlvzihuwai\donkeys-server\node_modules\ts-node\src\index.ts:1059:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+    at require (node:internal/modules/cjs/helpers:119:18)
+2024-03-14 22:57:15,614 ERROR 32964 CoolCommException: 数据不存在
+    at EnrollUserService.status (E:\newELv\erlvzihuwai\donkeys-server\src\app\modules\applets\service\enrollUserService.ts:122:19)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at EnrollUserController.order (E:\newELv\erlvzihuwai\donkeys-server\src\app\modules\applets\controller\enroll\enrollUserController.ts:62:24)
+    at Object.<anonymous> (E:\newELv\erlvzihuwai\donkeys-server\node_modules\@midwayjs\koa\dist\framework.js:35:28)
+    at xframe (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at xssProtection (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at nosniff (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at noopen (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at session (E:\newELv\erlvzihuwai\donkeys-server\node_modules\koa-session\index.js:41:7)
+    at bodyParser (E:\newELv\erlvzihuwai\donkeys-server\node_modules\koa-bodyparser\index.js:82:48) {
+  status: 1001
+}
+2024-03-14 22:58:44,965 ERROR 32964 CoolCommException: 数据不存在
+    at EnrollUserService.status (E:\newELv\erlvzihuwai\donkeys-server\src\app\modules\applets\service\enrollUserService.ts:122:19)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at EnrollUserController.order (E:\newELv\erlvzihuwai\donkeys-server\src\app\modules\applets\controller\enroll\enrollUserController.ts:62:24)
+    at Object.<anonymous> (E:\newELv\erlvzihuwai\donkeys-server\node_modules\@midwayjs\koa\dist\framework.js:35:28)
+    at xframe (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at xssProtection (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at nosniff (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at noopen (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at session (E:\newELv\erlvzihuwai\donkeys-server\node_modules\koa-session\index.js:41:7)
+    at bodyParser (E:\newELv\erlvzihuwai\donkeys-server\node_modules\koa-bodyparser\index.js:82:48) {
+  status: 1001
+}
+2024-03-14 22:59:01,181 ERROR 32964 CoolCommException: 数据不存在
+    at EnrollUserService.status (E:\newELv\erlvzihuwai\donkeys-server\src\app\modules\applets\service\enrollUserService.ts:122:19)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at EnrollUserController.order (E:\newELv\erlvzihuwai\donkeys-server\src\app\modules\applets\controller\enroll\enrollUserController.ts:62:24)
+    at Object.<anonymous> (E:\newELv\erlvzihuwai\donkeys-server\node_modules\@midwayjs\koa\dist\framework.js:35:28)
+    at xframe (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at xssProtection (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at nosniff (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at noopen (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at session (E:\newELv\erlvzihuwai\donkeys-server\node_modules\koa-session\index.js:41:7)
+    at bodyParser (E:\newELv\erlvzihuwai\donkeys-server\node_modules\koa-bodyparser\index.js:82:48) {
+  status: 1001
+}

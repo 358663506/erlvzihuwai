@@ -14119,7 +14119,7 @@ var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/inte
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.uploadConf = exports.upload = exports.updatePostTop = exports.updatePostStatus = exports.updatePost = exports.updateAutograph = exports.signUpInfo = exports.signUpAdd = exports.searchApi = exports.refreshToken = exports.pageHistory = exports.pageCollect = exports.infoUser = exports.infoCollect = exports.imgUpload = exports.getSliderImages = exports.getReplyPage = exports.getPostPage = exports.getPostInfo = exports.getPhotoWallType = exports.getPhotoWall = exports.getAutographInfo = exports.getAgreementInfo = exports.deleteReply = exports.deletePost = exports.deleteCollect = exports.addReply = exports.addPost = exports.addCollect = exports.addAutograph = void 0;
+exports.uploadConf = exports.upload = exports.updatePostTop = exports.updatePostStatus = exports.updatePost = exports.updateAutograph = exports.signUpInfo = exports.signUpAddUpdate = exports.signUpAdd = exports.searchApi = exports.refreshToken = exports.postStatus = exports.pageHistory = exports.pageCollect = exports.infoUser = exports.infoCollect = exports.imgUpload = exports.getSliderImages = exports.getReplyPage = exports.getPostPage = exports.getPostInfo = exports.getPhotoWallType = exports.getPhotoWall = exports.getByEnrollId = exports.getAutographInfo = exports.getAgreementInfo = exports.deleteReply = exports.deletePost = exports.deleteCollect = exports.addReply = exports.addPost = exports.addCollect = exports.addAutograph = void 0;
 var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 37));
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11));
 var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 39));
@@ -14452,7 +14452,7 @@ var signUpAdd = function signUpAdd() {
   }, data);
 };
 
-// 报名参加
+// 获取信息
 exports.signUpAdd = signUpAdd;
 var signUpInfo = function signUpInfo() {
   var data = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
@@ -14461,7 +14461,37 @@ var signUpInfo = function signUpInfo() {
     method: "post"
   }, data);
 };
+
+// 获取信息
 exports.signUpInfo = signUpInfo;
+var getByEnrollId = function getByEnrollId() {
+  var data = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  return (0, _request.httpTokenRequest)({
+    url: "enrollUser/getByEnrollId",
+    method: "get"
+  }, data);
+};
+
+// 上下车
+exports.getByEnrollId = getByEnrollId;
+var postStatus = function postStatus() {
+  var data = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  return (0, _request.httpTokenRequest)({
+    url: "enrollUser/post/status",
+    method: "post"
+  }, data);
+};
+
+// 上下车
+exports.postStatus = postStatus;
+var signUpAddUpdate = function signUpAddUpdate() {
+  var data = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  return (0, _request.httpTokenRequest)({
+    url: "enrollUser/update",
+    method: "post"
+  }, data);
+};
+exports.signUpAddUpdate = signUpAddUpdate;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/wx.js */ 1)["default"], __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),

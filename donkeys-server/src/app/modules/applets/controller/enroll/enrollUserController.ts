@@ -59,7 +59,6 @@ export class EnrollUserController extends BaseController {
      */
     @Post('/post/status', { summary: '成员上下车' })
     async order(@Body() id: number) {
-
         return this.ok(await this.enrollUserService.status(id));
     }
 
