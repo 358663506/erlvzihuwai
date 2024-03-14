@@ -6,7 +6,7 @@ import {Column} from 'typeorm';
 /**
  * 活动集合地址
  */
-@EntityModel('applets_enroll_muster_address')
+@EntityModel('applets_muster_address')
 export class AppletsMusterAddressEntity extends BaseEntity {
 
 

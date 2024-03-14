@@ -71,7 +71,7 @@ export class EnrollService extends BaseService {
     async add(param) {
 
 
-       // const savedParam  = await this.enrollEntity.save(param);
+        const savedParam  = await this.enrollEntity.save(param);
 
         if(param.addressList){
 
@@ -84,12 +84,12 @@ export class EnrollService extends BaseService {
                 if(addressInfo){
 
                     const  enrollMusterAddressEntity = new AppletsEnrollMusterAddressEntity();
-                   // enrollMusterAddressEntity.enroll_id= savedParam.id;
+                    enrollMusterAddressEntity.enroll_id= savedParam.id;
                     enrollMusterAddressEntity.muster_address_id = addressId;
                     enrollMusterAddressEntity.muster_time=addressInfo.muster_time;
                     enrollMusterAddressEntity.name = addressInfo.name;
 
-                   // console.log("====================>"+savedParam.id);
+                    console.log("====================>"+savedParam.id);
                     console.log("====================>"+addressInfo.muster_time);
                     await this.appletsEnrollMusterAddressEntity.save(enrollMusterAddressEntity);
                 }
