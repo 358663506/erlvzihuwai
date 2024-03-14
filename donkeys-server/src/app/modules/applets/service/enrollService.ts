@@ -83,8 +83,6 @@ export class EnrollService extends BaseService {
                 console.log("=========addressInfo===========>"+addressInfo);
                 if(addressInfo){
 
-
-
                     const  enrollMusterAddressEntity = new AppletsEnrollMusterAddressEntity();
                    // enrollMusterAddressEntity.enroll_id= savedParam.id;
                     enrollMusterAddressEntity.muster_address_id = addressId;

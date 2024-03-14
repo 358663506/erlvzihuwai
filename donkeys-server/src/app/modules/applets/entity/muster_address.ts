@@ -4,7 +4,7 @@ import {Column} from 'typeorm';
 
 
 /**
- * 图片文件信息
+ * 活动集合地址
  */
 @EntityModel('applets_enroll_muster_address')
 export class AppletsMusterAddressEntity extends BaseEntity {
