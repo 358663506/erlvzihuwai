@@ -132,6 +132,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 25));
+// test
 var _default = {
   onLaunch: function onLaunch() {
     uni.getSystemInfo({

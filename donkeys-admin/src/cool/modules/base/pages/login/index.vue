@@ -1,7 +1,6 @@
 <template>
     <div class="page-login">
         <div class="box">
-            <!-- <img class="logo" src="../../static/images/logo.png" alt="" /> -->
 
             <el-form label-position="top" class="form" size="medium" :disabled="saving">
                 <p class="desc">{{ app.name }}后台管理系统</p>

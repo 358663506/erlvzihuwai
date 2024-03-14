@@ -1,6 +1,6 @@
 // const baseUrl = 'https://erlvzihuwai.web3n.com/';
 // const baseUrl = 'https://admin.elzhw.cn/api/';
-const baseUrl = 'http://192.168.1.4:8001/';
+const baseUrl = 'http://127.0.0.1:8001/'
 import dayjs from "dayjs"
 import store from "@/store"
 
@@ -34,9 +34,11 @@ function wxLogin() {
 		uni.login({
 			provider: 'weixin',
 			success: function(loginRes) {
+				console.log('授权成功')
 				resolve(loginRes.code)
 			},
 			fail: err => {
+				console.log('授权失败')
 				reject()
 				uni.showToast({
 					icon: 'error',
@@ -54,9 +56,11 @@ const getUserProfile = () => {
 			desc: '获取您的微信信息以授权小程序',
 			lang: 'zh_CN',
 			success: userProfileRes => {
+				console.log('授权成功1')
 				resolve(userProfileRes)
 			},
 			fail: err => {
+				console.log('授权失败1')
 				reject()
 				uni.showToast({
 					icon: 'error',
@@ -123,6 +127,7 @@ const httpLogin = () => {
 	httpPromise = new Promise((resolve, reject) => {
 		Promise.all([wxLogin(), getUserProfile()])
 			.then(([code, userInfo]) => {
+				console.log([code, userInfo])
 				uni.showLoading({
 					title: "登录中"
 				})
@@ -133,6 +138,7 @@ const httpLogin = () => {
 						...userInfo,
 						code: code
 					}).then(res => {
+						console.log(res)
 						uni.$store.commit('setUserInfo', res.data)
 						uni.$store.commit("setTokenMap", res.data)
 						resolve()
@@ -142,6 +148,7 @@ const httpLogin = () => {
 						});
 					})
 					.catch(e => {
+						console.log(e)
 						reject()
 						uni.showToast({
 							icon: 'error',

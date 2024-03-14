@@ -591,6 +591,12 @@ var _default = {
     },
     linktap: function linktap(e) {
       console.log('linktap 事件触发：', e);
+    },
+    // 去报名
+    goSignUp: function goSignUp() {
+      uni.navigateTo({
+        url: '/pages/signUp/index?id=' + this.postInfo.id
+      });
     }
   }
 };

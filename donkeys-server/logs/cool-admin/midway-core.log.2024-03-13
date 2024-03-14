@@ -1,0 +1,79 @@
+2024-03-13 21:56:41,743 INFO 6248 [egg:logger] init all loggers with options: {"dir":"E:\\newELv\\erlvzihuwai\\donkeys-server\\logs\\cool-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"midway-web.log","coreLogName":"midway-core.log","agentLogName":"midway-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"INFO"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"type":"application"}
+2024-03-13 21:56:41,743 INFO 6248 [egg:core] dump config after load, 16ms
+2024-03-13 21:56:42,374 INFO 6248 [egg-multipart] file mode enable
+2024-03-13 21:56:42,374 INFO 6248 [egg-multipart] will save temporary files to "C:\\Users\\刘渊火\\AppData\\Local\\Temp\\egg-multipart-tmp\\cool-admin", cleanup job cron: "0 30 4 * * *"
+2024-03-13 21:56:43,162 INFO 6248 [@midwayjs/view-nunjucks] loading templates from ["E:\\newELv\\erlvzihuwai\\donkeys-server\\src\\app\\view"]
+2024-03-13 21:56:44,319 INFO 6248 [36m [cool:core] midwayjs cool core func handler [0m
+2024-03-13 21:56:44,360 INFO 6248 [36m [cool:core] midwayjs cool core cache register [0m
+2024-03-13 21:56:44,483 INFO 6248 [36m [cool:core] midwayjs cool core router prefix handler [0m
+2024-03-13 21:56:44,487 INFO 6248 [36m [cool:core] midwayjs cool core eps ready [0m
+2024-03-13 21:56:44,487 INFO 6248 [36m [cool:core] midwayjs cool core eps ready [0m
+2024-03-13 21:56:44,488 INFO 6248 [36m [cool:core] auto router prefix "/admin/demo/user"  [0m
+2024-03-13 21:56:44,489 INFO 6248 [36m [cool:core] auto router prefix "/admin/applets/agreement"  [0m
+2024-03-13 21:56:44,490 INFO 6248 [36m [cool:core] auto router prefix "/admin/applets/autograph"  [0m
+2024-03-13 21:56:44,490 INFO 6248 [36m [cool:core] auto router prefix "/admin/applets/carousel"  [0m
+2024-03-13 21:56:44,491 INFO 6248 [36m [cool:core] auto router prefix "/admin/applets/photoWall"  [0m
+2024-03-13 21:56:44,491 INFO 6248 [36m [cool:core] auto router prefix "/admin/applets/photoWallType"  [0m
+2024-03-13 21:56:44,491 INFO 6248 [36m [cool:core] auto router prefix "/admin/applets/post"  [0m
+2024-03-13 21:56:44,492 INFO 6248 [36m [cool:core] auto router prefix "/admin/applets/user"  [0m
+2024-03-13 21:56:44,492 INFO 6248 [36m [cool:core] auto router prefix "/admin/base/sys/department"  [0m
+2024-03-13 21:56:44,492 INFO 6248 [36m [cool:core] auto router prefix "/admin/base/sys/log"  [0m
+2024-03-13 21:56:44,492 INFO 6248 [36m [cool:core] auto router prefix "/admin/base/sys/menu"  [0m
+2024-03-13 21:56:44,493 INFO 6248 [36m [cool:core] auto router prefix "/admin/base/sys/param"  [0m
+2024-03-13 21:56:44,493 INFO 6248 [36m [cool:core] auto router prefix "/admin/base/sys/role"  [0m
+2024-03-13 21:56:44,493 INFO 6248 [36m [cool:core] auto router prefix "/admin/base/sys/user"  [0m
+2024-03-13 21:56:44,493 INFO 6248 [36m [cool:core] auto router prefix "/admin/demo/goods"  [0m
+2024-03-13 21:56:44,493 INFO 6248 [36m [cool:core] auto router prefix "/app/demo/goods"  [0m
+2024-03-13 21:56:44,494 INFO 6248 [36m [cool:core] auto router prefix "/admin/space/info"  [0m
+2024-03-13 21:56:44,494 INFO 6248 [36m [cool:core] auto router prefix "/admin/space/type"  [0m
+2024-03-13 21:56:44,494 INFO 6248 [36m [cool:core] auto router prefix "/admin/task/info"  [0m
+2024-03-13 21:56:44,494 INFO 6248 [36m [cool:core] midwayjs cool core crud handler [0m
+2024-03-13 21:56:44,495 INFO 6248 [36m [cool:core] midwayjs cool core component ready [0m
+2024-03-13 21:56:44,526 INFO 6248 [egg-static] starting static serve  -> E:\newELv\erlvzihuwai\donkeys-server\public
+2024-03-13 21:56:44,536 INFO 6248 [egg-security] use methodnoallow middleware
+2024-03-13 21:56:44,544 INFO 6248 [egg-security] use noopen middleware
+2024-03-13 21:56:44,553 INFO 6248 [egg-security] use nosniff middleware
+2024-03-13 21:56:44,561 INFO 6248 [egg-security] use xssProtection middleware
+2024-03-13 21:56:44,569 INFO 6248 [egg-security] use xframe middleware
+2024-03-13 21:56:44,577 INFO 6248 [egg-security] use dta middleware
+2024-03-13 21:56:44,578 INFO 6248 [egg-security] compose 6 middlewares into one security middleware
+2024-03-13 21:56:44,598 INFO 6248 [egg:core] dump config after ready, 6ms
+2024-03-13 21:56:44,693 INFO 6248 [36m [cool:core] midwayjs cool redis connect [0m
+2024-03-13 21:56:44,742 INFO 6248 [36m [cool:core] midwayjs cool redis connect [0m
+2024-03-13 21:56:44,756 INFO 6248 [36m [cool:core] midwayjs cool redis connect [0m
+2024-03-13 21:56:44,763 INFO 6248 [36m [cool:core] midwayjs cool qiniu component ready [0m
+2024-03-13 21:56:44,851 INFO 6248 [36m [cool:core] midwayjs cool queue component status 1 [0m
+2024-03-13 21:56:44,855 INFO 6248 [36m [cool:core] midwayjs cool redis component ready [0m
+2024-03-13 21:56:45,821 INFO 6248 [36m [cool:core] create demoCommQueue queue  [0m
+2024-03-13 21:56:45,822 INFO 6248 [36m [cool:core] create demoGetterQueue queue  [0m
+2024-03-13 21:56:45,843 INFO 6248 [36m [cool:core] create taskInfoQueue queue  [0m
+2024-03-13 21:56:54,509 INFO 6248 [36m [cool:core] location clean [0m
+2024-03-13 23:56:54,911 ERROR 6248 [36m [cool:core] midwayjs cool redis error [0m
+2024-03-13 23:56:54,912 ERROR 6248 Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+2024-03-13 23:56:54,943 ERROR 6248 [36m [cool:core] midwayjs cool redis error [0m
+2024-03-13 23:56:54,944 ERROR 6248 Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+2024-03-13 23:56:54,957 ERROR 6248 [36m [cool:core] midwayjs cool redis error [0m
+2024-03-13 23:56:54,959 ERROR 6248 Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+2024-03-13 23:56:55,010 INFO 6248 [36m [cool:core] midwayjs cool redis connect [0m
+2024-03-13 23:56:55,036 ERROR 6248 Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  name: 'unhandledExceptionError'
+}

@@ -301,3 +301,24 @@ export const updateAutograph = (data = {}) => {
 		data
 	);
 }
+
+ // 报名参加
+ export const signUpAdd = (data = {}) => {
+ 	return httpTokenRequest({
+ 		url: "enrollUser/add",
+ 		method: "post",
+ 	},
+ 		data
+ 	);
+ }
+
+  // 报名参加
+  export const signUpInfo = (data = {}) => {
+	return httpTokenRequest({
+		url: "enrollUser/info",
+		method: "post",
+	},
+		data
+	);
+}
+

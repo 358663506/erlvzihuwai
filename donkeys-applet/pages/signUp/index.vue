@@ -7,9 +7,9 @@
 		<view class="nav-header bg-white" :style="{top: customBar + 'px'}">
 			<u-form
 				labelPosition="top"
-				:rules="rules"
 				:model="userInfo"
 				 ref="uForm"
+				 :required="true" 
 				labelWidth="75px"
 			>
 			<u-form-item
@@ -19,6 +19,7 @@
 				ref="item1">
 				<u-input
 					v-model="userInfo.name"
+					disabled
 					></u-input>
 			</u-form-item>
 			<u-form-item
@@ -38,7 +39,7 @@
 				borderBottom
 				ref="item1"
 			>
-				<u-input v-model="userInfo.enroll_muster_address_id" type="select" @click="show = true" />
+				<u-input v-model="userInfo.enroll_muster_address_name" type="select" @click="show = true" />
 				<!-- <u-radio-group
 					v-model="userInfo.enroll_muster_address_id"
 					placement="column"
@@ -67,11 +68,11 @@
 					<u-radio
 					  :customStyle="{marginBottom: '8px'}"
 					  v-for="(item, index) in radiolist3"
-					  :key="item.name"
-					  :label="item.name"
-					  :name="item.name"
+					  :key="item.value"
+					  :label="item.label"
+					  :name="item.value"
 					>
-					{{ item.name }}
+					{{ item.label }}
 					</u-radio>
 				  </u-radio-group>
 			</u-form-item>
@@ -124,7 +125,7 @@
 				prop="policy_img"
 				borderBottom
 				ref="item1">
-				<u-upload :action="action" :max-size="10 * 1024 * 1024" max-count="1" :limitType="['png', 'jpg', 'jpeg', 'webp', 'gif']" :file-list="fileList" ></u-upload>
+				<u-upload  :before-upload="beforeUpload"   :max-size="10 * 1024 * 1024" max-count="1" :limitType="['png', 'jpg', 'jpeg', 'webp', 'gif']" :file-list="fileList" ></u-upload>
 			</u-form-item>
 			
 			<u-form-item
@@ -222,7 +223,8 @@
 
 <script>
 	import {
-		searchApi
+		signUpAdd,
+		signUpInfo
 	} from "@/apis/index.js"
 	import dayjs from "dayjs"
 
@@ -255,33 +257,32 @@
 				this.search()
 			}
 		},
+		
 		data() {
 			return {
 				show: false,
 				fileList: [],
 				showSex: false,
-				action: 'https://admin.elzhw.cn/api/',
 				userInfo: {
-						id: '',
 						enroll_id: '', // 报名活动关联ID
-						name: '', // 微信名称
+						name: uni.$store.state.userInfo.nickName, // 微信名称
 						mobile: '', // 手机号
 						enroll_muster_address_id: '', // 集合地点ID
-						driver_flg: '', // 是否自驾
+						driver_flg: '1', // 是否自驾
 						driver_address: '', // 自驾出发地址
 						real_name: '', // 真实姓名
 						Id_card: '', // 身份证号
 						policy_no: '', // 保险单号
 						policy_img: '', // 保险照片
-						dinner_lfg: '', // 是否愿意吃晚餐0，吃，1:不吃，2都可以
+						dinner_lfg: '0', // 是否愿意吃晚餐0，吃，1:不吃，2都可以
 						emergency_contact: '', // 紧急联系人名
 						emergency_contact_mobile: '', // 紧急联系人手机号
-						openid: '', // 小程序openlD
-						unionid: '', // 小程序unionid
-						state: '', // 0:参加，1:退出
+						openid: uni.$store.state.userInfo.openId, // 小程序openlD
+						unionid: uni.$store.state.userInfo.unionId, // 小程序unionid
+						state: 0, // 0:参加，1:退出
 						create_time: '', // 创建时间
 						sex: '男',
-						state: 0,
+						enroll_muster_address_name: '',
 						isgm: 1
 					},
 				 // 性别
@@ -311,25 +312,27 @@
 				// 是否自驾
 				radiolist3: [
 					{
-						name: '是'
+						label: '是',
+						value: '1'
 					},
 					{
-						name: '否'
+						label: '否',
+						value: '0'
 					}
 				],
 				// 是否吃晚餐
 				radiolist4: [
 					{
 						label: '吃',
-						value: 0
+						value: '0'
 					},
 					{
 						label: '不吃',
-						value: 1
+						value: '1'
 					},
 					{
 						label: '都可以',
-						value: 2
+						value: '2'
 					}
 				],
 				// 是否需要购买保险
@@ -345,31 +348,72 @@
 				],
 				rules: {
 					name: [
-						{
-							required: true,
-							message: '请输入姓名',
-							trigger: ['blur', 'change']
-						}
-					]
+					{ 
+						required: true, 
+						message: '请输入姓名', 
+						// 可以单个或者同时写两个触发验证方式 
+						trigger: ['change','blur'],
+					}
+				],
+				mobile: [
+					{ 
+						required: true, 
+						message: '请输入姓名', 
+						// 可以单个或者同时写两个触发验证方式 
+						trigger: ['change','blur'],
+					}
+				]
 				},
 				radio: '',
 				switchVal: false
 			}
 		},
-		onLoad() {
+		onLoad(options) {
+			console.log(this.$route, options)
+			this.userInfo.enroll_id = options.id
+			// this.getInfo()
 			// this.$store.state.loading = true
 		},
-
+		mounted () {
+			this.$nextTick(() => {  
+				console.log(this.$refs.uForm)
+				this.$refs.uForm.setRules(this.rules);  
+			});  
+		},
+		onReady() {
+			this.$nextTick(() => {  
+				this.$refs.uForm.setRules(this.rules);  
+			});  
+		},
 		methods: {
+			async beforeUpload (index, list) {
+				console.log(index, list);
+			},
+			async getInfo () {
+				const res = await signUpInfo({ id: this.userInfo.enroll_id })
+				console.log('res', res)
+			},
 			confirm (e) {
 				console.log(e)
-				this.userInfo.enroll_muster_address_id = e[0].label
+				this.userInfo.enroll_muster_address_id = e[0].value
+				this.userInfo.enroll_muster_address_name = e[0].label
 			},
 			submit (e) {
-				console.log(e)
-				this.$refs.uForm.validate(valid => {
+				console.log(e, uni.$store.state.userInfo)
+				this.$refs.uForm.validate(async valid => {
+					console.log(valid)
 								if (valid) {
-									console.log('验证通过');
+									const data = {
+										...this.userInfo
+									}
+									console.log(data)
+									const res = await signUpAdd(data)
+									if (res.code === 1000 ) {
+										uni.showToast({
+											title: "新增成功",
+											icon: 'none',
+										})
+									}
 								} else {
 									console.log('验证失败');
 								}

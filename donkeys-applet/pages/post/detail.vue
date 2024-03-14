@@ -140,6 +140,9 @@
 				<u-loading color="#fff" mode="flower" :show="true" :size="loadingSize"></u-loading>
 			</view>
 		</view>
+		<view class="sign-up" v-if="postInfo.status === 1&&postInfo.id">
+			<view class="btn" @click="goSignUp">我要报名</view>
+		</view>
 	</view>
 </template>
 
@@ -531,11 +534,19 @@
 			linktap(e) {
 				console.log('linktap 事件触发：', e)
 			},
+			// 去报名
+			goSignUp () {
+				uni.navigateTo({
+					url: '/pages/signUp/index?id=' + this.postInfo.id
+				})
+			}
 		}
 	}
 </script>
 
 <style lang="scss">
+	.full {
+	}
 	page {
 		background-color: #fff;
 	}
@@ -846,6 +857,25 @@
 					color: #ccc;
 				}
 			}
+		}
+	}
+	.sign-up {
+		height: 88upx;
+		border-top: 1px solid #ccc;
+		padding: 5px 12px;
+		box-sizing: border-box;
+		position: sticky;
+		bottom: 0;
+		background-color: #fff;
+		.btn {
+			width: 100%;
+			height: 100%;
+			border-radius: 6px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: #025CEA;
+			color: #fff;
 		}
 	}
 </style>

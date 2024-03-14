@@ -1,0 +1,16 @@
+2024-03-13 21:59:25,829 WARN 6248 [-/192.168.1.4/-/120ms POST /add] SyntaxError: Unexpected token ' in JSON at position 17
+    at JSON.parse (<anonymous>)
+    at parse (E:\newELv\erlvzihuwai\donkeys-server\node_modules\co-body\lib\json.js:57:17)
+    at AsyncFunction.module.exports [as json] (E:\newELv\erlvzihuwai\donkeys-server\node_modules\co-body\lib\json.js:41:20)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at parseBody (E:\newELv\erlvzihuwai\donkeys-server\node_modules\koa-bodyparser\index.js:100:14)
+    at bodyParser (E:\newELv\erlvzihuwai\donkeys-server\node_modules\koa-bodyparser\index.js:85:19) {
+  status: 400,
+  body: '\n' +
+    '{\n' +
+    `\t"applyTime": '2022-12-12',\n` +
+    '\t"userId"":"10000814,\n' +
+    `\t"applyContent": '111',\n` +
+    '\t\n' +
+    '}'
+}
