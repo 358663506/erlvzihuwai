@@ -1,6 +1,0 @@
-2024-03-15 00:00:00,010 INFO 32964 [Timer] baseLogSchedule#BaseLogSchedule next time will execute after 86399992ms at 2024-03-16 00:00:00.002
-2024-03-15 00:00:00,013 INFO 32964 [Job#1710432000007522551132168001] baseLogSchedule#BaseLogSchedule executing by app
-2024-03-15 00:00:00,019 INFO 32964 [Timer] cool:cacheClear#CacheClear next time will execute after 86399982ms at 2024-03-16 00:00:00.001
-2024-03-15 00:00:00,020 INFO 32964 [Job#1710432000018522551237994001] cool:cacheClear#CacheClear executing by app
-2024-03-15 00:00:00,022 INFO 32964 [Job#1710432000018522551237994001] cool:cacheClear#CacheClear execute succeed, used 2ms. 
-2024-03-15 00:00:00,045 INFO 32964 [Job#1710432000007522551132168001] baseLogSchedule#BaseLogSchedule execute succeed, used 31ms. 

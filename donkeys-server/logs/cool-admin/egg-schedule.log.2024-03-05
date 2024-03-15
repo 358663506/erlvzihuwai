@@ -1,4 +1,0 @@
-2024-03-05 23:49:15,169 INFO 28680 [egg-schedule]: register schedule E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
-2024-03-05 23:49:16,777 INFO 28680 [Timer] E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 16843227ms at 2024-03-06 04:30:00.003
-2024-03-05 23:49:16,780 INFO 28680 [Timer] cool:cacheClear#CacheClear next time will execute after 643221ms at 2024-03-06 00:00:00.001
-2024-03-05 23:49:16,781 INFO 28680 [Timer] baseLogSchedule#BaseLogSchedule next time will execute after 643219ms at 2024-03-06 00:00:00.000
