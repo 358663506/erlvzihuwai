@@ -1,6 +1,6 @@
 // const baseUrl = 'https://erlvzihuwai.web3n.com/';
-const baseUrl = 'https://admin.elzhw.cn/api/';
-// const baseUrl = 'http://127.0.0.1:8001/'
+// const baseUrl = 'https://admin.elzhw.cn/api/';
+const baseUrl = 'http://127.0.0.1:8001/'
 import dayjs from "dayjs"
 import store from "@/store"
 

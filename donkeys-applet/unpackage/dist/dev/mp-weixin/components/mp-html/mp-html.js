@@ -128,7 +128,7 @@ var _index3 = _interopRequireDefault(__webpack_require__(/*! ./img-cache/index.j
 var _index4 = _interopRequireDefault(__webpack_require__(/*! ./editable/index.js */ 235));
 var node = function node() {
   __webpack_require__.e(/*! require.ensure | components/mp-html/node/node */ "components/mp-html/node/node").then((function () {
-    return resolve(__webpack_require__(/*! ./node/node */ 341));
+    return resolve(__webpack_require__(/*! ./node/node */ 334));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var plugins = [_index.default, _index2.default, _index3.default, _index4.default];

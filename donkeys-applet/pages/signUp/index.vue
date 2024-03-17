@@ -6,11 +6,12 @@
 		</cu-custom>
 		<view class="nav-header bg-white" :style="{top: customBar + 'px'}">
 			<u-form
-				labelPosition="top"
+				labelPosition="left"
 				:model="userInfo"
 				 ref="uForm"
 				 :required="true" 
-				labelWidth="75px"
+				 labelAlign="left"
+				labelWidth="47%"
 			>
 			<u-form-item
 				label="微信昵称"
@@ -19,7 +20,7 @@
 				ref="item1">
 				<u-input
 					v-model="userInfo.name"
-					disabled
+					type="nickname"
 					></u-input>
 			</u-form-item>
 			<u-form-item
@@ -439,20 +440,6 @@
 						trigger: ['change','blur'],
 					},
 				],
-				policy_no: [
-					{
-						validator: (rule, value, callback) => {
-							if (this.userInfo.policy_flg === 1) {
-								return true
-							} else {
-								return !!value.trim()
-							}
-						},
-						message: '请输入保险单号',
-						// 触发器可以同时用blur和change
-						trigger: ['change','blur'],
-					},
-				]
 				},
 				radio: '',
 				switchVal: false
@@ -566,8 +553,8 @@
 		color: red;
 		font-size: 24upx;
 		position: absolute;
-		top: 12%;
-		left: 34%;
+		top: 45%;
+		left: 0%;
 	}
 	.btns {
 		display: flex;

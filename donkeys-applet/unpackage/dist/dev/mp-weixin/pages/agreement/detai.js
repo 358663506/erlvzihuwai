@@ -297,7 +297,7 @@ uni.getSystemInfo({
 });
 var myPopup = function myPopup() {
   __webpack_require__.e(/*! require.ensure | components/qianxiao-pop/qianxiao-pop */ "components/qianxiao-pop/qianxiao-pop").then((function () {
-    return resolve(__webpack_require__(/*! @/components/qianxiao-pop/qianxiao-pop.vue */ 334));
+    return resolve(__webpack_require__(/*! @/components/qianxiao-pop/qianxiao-pop.vue */ 327));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var _default = {
