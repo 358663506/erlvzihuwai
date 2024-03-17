@@ -97,3 +97,4 @@
 2024-03-17 22:19:29,301 INFO 35136 [36m [cool:core] create demoCommQueue queue  [0m
 2024-03-17 22:19:29,302 INFO 35136 [36m [cool:core] create demoGetterQueue queue  [0m
 2024-03-17 22:19:29,335 INFO 35136 [36m [cool:core] create taskInfoQueue queue  [0m
+2024-03-17 22:19:37,992 INFO 35136 [36m [cool:core] location clean [0m
