@@ -12,3 +12,17 @@
     at Module.require (node:internal/modules/cjs/loader:1100:19)
     at require (node:internal/modules/cjs/helpers:119:18)
 2024-03-17 22:01:00,407 INFO 33860 [egg:core] dump config after ready, 4ms
+2024-03-17 22:19:24,997 INFO 35136 [egg:logger] init all loggers with options: {"dir":"E:\\newELv\\erlvzihuwai\\donkeys-server\\logs\\cool-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"midway-web.log","coreLogName":"midway-core.log","agentLogName":"midway-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"INFO"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"type":"agent"}
+2024-03-17 22:19:25,000 INFO 35136 [egg:core] dump config after load, 168ms
+2024-03-17 22:19:25,812 ERROR 35136 ReferenceError: window is not defined
+    at E:\newELv\erlvzihuwai\donkeys-server\src\config\config.local.ts:59:16
+    at Object.<anonymous> (E:\newELv\erlvzihuwai\donkeys-server\src\config\config.local.ts:60:3)
+    at Module._compile (node:internal/modules/cjs/loader:1198:14)
+    at Module.m._compile (E:\newELv\erlvzihuwai\donkeys-server\node_modules\ts-node\src\index.ts:1056:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (E:\newELv\erlvzihuwai\donkeys-server\node_modules\ts-node\src\index.ts:1059:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+    at require (node:internal/modules/cjs/helpers:119:18)
+2024-03-17 22:19:25,819 INFO 35136 [egg:core] dump config after ready, 3ms

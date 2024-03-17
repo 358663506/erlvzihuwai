@@ -9,6 +9,8 @@ import * as R from 'ramda';
 import { AppletsHistoryEntity } from '../entity/history';
 import { AppletsCollectEntity } from '../entity/collect';
 import { AppletsReplayEntity } from '../entity/reply';
+import {AppletsMusterAddressEntity} from "../entity/muster_address";
+import {AppletsEnrollMusterAddressEntity} from "../entity/enroll_muster_address";
 
 /* 发布活动 */
 @Provide()
@@ -31,6 +33,12 @@ export class AppletsPostService extends BaseService {
     @Inject('cool:cache')
     coolCache: ICoolCache;
 
+
+    @InjectEntityModel(AppletsMusterAddressEntity)
+    appletsMusterAddressEntity:Repository<AppletsMusterAddressEntity>
+
+    @InjectEntityModel(AppletsEnrollMusterAddressEntity)
+    appletsEnrollMusterAddressEntity:Repository<AppletsEnrollMusterAddressEntity>
     /**
      * 分页查询
      * @param query
@@ -85,9 +93,33 @@ export class AppletsPostService extends BaseService {
      * @param param
      */
     async add(param) {
-        await this.appletsPostEntity.save(param);
+       const savedParam = await this.appletsPostEntity.save(param);
         // 判断有没有标签
         // await this.updateUserRole(param);
+
+        if(param.addressList){
+
+            // 使用forEach方法遍历数组
+            for (const addressId of param.addressList) {
+                console.log("====================>"+addressId)
+                const  addressInfo = await this.appletsMusterAddressEntity.findOne({ id: addressId });
+
+                console.log("=========addressInfo===========>"+addressInfo);
+                if(addressInfo){
+
+                    const  enrollMusterAddressEntity = new AppletsEnrollMusterAddressEntity();
+                    enrollMusterAddressEntity.enroll_id= savedParam.id;
+                    enrollMusterAddressEntity.muster_address_id = addressId;
+                    enrollMusterAddressEntity.muster_time=addressInfo.muster_time;
+                    enrollMusterAddressEntity.name = addressInfo.name;
+
+                    console.log("====================>"+savedParam.id);
+                    console.log("====================>"+addressInfo.muster_time);
+                    await this.appletsEnrollMusterAddressEntity.save(enrollMusterAddressEntity);
+                }
+
+            }
+        }
         return param;
     }
 
@@ -102,6 +134,31 @@ export class AppletsPostService extends BaseService {
         }
         param.visitCount = postInfo.visitCount;
         await this.appletsPostEntity.save(param);
+
+        // 修改的时候先删除
+        await this.appletsEnrollMusterAddressEntity.delete({enroll_id:param.id});
+
+        if(param.addressList){
+
+            // 使用forEach方法遍历数组
+            for (const addressId of param.addressList) {
+                console.log("====================>"+addressId)
+                const  addressInfo = await this.appletsMusterAddressEntity.findOne({ id: addressId });
+
+                console.log("=========addressInfo===========>"+addressInfo);
+                if(addressInfo){
+
+                    const  enrollMusterAddressEntity = new AppletsEnrollMusterAddressEntity();
+                    enrollMusterAddressEntity.enroll_id= param.id;
+                    enrollMusterAddressEntity.muster_address_id = addressId;
+                    enrollMusterAddressEntity.muster_time=addressInfo.muster_time;
+                    enrollMusterAddressEntity.name = addressInfo.name;
+                    await this.appletsEnrollMusterAddressEntity.save(enrollMusterAddressEntity);
+                }
+
+            }
+        }
+
         // 判断有没有标签
         // await this.updateUserRole(param);
         return param;
