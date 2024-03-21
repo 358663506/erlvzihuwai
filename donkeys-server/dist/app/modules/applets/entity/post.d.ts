@@ -4,6 +4,7 @@ import { AppletsPostLablelEntity } from './post_label';
 import { AppletsCollectEntity } from './collect';
 import { BaseEntity } from '@cool-midway/core';
 import { AppletsHistoryEntity } from './history';
+import { AppletsEnrollMusterAddressEntity } from "./enroll_muster_address";
 /**
  * 回复
  */
@@ -33,4 +34,5 @@ export declare class AppletsPostEntity extends BaseEntity {
     collects: AppletsCollectEntity[];
     contentType: string;
     canReply: number;
+    addressList: AppletsEnrollMusterAddressEntity[];
 }

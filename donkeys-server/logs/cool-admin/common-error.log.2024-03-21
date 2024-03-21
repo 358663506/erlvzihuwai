@@ -9,3 +9,97 @@
     at Function.Module._load (node:internal/modules/cjs/loader:911:12)
     at Module.require (node:internal/modules/cjs/loader:1100:19)
     at require (node:internal/modules/cjs/helpers:119:18)
+2024-03-21 22:44:42,978 ERROR 18264 ReferenceError: window is not defined
+    at E:\newELv\erlvzihuwai\donkeys-server\src\config\config.local.ts:59:16
+    at Object.<anonymous> (E:\newELv\erlvzihuwai\donkeys-server\src\config\config.local.ts:60:3)
+    at Module._compile (node:internal/modules/cjs/loader:1198:14)
+    at Module.m._compile (E:\newELv\erlvzihuwai\donkeys-server\node_modules\ts-node\src\index.ts:1056:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (E:\newELv\erlvzihuwai\donkeys-server\node_modules\ts-node\src\index.ts:1059:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+    at require (node:internal/modules/cjs/helpers:119:18)
+2024-03-21 22:46:17,986 ERROR 32668 ReferenceError: window is not defined
+    at E:\newELv\erlvzihuwai\donkeys-server\src\config\config.local.ts:59:16
+    at Object.<anonymous> (E:\newELv\erlvzihuwai\donkeys-server\src\config\config.local.ts:60:3)
+    at Module._compile (node:internal/modules/cjs/loader:1198:14)
+    at Module.m._compile (E:\newELv\erlvzihuwai\donkeys-server\node_modules\ts-node\src\index.ts:1056:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (E:\newELv\erlvzihuwai\donkeys-server\node_modules\ts-node\src\index.ts:1059:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+    at require (node:internal/modules/cjs/helpers:119:18)
+2024-03-21 22:57:18,045 ERROR 32668 [-/127.0.0.1/-/1502ms GET /admin/base/open/captcha?height=36&width=110] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  headerSent: true
+}
+2024-03-21 22:57:38,183 ERROR 32668 [36m [cool:core] midwayjs cool redis error [0m
+2024-03-21 22:57:38,184 ERROR 32668 Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+2024-03-21 22:57:38,363 ERROR 32668 TypeError: Cannot read properties of null (reading 'expire')
+    at RedisCacheHandler.set (E:\newELv\erlvzihuwai\donkeys-server\node_modules\@cool-midway\redis\redis.js:112:30)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at BaseSysLoginService.captcha (E:\newELv\erlvzihuwai\donkeys-server\src\app\modules\base\service\sys\login.ts:117:9)
+    at BaseOpenController.captcha (E:\newELv\erlvzihuwai\donkeys-server\src\app\modules\base\controller\admin\open.ts:57:24)
+    at Object.<anonymous> (E:\newELv\erlvzihuwai\donkeys-server\node_modules\@midwayjs\koa\dist\framework.js:35:28)
+    at xframe (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at xssProtection (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at nosniff (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at noopen (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+2024-03-21 22:57:38,364 ERROR 32668 TypeError: Cannot read properties of null (reading 'expire')
+    at RedisCacheHandler.set (E:\newELv\erlvzihuwai\donkeys-server\node_modules\@cool-midway\redis\redis.js:112:30)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at BaseSysLoginService.captcha (E:\newELv\erlvzihuwai\donkeys-server\src\app\modules\base\service\sys\login.ts:117:9)
+    at BaseOpenController.captcha (E:\newELv\erlvzihuwai\donkeys-server\src\app\modules\base\controller\admin\open.ts:57:24)
+    at Object.<anonymous> (E:\newELv\erlvzihuwai\donkeys-server\node_modules\@midwayjs\koa\dist\framework.js:35:28)
+    at xframe (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at xssProtection (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at nosniff (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at noopen (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+2024-03-21 23:16:50,901 ERROR 32668 [36m [cool:core] midwayjs cool redis error [0m
+2024-03-21 23:16:50,903 ERROR 32668 Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+2024-03-21 23:16:51,063 ERROR 32668 TypeError: Cannot read properties of null (reading 'expire')
+    at RedisCacheHandler.set (E:\newELv\erlvzihuwai\donkeys-server\node_modules\@cool-midway\redis\redis.js:112:30)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at BaseSysLoginService.captcha (E:\newELv\erlvzihuwai\donkeys-server\src\app\modules\base\service\sys\login.ts:117:9)
+    at BaseOpenController.captcha (E:\newELv\erlvzihuwai\donkeys-server\src\app\modules\base\controller\admin\open.ts:57:24)
+    at Object.<anonymous> (E:\newELv\erlvzihuwai\donkeys-server\node_modules\@midwayjs\koa\dist\framework.js:35:28)
+    at xframe (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at xssProtection (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at nosniff (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at noopen (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+2024-03-21 23:30:47,966 ERROR 32668 [36m [cool:core] midwayjs cool redis error [0m
+2024-03-21 23:30:47,968 ERROR 32668 Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+2024-03-21 23:30:48,139 ERROR 32668 TypeError: Cannot read properties of null (reading 'expire')
+    at RedisCacheHandler.set (E:\newELv\erlvzihuwai\donkeys-server\node_modules\@cool-midway\redis\redis.js:112:30)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at BaseSysLoginService.captcha (E:\newELv\erlvzihuwai\donkeys-server\src\app\modules\base\service\sys\login.ts:117:9)
+    at BaseOpenController.captcha (E:\newELv\erlvzihuwai\donkeys-server\src\app\modules\base\controller\admin\open.ts:57:24)
+    at Object.<anonymous> (E:\newELv\erlvzihuwai\donkeys-server\node_modules\@midwayjs\koa\dist\framework.js:35:28)
+    at xframe (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at xssProtection (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at nosniff (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at noopen (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\noopen.js:8:5)

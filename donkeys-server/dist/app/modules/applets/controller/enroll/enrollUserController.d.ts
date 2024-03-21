@@ -1,7 +1,12 @@
 import { BaseController } from '@cool-midway/core';
 import { EnrollUserService } from "../../service/enrollUserService";
+import { AppletsPostEntity } from "../../entity/post";
+import { Repository } from "typeorm";
+import { AppletsEnrollMusterAddressEntity } from "../../entity/enroll_muster_address";
 export declare class EnrollUserController extends BaseController {
     enrollUserService: EnrollUserService;
+    appletsPostEntity: Repository<AppletsPostEntity>;
+    appletsEnrollMusterAddressEntity: Repository<AppletsEnrollMusterAddressEntity>;
     /**
      * 活动成员列表
      * @returns

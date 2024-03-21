@@ -1,0 +1,56 @@
+2024-03-22 00:05:40,272 INFO 23852 [egg:logger] init all loggers with options: {"dir":"E:\\newELv\\erlvzihuwai\\donkeys-server\\logs\\cool-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"midway-web.log","coreLogName":"midway-core.log","agentLogName":"midway-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"INFO"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"type":"agent"}
+2024-03-22 00:05:40,274 INFO 23852 [egg:core] dump config after load, 75ms
+2024-03-22 00:05:40,517 ERROR 23852 ReferenceError: window is not defined
+    at E:\newELv\erlvzihuwai\donkeys-server\src\config\config.local.ts:59:16
+    at Object.<anonymous> (E:\newELv\erlvzihuwai\donkeys-server\src\config\config.local.ts:60:3)
+    at Module._compile (node:internal/modules/cjs/loader:1198:14)
+    at Module.m._compile (E:\newELv\erlvzihuwai\donkeys-server\node_modules\ts-node\src\index.ts:1056:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (E:\newELv\erlvzihuwai\donkeys-server\node_modules\ts-node\src\index.ts:1059:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+    at require (node:internal/modules/cjs/helpers:119:18)
+2024-03-22 00:05:40,527 INFO 23852 [egg:core] dump config after ready, 6ms
+2024-03-22 00:06:01,020 INFO 49884 [egg:logger] init all loggers with options: {"dir":"E:\\newELv\\erlvzihuwai\\donkeys-server\\logs\\cool-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"midway-web.log","coreLogName":"midway-core.log","agentLogName":"midway-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"INFO"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"type":"agent"}
+2024-03-22 00:06:01,023 INFO 49884 [egg:core] dump config after load, 50ms
+2024-03-22 00:06:01,206 ERROR 49884 ReferenceError: window is not defined
+    at E:\newELv\erlvzihuwai\donkeys-server\src\config\config.local.ts:59:16
+    at Object.<anonymous> (E:\newELv\erlvzihuwai\donkeys-server\src\config\config.local.ts:60:3)
+    at Module._compile (node:internal/modules/cjs/loader:1198:14)
+    at Module.m._compile (E:\newELv\erlvzihuwai\donkeys-server\node_modules\ts-node\src\index.ts:1056:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (E:\newELv\erlvzihuwai\donkeys-server\node_modules\ts-node\src\index.ts:1059:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+    at require (node:internal/modules/cjs/helpers:119:18)
+2024-03-22 00:06:01,214 INFO 49884 [egg:core] dump config after ready, 4ms
+2024-03-22 00:19:19,945 INFO 25564 [egg:logger] init all loggers with options: {"dir":"E:\\newELv\\erlvzihuwai\\donkeys-server\\logs\\cool-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"midway-web.log","coreLogName":"midway-core.log","agentLogName":"midway-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"INFO"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"type":"agent"}
+2024-03-22 00:19:19,947 INFO 25564 [egg:core] dump config after load, 57ms
+2024-03-22 00:19:20,136 ERROR 25564 ReferenceError: window is not defined
+    at E:\newELv\erlvzihuwai\donkeys-server\src\config\config.local.ts:59:16
+    at Object.<anonymous> (E:\newELv\erlvzihuwai\donkeys-server\src\config\config.local.ts:60:3)
+    at Module._compile (node:internal/modules/cjs/loader:1198:14)
+    at Module.m._compile (E:\newELv\erlvzihuwai\donkeys-server\node_modules\ts-node\src\index.ts:1056:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (E:\newELv\erlvzihuwai\donkeys-server\node_modules\ts-node\src\index.ts:1059:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+    at require (node:internal/modules/cjs/helpers:119:18)
+2024-03-22 00:19:20,142 INFO 25564 [egg:core] dump config after ready, 4ms
+2024-03-22 00:20:20,858 INFO 44628 [egg:logger] init all loggers with options: {"dir":"E:\\newELv\\erlvzihuwai\\donkeys-server\\logs\\cool-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"midway-web.log","coreLogName":"midway-core.log","agentLogName":"midway-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"INFO"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"type":"agent"}
+2024-03-22 00:20:20,866 INFO 44628 [egg:core] dump config after load, 56ms
+2024-03-22 00:20:21,054 ERROR 44628 ReferenceError: window is not defined
+    at E:\newELv\erlvzihuwai\donkeys-server\src\config\config.local.ts:59:16
+    at Object.<anonymous> (E:\newELv\erlvzihuwai\donkeys-server\src\config\config.local.ts:60:3)
+    at Module._compile (node:internal/modules/cjs/loader:1198:14)
+    at Module.m._compile (E:\newELv\erlvzihuwai\donkeys-server\node_modules\ts-node\src\index.ts:1056:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (E:\newELv\erlvzihuwai\donkeys-server\node_modules\ts-node\src\index.ts:1059:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+    at require (node:internal/modules/cjs/helpers:119:18)
+2024-03-22 00:20:21,060 INFO 44628 [egg:core] dump config after ready, 4ms

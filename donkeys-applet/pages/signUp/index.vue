@@ -457,59 +457,46 @@
 			}
 		},
 		onLoad(options) {
-			wx.getPrivacySetting({
-			      success: res => {
-			        console.log(res) // 返回结果为: res = { needAuthorization: true/false, privacyContractName: '《xxx隐私保护指引》' }
-			        if (res.needAuthorization) {
-			          // 需要弹出隐私协议
-			          this.showPrivacy = true
-			        } else {
-						this.showPrivacy = true
-			          // 用户已经同意过隐私协议，所以不需要再弹出隐私协议，也能调用已声明过的隐私接口
-			          // wx.getUserProfile()
-			          // wx.chooseMedia()
-			          // wx.getClipboardData()
-			          // wx.startRecord()
-			        }
-			      },
-			      fail: () => {},
-			      complete: () => {}
-			    })
+	
 			console.log(this.$route, options)
 			this.userInfo.enroll_id = options.id
+			this.radiolist2 = JSON.parse(options.addressList).map(item => {
+				return {
+					value: item.id,
+					label: item.name + '' + item.muster_time,
+				}
+			})
 			this.getInfo()
 			// this.$store.state.loading = true
 		},
 		mounted () {
-			console.log(new Date() * 1 , new Date('2024/3/21 14:00:00') * 1)
-			if (new Date() * 1 > new Date('2024/3/21 12:30:00') * 1) {
+			console.log(new Date() * 1 , new Date('2024/3/22 08:00:00') * 1)
+			if (new Date() * 1 > new Date('2024/3/22 08:00:00') * 1) {
 				this.showForm = true
 			}
-			this.getMusterAdressPage()
-			this.$nextTick(() => {
-				if (this.showForm) {
-					this.$refs.uForm.setRules(this.rules);  
+			const that = this
+			setTimeout(() => {
+				that.$nextTick(() => {
+				if (that.showForm) {
+					that.$refs.uForm.setRules(this.rules);  
 				}
 				
 			});  
+			}, 500)
+			
 		},
 		onReady() {
-			this.$nextTick(() => {  
-				if (this.showForm) {
-					this.$refs.uForm.setRules(this.rules);  
-				}
+			// const that = this
+			// setTimeout(() => {
+			// 	that.$nextTick(() => {
+			// 	if (that.showForm) {
+			// 		that.$refs.uForm.setRules(this.rules);  
+			// 	}
 				
-			});  
+			// });  
+			// }, 500)
 		},
 		methods: {
-			// 获取地址
-			async getMusterAdressPage () {
-				const res = await musterAdressPage({
-					status: -1,
-					name: ''
-				})
-				console.log(res);
-			},
 			async beforeUpload (index, list) {
 				console.log(index, list);
 			},

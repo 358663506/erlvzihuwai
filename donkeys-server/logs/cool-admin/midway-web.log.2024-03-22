@@ -1,0 +1,2 @@
+2024-03-22 00:00:00,018 INFO 32668 [-/127.0.0.1/-/1ms SCHEDULE /__schedule?path=baseLogSchedule#BaseLogSchedule&cron=0%200%200%20*%20*%20*&type=worker] 清除日志定时任务开始执行
+2024-03-22 00:00:00,044 INFO 32668 [-/127.0.0.1/-/27ms SCHEDULE /__schedule?path=baseLogSchedule#BaseLogSchedule&cron=0%200%200%20*%20*%20*&type=worker] 清除日志定时任务结束，耗时:24ms

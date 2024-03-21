@@ -11,9 +11,10 @@
 
 <script lang="ts">
 import { UpsertItem, UpsertRef } from '@cool-vue/crud/types';
-import { defineComponent, ref } from 'vue';
+import { defineComponent, onMounted, ref } from 'vue';
 import { useCool } from '/@/cool';
-
+import { storage, href } from "/@/cool/utils";
+import store from "/@/store";
 export default defineComponent({
     setup() {
         const upsertRef = ref<UpsertRef>();
@@ -46,8 +47,23 @@ export default defineComponent({
             {
                 label: '文章封面',
                 prop: 'articleCover',
+                 span: 12,
                 component: {
                     name: 'slot-article-cover'
+                }
+            },
+            {
+                label: '出发地点',
+                prop: 'el-select',
+                 span: 12,
+                component: {
+                    name: 'el-select',
+                    options: [
+                        {
+                            label: '上海',
+                            value: '1'
+                        }
+                    ]
                 }
             },
             {
@@ -222,12 +238,27 @@ export default defineComponent({
         function onUploadSpaceConfirm(file: any) {
             upsertRef.value?.setForm('articleCover', file);
         }
-
+        onMounted(() => {
+            getAddress()
+        })
+        // 获取上车地点
+        function getAddress () {
+            const form = ref<any>({
+                size: 100,
+                page: 1,
+                status: 1
+            })
+            store.service.base.address.address(form).then((res: any) => {
+                console.log('address:',res)
+			return res;
+		});
+        }
         return {
             items,
             upsertRef,
             dialog,
-            onUploadSpaceConfirm
+            onUploadSpaceConfirm,
+            getAddress
         };
     }
 });

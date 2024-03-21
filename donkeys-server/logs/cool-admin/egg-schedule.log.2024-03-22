@@ -1,0 +1,22 @@
+2024-03-22 00:00:00,008 INFO 32668 [Timer] cool:cacheClear#CacheClear next time will execute after 86399995ms at 2024-03-23 00:00:00.002
+2024-03-22 00:00:00,011 INFO 32668 [Job#17110368000056570877895435001] cool:cacheClear#CacheClear executing by app
+2024-03-22 00:00:00,015 INFO 32668 [Job#17110368000056570877895435001] cool:cacheClear#CacheClear execute succeed, used 3ms. 
+2024-03-22 00:00:00,017 INFO 32668 [Timer] baseLogSchedule#BaseLogSchedule next time will execute after 86399985ms at 2024-03-23 00:00:00.002
+2024-03-22 00:00:00,017 INFO 32668 [Job#17110368000156570877999876001] baseLogSchedule#BaseLogSchedule executing by app
+2024-03-22 00:00:00,044 INFO 32668 [Job#17110368000156570877999876001] baseLogSchedule#BaseLogSchedule execute succeed, used 27ms. 
+2024-03-22 00:05:40,749 INFO 23852 [egg-schedule]: register schedule E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2024-03-22 00:05:41,711 INFO 23852 [Timer] E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 15858293ms at 2024-03-22 04:30:00.004
+2024-03-22 00:05:41,714 INFO 23852 [Timer] cool:cacheClear#CacheClear next time will execute after 86058287ms at 2024-03-23 00:00:00.001
+2024-03-22 00:05:41,715 INFO 23852 [Timer] baseLogSchedule#BaseLogSchedule next time will execute after 86058286ms at 2024-03-23 00:00:00.001
+2024-03-22 00:06:01,396 INFO 49884 [egg-schedule]: register schedule E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2024-03-22 00:06:02,182 INFO 49884 [Timer] E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 15837823ms at 2024-03-22 04:30:00.004
+2024-03-22 00:06:02,184 INFO 49884 [Timer] cool:cacheClear#CacheClear next time will execute after 86037817ms at 2024-03-23 00:00:00.001
+2024-03-22 00:06:02,185 INFO 49884 [Timer] baseLogSchedule#BaseLogSchedule next time will execute after 86037816ms at 2024-03-23 00:00:00.001
+2024-03-22 00:19:20,336 INFO 25564 [egg-schedule]: register schedule E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2024-03-22 00:19:21,141 INFO 25564 [Timer] E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 15038863ms at 2024-03-22 04:30:00.004
+2024-03-22 00:19:21,143 INFO 25564 [Timer] cool:cacheClear#CacheClear next time will execute after 85238858ms at 2024-03-23 00:00:00.001
+2024-03-22 00:19:21,144 INFO 25564 [Timer] baseLogSchedule#BaseLogSchedule next time will execute after 85238856ms at 2024-03-23 00:00:00.000
+2024-03-22 00:20:21,249 INFO 44628 [egg-schedule]: register schedule E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2024-03-22 00:20:22,005 INFO 44628 [Timer] E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 14977999ms at 2024-03-22 04:30:00.004
+2024-03-22 00:20:22,007 INFO 44628 [Timer] cool:cacheClear#CacheClear next time will execute after 85177994ms at 2024-03-23 00:00:00.001
+2024-03-22 00:20:22,007 INFO 44628 [Timer] baseLogSchedule#BaseLogSchedule next time will execute after 85177993ms at 2024-03-23 00:00:00.000

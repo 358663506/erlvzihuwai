@@ -1,0 +1,80 @@
+2024-03-22 00:05:40,517 ERROR 23852 ReferenceError: window is not defined
+    at E:\newELv\erlvzihuwai\donkeys-server\src\config\config.local.ts:59:16
+    at Object.<anonymous> (E:\newELv\erlvzihuwai\donkeys-server\src\config\config.local.ts:60:3)
+    at Module._compile (node:internal/modules/cjs/loader:1198:14)
+    at Module.m._compile (E:\newELv\erlvzihuwai\donkeys-server\node_modules\ts-node\src\index.ts:1056:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (E:\newELv\erlvzihuwai\donkeys-server\node_modules\ts-node\src\index.ts:1059:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+    at require (node:internal/modules/cjs/helpers:119:18)
+2024-03-22 00:06:01,206 ERROR 49884 ReferenceError: window is not defined
+    at E:\newELv\erlvzihuwai\donkeys-server\src\config\config.local.ts:59:16
+    at Object.<anonymous> (E:\newELv\erlvzihuwai\donkeys-server\src\config\config.local.ts:60:3)
+    at Module._compile (node:internal/modules/cjs/loader:1198:14)
+    at Module.m._compile (E:\newELv\erlvzihuwai\donkeys-server\node_modules\ts-node\src\index.ts:1056:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (E:\newELv\erlvzihuwai\donkeys-server\node_modules\ts-node\src\index.ts:1059:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+    at require (node:internal/modules/cjs/helpers:119:18)
+2024-03-22 00:08:00,000 ERROR 49884 QueryFailedError: Unknown column 'a.top' in 'order clause'
+    at QueryFailedError.TypeORMError [as constructor] (E:\newELv\erlvzihuwai\donkeys-server\src\error\TypeORMError.ts:7:9)
+    at new QueryFailedError (E:\newELv\erlvzihuwai\donkeys-server\src\error\QueryFailedError.ts:9:9)
+    at Query.onResult (E:\newELv\erlvzihuwai\donkeys-server\src\driver\mysql\MysqlQueryRunner.ts:183:37)
+    at Query.execute (E:\newELv\erlvzihuwai\donkeys-server\node_modules\mysql2\lib\commands\command.js:36:14)
+    at PoolConnection.handlePacket (E:\newELv\erlvzihuwai\donkeys-server\node_modules\mysql2\lib\connection.js:456:32)
+    at PacketParser.onPacket (E:\newELv\erlvzihuwai\donkeys-server\node_modules\mysql2\lib\connection.js:85:12)
+    at PacketParser.executeStart (E:\newELv\erlvzihuwai\donkeys-server\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (E:\newELv\erlvzihuwai\donkeys-server\node_modules\mysql2\lib\connection.js:92:25)
+    at Socket.emit (node:events:513:28)
+    at Socket.emit (node:domain:489:12) {
+  query: 'SELECT `a`.`id` AS `a_id`, `a`.`createTime` AS `a_createTime`, `a`.`updateTime` AS `a_updateTime`, `a`.`status` AS `a_status`, `a`.`name` AS `a_name`, `a`.`muster_time` AS `a_muster_time` FROM `applets_muster_address` `a` WHERE 1 = 1 AND 1=1 AND 1=1 ORDER BY a.top DESC, `a`.`status` ASC, `a`.`createTime` DESC LIMIT 15',
+  parameters: [],
+  driverError: Error: Unknown column 'a.top' in 'order clause'
+      at Packet.asError (E:\newELv\erlvzihuwai\donkeys-server\node_modules\mysql2\lib\packets\packet.js:728:17)
+      at Query.execute (E:\newELv\erlvzihuwai\donkeys-server\node_modules\mysql2\lib\commands\command.js:29:26)
+      at PoolConnection.handlePacket (E:\newELv\erlvzihuwai\donkeys-server\node_modules\mysql2\lib\connection.js:456:32)
+      at PacketParser.onPacket (E:\newELv\erlvzihuwai\donkeys-server\node_modules\mysql2\lib\connection.js:85:12)
+      at PacketParser.executeStart (E:\newELv\erlvzihuwai\donkeys-server\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (E:\newELv\erlvzihuwai\donkeys-server\node_modules\mysql2\lib\connection.js:92:25)
+      at Socket.emit (node:events:513:28)
+      at Socket.emit (node:domain:489:12)
+      at addChunk (node:internal/streams/readable:315:12)
+      at readableAddChunk (node:internal/streams/readable:289:9) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'a.top' in 'order clause'",
+    sql: 'SELECT `a`.`id` AS `a_id`, `a`.`createTime` AS `a_createTime`, `a`.`updateTime` AS `a_updateTime`, `a`.`status` AS `a_status`, `a`.`name` AS `a_name`, `a`.`muster_time` AS `a_muster_time` FROM `applets_muster_address` `a` WHERE 1 = 1 AND 1=1 AND 1=1 ORDER BY a.top DESC, `a`.`status` ASC, `a`.`createTime` DESC LIMIT 15'
+  },
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'a.top' in 'order clause'",
+  sql: 'SELECT `a`.`id` AS `a_id`, `a`.`createTime` AS `a_createTime`, `a`.`updateTime` AS `a_updateTime`, `a`.`status` AS `a_status`, `a`.`name` AS `a_name`, `a`.`muster_time` AS `a_muster_time` FROM `applets_muster_address` `a` WHERE 1 = 1 AND 1=1 AND 1=1 ORDER BY a.top DESC, `a`.`status` ASC, `a`.`createTime` DESC LIMIT 15'
+}
+2024-03-22 00:19:20,136 ERROR 25564 ReferenceError: window is not defined
+    at E:\newELv\erlvzihuwai\donkeys-server\src\config\config.local.ts:59:16
+    at Object.<anonymous> (E:\newELv\erlvzihuwai\donkeys-server\src\config\config.local.ts:60:3)
+    at Module._compile (node:internal/modules/cjs/loader:1198:14)
+    at Module.m._compile (E:\newELv\erlvzihuwai\donkeys-server\node_modules\ts-node\src\index.ts:1056:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (E:\newELv\erlvzihuwai\donkeys-server\node_modules\ts-node\src\index.ts:1059:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+    at require (node:internal/modules/cjs/helpers:119:18)
+2024-03-22 00:20:21,054 ERROR 44628 ReferenceError: window is not defined
+    at E:\newELv\erlvzihuwai\donkeys-server\src\config\config.local.ts:59:16
+    at Object.<anonymous> (E:\newELv\erlvzihuwai\donkeys-server\src\config\config.local.ts:60:3)
+    at Module._compile (node:internal/modules/cjs/loader:1198:14)
+    at Module.m._compile (E:\newELv\erlvzihuwai\donkeys-server\node_modules\ts-node\src\index.ts:1056:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.require.extensions.<computed> [as .ts] (E:\newELv\erlvzihuwai\donkeys-server\node_modules\ts-node\src\index.ts:1059:12)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+    at require (node:internal/modules/cjs/helpers:119:18)

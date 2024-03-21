@@ -48,3 +48,173 @@
 2024-03-21 22:22:43,742 INFO 6824 [36m [cool:core] create demoGetterQueue queue  [0m
 2024-03-21 22:22:43,765 INFO 6824 [36m [cool:core] create taskInfoQueue queue  [0m
 2024-03-21 22:22:52,405 INFO 6824 [36m [cool:core] location clean [0m
+2024-03-21 22:44:43,024 INFO 18264 [egg:logger] init all loggers with options: {"dir":"E:\\newELv\\erlvzihuwai\\donkeys-server\\logs\\cool-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"midway-web.log","coreLogName":"midway-core.log","agentLogName":"midway-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"INFO"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"type":"application"}
+2024-03-21 22:44:43,025 INFO 18264 [egg:core] dump config after load, 10ms
+2024-03-21 22:44:43,173 INFO 18264 [egg-multipart] file mode enable
+2024-03-21 22:44:43,174 INFO 18264 [egg-multipart] will save temporary files to "C:\\Users\\刘渊火\\AppData\\Local\\Temp\\egg-multipart-tmp\\cool-admin", cleanup job cron: "0 30 4 * * *"
+2024-03-21 22:44:43,335 INFO 18264 [@midwayjs/view-nunjucks] loading templates from ["E:\\newELv\\erlvzihuwai\\donkeys-server\\src\\app\\view"]
+2024-03-21 22:44:43,779 INFO 18264 [36m [cool:core] midwayjs cool core func handler [0m
+2024-03-21 22:44:43,824 INFO 18264 [36m [cool:core] midwayjs cool core cache register [0m
+2024-03-21 22:44:43,946 INFO 18264 [36m [cool:core] midwayjs cool core router prefix handler [0m
+2024-03-21 22:44:43,952 INFO 18264 [36m [cool:core] midwayjs cool core eps ready [0m
+2024-03-21 22:44:43,953 INFO 18264 [36m [cool:core] midwayjs cool core eps ready [0m
+2024-03-21 22:44:43,953 INFO 18264 [36m [cool:core] auto router prefix "/admin/demo/user"  [0m
+2024-03-21 22:44:43,955 INFO 18264 [36m [cool:core] auto router prefix "/admin/applets/agreement"  [0m
+2024-03-21 22:44:43,956 INFO 18264 [36m [cool:core] auto router prefix "/admin/applets/autograph"  [0m
+2024-03-21 22:44:43,956 INFO 18264 [36m [cool:core] auto router prefix "/admin/applets/carousel"  [0m
+2024-03-21 22:44:43,957 INFO 18264 [36m [cool:core] auto router prefix "/admin/applets/photoWall"  [0m
+2024-03-21 22:44:43,957 INFO 18264 [36m [cool:core] auto router prefix "/admin/applets/photoWallType"  [0m
+2024-03-21 22:44:43,958 INFO 18264 [36m [cool:core] auto router prefix "/admin/applets/post"  [0m
+2024-03-21 22:44:43,959 INFO 18264 [36m [cool:core] auto router prefix "/admin/applets/user"  [0m
+2024-03-21 22:44:43,959 INFO 18264 [36m [cool:core] auto router prefix "/admin/base/sys/department"  [0m
+2024-03-21 22:44:43,960 INFO 18264 [36m [cool:core] auto router prefix "/admin/base/sys/log"  [0m
+2024-03-21 22:44:43,960 INFO 18264 [36m [cool:core] auto router prefix "/admin/base/sys/menu"  [0m
+2024-03-21 22:44:43,960 INFO 18264 [36m [cool:core] auto router prefix "/admin/base/sys/param"  [0m
+2024-03-21 22:44:43,961 INFO 18264 [36m [cool:core] auto router prefix "/admin/base/sys/role"  [0m
+2024-03-21 22:44:43,961 INFO 18264 [36m [cool:core] auto router prefix "/admin/base/sys/user"  [0m
+2024-03-21 22:44:43,961 INFO 18264 [36m [cool:core] auto router prefix "/admin/demo/goods"  [0m
+2024-03-21 22:44:43,961 INFO 18264 [36m [cool:core] auto router prefix "/app/demo/goods"  [0m
+2024-03-21 22:44:43,962 INFO 18264 [36m [cool:core] auto router prefix "/admin/space/info"  [0m
+2024-03-21 22:44:43,962 INFO 18264 [36m [cool:core] auto router prefix "/admin/space/type"  [0m
+2024-03-21 22:44:43,962 INFO 18264 [36m [cool:core] auto router prefix "/admin/task/info"  [0m
+2024-03-21 22:44:43,962 INFO 18264 [36m [cool:core] midwayjs cool core crud handler [0m
+2024-03-21 22:44:43,963 INFO 18264 [36m [cool:core] midwayjs cool core component ready [0m
+2024-03-21 22:44:43,987 INFO 18264 [egg-static] starting static serve  -> E:\newELv\erlvzihuwai\donkeys-server\public
+2024-03-21 22:44:43,990 INFO 18264 [egg-security] use methodnoallow middleware
+2024-03-21 22:44:43,991 INFO 18264 [egg-security] use noopen middleware
+2024-03-21 22:44:43,994 INFO 18264 [egg-security] use nosniff middleware
+2024-03-21 22:44:43,997 INFO 18264 [egg-security] use xssProtection middleware
+2024-03-21 22:44:43,999 INFO 18264 [egg-security] use xframe middleware
+2024-03-21 22:44:44,000 INFO 18264 [egg-security] use dta middleware
+2024-03-21 22:44:44,000 INFO 18264 [egg-security] compose 6 middlewares into one security middleware
+2024-03-21 22:44:44,026 INFO 18264 [egg:core] dump config after ready, 7ms
+2024-03-21 22:44:44,148 INFO 18264 [36m [cool:core] midwayjs cool redis connect [0m
+2024-03-21 22:44:44,155 INFO 18264 [36m [cool:core] midwayjs cool redis connect [0m
+2024-03-21 22:44:44,164 INFO 18264 [36m [cool:core] midwayjs cool redis connect [0m
+2024-03-21 22:44:44,172 INFO 18264 [36m [cool:core] midwayjs cool qiniu component ready [0m
+2024-03-21 22:44:44,251 INFO 18264 [36m [cool:core] midwayjs cool redis component ready [0m
+2024-03-21 22:44:44,287 INFO 18264 [36m [cool:core] midwayjs cool queue component status 1 [0m
+2024-03-21 22:44:45,270 INFO 18264 [36m [cool:core] create demoCommQueue queue  [0m
+2024-03-21 22:44:45,272 INFO 18264 [36m [cool:core] create demoGetterQueue queue  [0m
+2024-03-21 22:44:45,288 INFO 18264 [36m [cool:core] create taskInfoQueue queue  [0m
+2024-03-21 22:44:53,966 INFO 18264 [36m [cool:core] location clean [0m
+2024-03-21 22:46:18,053 INFO 32668 [egg:logger] init all loggers with options: {"dir":"E:\\newELv\\erlvzihuwai\\donkeys-server\\logs\\cool-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"midway-web.log","coreLogName":"midway-core.log","agentLogName":"midway-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"INFO"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"type":"application"}
+2024-03-21 22:46:18,053 INFO 32668 [egg:core] dump config after load, 17ms
+2024-03-21 22:46:18,221 INFO 32668 [egg-multipart] file mode enable
+2024-03-21 22:46:18,222 INFO 32668 [egg-multipart] will save temporary files to "C:\\Users\\刘渊火\\AppData\\Local\\Temp\\egg-multipart-tmp\\cool-admin", cleanup job cron: "0 30 4 * * *"
+2024-03-21 22:46:18,392 INFO 32668 [@midwayjs/view-nunjucks] loading templates from ["E:\\newELv\\erlvzihuwai\\donkeys-server\\src\\app\\view"]
+2024-03-21 22:46:18,957 INFO 32668 [36m [cool:core] midwayjs cool core func handler [0m
+2024-03-21 22:46:19,004 INFO 32668 [36m [cool:core] midwayjs cool core cache register [0m
+2024-03-21 22:46:19,146 INFO 32668 [36m [cool:core] midwayjs cool core router prefix handler [0m
+2024-03-21 22:46:19,150 INFO 32668 [36m [cool:core] midwayjs cool core eps ready [0m
+2024-03-21 22:46:19,150 INFO 32668 [36m [cool:core] midwayjs cool core eps ready [0m
+2024-03-21 22:46:19,150 INFO 32668 [36m [cool:core] auto router prefix "/admin/demo/user"  [0m
+2024-03-21 22:46:19,152 INFO 32668 [36m [cool:core] auto router prefix "/admin/applets/agreement"  [0m
+2024-03-21 22:46:19,153 INFO 32668 [36m [cool:core] auto router prefix "/admin/applets/autograph"  [0m
+2024-03-21 22:46:19,153 INFO 32668 [36m [cool:core] auto router prefix "/admin/applets/carousel"  [0m
+2024-03-21 22:46:19,153 INFO 32668 [36m [cool:core] auto router prefix "/admin/applets/photoWall"  [0m
+2024-03-21 22:46:19,154 INFO 32668 [36m [cool:core] auto router prefix "/admin/applets/photoWallType"  [0m
+2024-03-21 22:46:19,154 INFO 32668 [36m [cool:core] auto router prefix "/admin/applets/post"  [0m
+2024-03-21 22:46:19,155 INFO 32668 [36m [cool:core] auto router prefix "/admin/applets/user"  [0m
+2024-03-21 22:46:19,156 INFO 32668 [36m [cool:core] auto router prefix "/admin/base/sys/department"  [0m
+2024-03-21 22:46:19,157 INFO 32668 [36m [cool:core] auto router prefix "/admin/base/sys/log"  [0m
+2024-03-21 22:46:19,158 INFO 32668 [36m [cool:core] auto router prefix "/admin/base/sys/menu"  [0m
+2024-03-21 22:46:19,159 INFO 32668 [36m [cool:core] auto router prefix "/admin/base/sys/param"  [0m
+2024-03-21 22:46:19,159 INFO 32668 [36m [cool:core] auto router prefix "/admin/base/sys/role"  [0m
+2024-03-21 22:46:19,160 INFO 32668 [36m [cool:core] auto router prefix "/admin/base/sys/user"  [0m
+2024-03-21 22:46:19,160 INFO 32668 [36m [cool:core] auto router prefix "/admin/demo/goods"  [0m
+2024-03-21 22:46:19,160 INFO 32668 [36m [cool:core] auto router prefix "/app/demo/goods"  [0m
+2024-03-21 22:46:19,161 INFO 32668 [36m [cool:core] auto router prefix "/admin/space/info"  [0m
+2024-03-21 22:46:19,161 INFO 32668 [36m [cool:core] auto router prefix "/admin/space/type"  [0m
+2024-03-21 22:46:19,161 INFO 32668 [36m [cool:core] auto router prefix "/admin/task/info"  [0m
+2024-03-21 22:46:19,162 INFO 32668 [36m [cool:core] midwayjs cool core crud handler [0m
+2024-03-21 22:46:19,162 INFO 32668 [36m [cool:core] midwayjs cool core component ready [0m
+2024-03-21 22:46:19,191 INFO 32668 [egg-static] starting static serve  -> E:\newELv\erlvzihuwai\donkeys-server\public
+2024-03-21 22:46:19,196 INFO 32668 [egg-security] use methodnoallow middleware
+2024-03-21 22:46:19,197 INFO 32668 [egg-security] use noopen middleware
+2024-03-21 22:46:19,200 INFO 32668 [egg-security] use nosniff middleware
+2024-03-21 22:46:19,200 INFO 32668 [egg-security] use xssProtection middleware
+2024-03-21 22:46:19,201 INFO 32668 [egg-security] use xframe middleware
+2024-03-21 22:46:19,202 INFO 32668 [egg-security] use dta middleware
+2024-03-21 22:46:19,202 INFO 32668 [egg-security] compose 6 middlewares into one security middleware
+2024-03-21 22:46:19,235 INFO 32668 [egg:core] dump config after ready, 14ms
+2024-03-21 22:46:19,348 INFO 32668 [36m [cool:core] midwayjs cool redis connect [0m
+2024-03-21 22:46:19,351 INFO 32668 [36m [cool:core] midwayjs cool redis connect [0m
+2024-03-21 22:46:19,353 INFO 32668 [36m [cool:core] midwayjs cool redis connect [0m
+2024-03-21 22:46:19,375 INFO 32668 [36m [cool:core] midwayjs cool qiniu component ready [0m
+2024-03-21 22:46:19,465 INFO 32668 [36m [cool:core] midwayjs cool redis component ready [0m
+2024-03-21 22:46:19,486 INFO 32668 [36m [cool:core] midwayjs cool queue component status 1 [0m
+2024-03-21 22:46:20,466 INFO 32668 [36m [cool:core] create demoCommQueue queue  [0m
+2024-03-21 22:46:20,467 INFO 32668 [36m [cool:core] create demoGetterQueue queue  [0m
+2024-03-21 22:46:20,489 INFO 32668 [36m [cool:core] create taskInfoQueue queue  [0m
+2024-03-21 22:46:29,172 INFO 32668 [36m [cool:core] location clean [0m
+2024-03-21 22:57:38,183 ERROR 32668 [36m [cool:core] midwayjs cool redis error [0m
+2024-03-21 22:57:38,184 ERROR 32668 Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+2024-03-21 22:57:38,281 INFO 32668 [36m [cool:core] midwayjs cool redis connect [0m
+2024-03-21 22:57:38,363 ERROR 32668 TypeError: Cannot read properties of null (reading 'expire')
+    at RedisCacheHandler.set (E:\newELv\erlvzihuwai\donkeys-server\node_modules\@cool-midway\redis\redis.js:112:30)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at BaseSysLoginService.captcha (E:\newELv\erlvzihuwai\donkeys-server\src\app\modules\base\service\sys\login.ts:117:9)
+    at BaseOpenController.captcha (E:\newELv\erlvzihuwai\donkeys-server\src\app\modules\base\controller\admin\open.ts:57:24)
+    at Object.<anonymous> (E:\newELv\erlvzihuwai\donkeys-server\node_modules\@midwayjs\koa\dist\framework.js:35:28)
+    at xframe (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at xssProtection (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at nosniff (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at noopen (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+2024-03-21 22:57:38,364 ERROR 32668 TypeError: Cannot read properties of null (reading 'expire')
+    at RedisCacheHandler.set (E:\newELv\erlvzihuwai\donkeys-server\node_modules\@cool-midway\redis\redis.js:112:30)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at BaseSysLoginService.captcha (E:\newELv\erlvzihuwai\donkeys-server\src\app\modules\base\service\sys\login.ts:117:9)
+    at BaseOpenController.captcha (E:\newELv\erlvzihuwai\donkeys-server\src\app\modules\base\controller\admin\open.ts:57:24)
+    at Object.<anonymous> (E:\newELv\erlvzihuwai\donkeys-server\node_modules\@midwayjs\koa\dist\framework.js:35:28)
+    at xframe (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at xssProtection (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at nosniff (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at noopen (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+2024-03-21 22:57:44,890 INFO 32668 [36m [cool:core] midwayjs cool redis connect [0m
+2024-03-21 23:16:50,901 ERROR 32668 [36m [cool:core] midwayjs cool redis error [0m
+2024-03-21 23:16:50,903 ERROR 32668 Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+2024-03-21 23:16:50,996 INFO 32668 [36m [cool:core] midwayjs cool redis connect [0m
+2024-03-21 23:16:51,063 ERROR 32668 TypeError: Cannot read properties of null (reading 'expire')
+    at RedisCacheHandler.set (E:\newELv\erlvzihuwai\donkeys-server\node_modules\@cool-midway\redis\redis.js:112:30)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at BaseSysLoginService.captcha (E:\newELv\erlvzihuwai\donkeys-server\src\app\modules\base\service\sys\login.ts:117:9)
+    at BaseOpenController.captcha (E:\newELv\erlvzihuwai\donkeys-server\src\app\modules\base\controller\admin\open.ts:57:24)
+    at Object.<anonymous> (E:\newELv\erlvzihuwai\donkeys-server\node_modules\@midwayjs\koa\dist\framework.js:35:28)
+    at xframe (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at xssProtection (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at nosniff (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at noopen (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+2024-03-21 23:19:46,463 INFO 32668 [36m [cool:core] midwayjs cool redis connect [0m
+2024-03-21 23:30:47,966 ERROR 32668 [36m [cool:core] midwayjs cool redis error [0m
+2024-03-21 23:30:47,968 ERROR 32668 Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+2024-03-21 23:30:48,064 INFO 32668 [36m [cool:core] midwayjs cool redis connect [0m
+2024-03-21 23:30:48,139 ERROR 32668 TypeError: Cannot read properties of null (reading 'expire')
+    at RedisCacheHandler.set (E:\newELv\erlvzihuwai\donkeys-server\node_modules\@cool-midway\redis\redis.js:112:30)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at BaseSysLoginService.captcha (E:\newELv\erlvzihuwai\donkeys-server\src\app\modules\base\service\sys\login.ts:117:9)
+    at BaseOpenController.captcha (E:\newELv\erlvzihuwai\donkeys-server\src\app\modules\base\controller\admin\open.ts:57:24)
+    at Object.<anonymous> (E:\newELv\erlvzihuwai\donkeys-server\node_modules\@midwayjs\koa\dist\framework.js:35:28)
+    at xframe (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at xssProtection (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at nosniff (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at noopen (E:\newELv\erlvzihuwai\donkeys-server\node_modules\egg-security\lib\middlewares\noopen.js:8:5)

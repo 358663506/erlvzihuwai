@@ -594,8 +594,9 @@ var _default = {
     },
     // 去报名
     goSignUp: function goSignUp() {
+      var list = this.postInfo.addressList ? JSON.stringify(this.postInfo.addressList) : '[]';
       uni.navigateTo({
-        url: '/pages/signUp/index?id=' + this.postInfo.id
+        url: '/pages/signUp/index?id=' + this.postInfo.id + '&addressList=' + list
       });
     }
   }

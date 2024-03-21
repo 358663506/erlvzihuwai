@@ -17,7 +17,7 @@ export default (): UserConfig => {
     // 请求代理地址
     const proxy = {
         '/dev': {
-            target: 'http://192.168.1.4:8001/',
+            target: 'http://127.0.0.1:8001/',
             // target: 'https://admin.web3n.com',
             changeOrigin: true,
             secure: true,

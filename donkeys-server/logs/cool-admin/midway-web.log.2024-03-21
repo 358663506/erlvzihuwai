@@ -1,0 +1,7 @@
+2024-03-21 22:57:18,045 ERROR 32668 [-/127.0.0.1/-/1502ms GET /admin/base/open/captcha?height=36&width=110] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  headerSent: true
+}
