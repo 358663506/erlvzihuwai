@@ -42,7 +42,7 @@ export class MusterAddressService extends BaseService {
             )
             .skip((page - 1) * size) // 跳过个数
             .take(size) //查询个数
-            .orderBy(sort ? { 'a.createTime': sort } : { 'a.top': 'DESC', 'a.status': 'ASC', 'a.createTime': 'DESC' })
+            .orderBy(sort ? { 'a.createTime': sort } : {  'a.status': 'ASC', 'a.createTime': 'DESC' })
             .getManyAndCount();
         return {
             list: result[0],
