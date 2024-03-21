@@ -24,7 +24,7 @@ export function useCool() {
 	const route = useRoute();
 	const router = useRouter();
 	const app = computed(() => store.getters.app);
-
+	console.log(service.value)
 	return {
 		store,
 		route,

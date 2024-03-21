@@ -6,44 +6,9 @@
   "auditLog": "E:\\newELv\\erlvzihuwai\\donkeys-server\\logs\\cool-admin\\.6ba93ee0fe8748713ac530ff56c4124730784e08-audit.json",
   "files": [
     {
-      "date": 1709653753729,
-      "name": "E:\\newELv\\erlvzihuwai\\donkeys-server\\logs\\cool-admin\\egg-schedule.log.2024-03-05",
-      "hash": "f9838c1531739fa79de82daa71c94dc2"
-    },
-    {
-      "date": 1709655567707,
-      "name": "E:\\newELv\\erlvzihuwai\\donkeys-server\\logs\\cool-admin\\egg-schedule.log.2024-03-06",
-      "hash": "8d33cd575a5e61e1c3e25bda755bda4a"
-    },
-    {
-      "date": 1709912081901,
-      "name": "E:\\newELv\\erlvzihuwai\\donkeys-server\\logs\\cool-admin\\egg-schedule.log.2024-03-08",
-      "hash": "38cef40943d3ca1730a4841990982d26"
-    },
-    {
-      "date": 1709913600012,
-      "name": "E:\\newELv\\erlvzihuwai\\donkeys-server\\logs\\cool-admin\\egg-schedule.log.2024-03-09",
-      "hash": "70ec4e9f50e0caeb6ae1df500ef38c00"
-    },
-    {
-      "date": 1710338200935,
-      "name": "E:\\newELv\\erlvzihuwai\\donkeys-server\\logs\\cool-admin\\egg-schedule.log.2024-03-13",
-      "hash": "29fab842943729eba282525fca3a83fd"
-    },
-    {
-      "date": 1710347279783,
-      "name": "E:\\newELv\\erlvzihuwai\\donkeys-server\\logs\\cool-admin\\egg-schedule.log.2024-03-14",
-      "hash": "b60f130862d6096dc43e176e0b83f4b3"
-    },
-    {
-      "date": 1710432000012,
-      "name": "E:\\newELv\\erlvzihuwai\\donkeys-server\\logs\\cool-admin\\egg-schedule.log.2024-03-15",
-      "hash": "5d292d4b821a09865a3462c238150d28"
-    },
-    {
-      "date": 1710684059608,
-      "name": "E:\\newELv\\erlvzihuwai\\donkeys-server\\logs\\cool-admin\\egg-schedule.log.2024-03-17",
-      "hash": "5b0d736201f075763df6abaff269ff49"
+      "date": 1711030958770,
+      "name": "E:\\newELv\\erlvzihuwai\\donkeys-server\\logs\\cool-admin\\egg-schedule.log.2024-03-21",
+      "hash": "954e2e6de66d627ee794baac8df368d9"
     }
   ],
   "hashType": "md5"

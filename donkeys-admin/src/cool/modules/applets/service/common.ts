@@ -83,6 +83,15 @@ class Common extends BaseService {
             url: '/eps'
         });
     }
+
+    /**
+     * 数据接口
+     */
+    eps() {
+        return this.request({
+            url: '/page'
+        });
+    }
 }
 
 export default Common;

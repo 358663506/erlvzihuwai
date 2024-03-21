@@ -6,6 +6,8 @@ import { PostStatusDTO, PostTopDTO } from '../dto/postStatus';
 import { AppletsHistoryEntity } from '../entity/history';
 import { AppletsCollectEntity } from '../entity/collect';
 import { AppletsReplayEntity } from '../entity/reply';
+import { AppletsMusterAddressEntity } from "../entity/muster_address";
+import { AppletsEnrollMusterAddressEntity } from "../entity/enroll_muster_address";
 export declare class AppletsPostService extends BaseService {
     appletsPostEntity: Repository<AppletsPostEntity>;
     appletsLabelEntity: Repository<AppletsLabelEntity>;
@@ -13,6 +15,8 @@ export declare class AppletsPostService extends BaseService {
     appletsCollectEntity: Repository<AppletsCollectEntity>;
     appletsReplayEntity: Repository<AppletsReplayEntity>;
     coolCache: ICoolCache;
+    appletsMusterAddressEntity: Repository<AppletsMusterAddressEntity>;
+    appletsEnrollMusterAddressEntity: Repository<AppletsEnrollMusterAddressEntity>;
     /**
      * 分页查询
      * @param query

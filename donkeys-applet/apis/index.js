@@ -351,3 +351,13 @@ export const updateAutograph = (data = {}) => {
 		data
 	);
 }
+
+  // 获取上车点
+  export const musterAdressPage = (data = {}) => {
+	return httpTokenRequest({
+		url: "musterAdress/page",
+		method: "post",
+	},
+		data
+	);
+}

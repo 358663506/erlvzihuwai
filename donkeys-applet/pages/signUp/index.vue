@@ -4,7 +4,7 @@
 			<block slot="backText">返回</block>
 			<block slot="content">报名管理</block>
 		</cu-custom>
-		<view class="nav-header bg-white" :style="{top: customBar + 'px'}">
+		<view class="nav-header bg-white" v-if="showForm" :style="{top: customBar + 'px'}">
 			<u-form
 				labelPosition="left"
 				:model="userInfo"
@@ -215,7 +215,10 @@
 					></u-input>
 			</u-form-item>
 		</u-form>
-				<u-button v-if="!userInfo.id" @click="submit('join')">参加</u-button>
+				
+				<view class="btnsJoin" v-if="!userInfo.id">
+					<u-button class="btn"   @click="submit('join')">参加</u-button>
+				</view>
 				<view class="btns" v-else>
 					<u-button class="btn" type="primary"  @click="submit('update')">修改</u-button>
 					<u-button class="btn" type="error" v-if="userInfo.status === 0" @click="quit(0)">下车</u-button>
@@ -229,6 +232,11 @@
 				<u-loading color="#fff" mode="flower" :show="true" :size="loadingSize"></u-loading>
 			</view>
 		</view>
+	<!-- 	<view v-if="showPrivacy">
+		  <view>隐私弹窗内容....</view>
+		  <button bindtap="handleOpenPrivacyContract">查看隐私协议</button>
+		  <button id="agree-btn" open-type="agreePrivacyAuthorization" bindagreeprivacyauthorization="handleAgreePrivacyAuthorization">同意</button>
+		</view> -->
 	</view>
 </template>
 
@@ -237,7 +245,8 @@
 		signUpAdd,
 		getByEnrollId,
 		postStatus,
-		signUpAddUpdate
+		signUpAddUpdate,
+		musterAdressPage
 	} from "@/apis/index.js"
 	import dayjs from "dayjs"
 
@@ -277,6 +286,7 @@
 		data() {
 			return {
 				show: false,
+				showPrivacy: false,
 				fileList: [],
 				showSex: false,
 				userInfo: {
@@ -314,15 +324,15 @@
 				// 集合点
 				radiolist2: [
 					{
-						label: '世纪大道',
+						label: '世纪大道12号口(上午7点30)',
 						value: 1
 					},
 					{
-						label: '七宝',
+						label: '七宝地铁5号口(上午8点10分)',
 						value: 2
 					},
 					{
-						label: '宜山路',
+						label: '宜山路5号口(上午7点)',
 						value: 3
 					}
 				],
@@ -442,27 +452,64 @@
 				],
 				},
 				radio: '',
-				switchVal: false
+				switchVal: false,
+				showForm: false
 			}
 		},
 		onLoad(options) {
+			wx.getPrivacySetting({
+			      success: res => {
+			        console.log(res) // 返回结果为: res = { needAuthorization: true/false, privacyContractName: '《xxx隐私保护指引》' }
+			        if (res.needAuthorization) {
+			          // 需要弹出隐私协议
+			          this.showPrivacy = true
+			        } else {
+						this.showPrivacy = true
+			          // 用户已经同意过隐私协议，所以不需要再弹出隐私协议，也能调用已声明过的隐私接口
+			          // wx.getUserProfile()
+			          // wx.chooseMedia()
+			          // wx.getClipboardData()
+			          // wx.startRecord()
+			        }
+			      },
+			      fail: () => {},
+			      complete: () => {}
+			    })
 			console.log(this.$route, options)
 			this.userInfo.enroll_id = options.id
 			this.getInfo()
 			// this.$store.state.loading = true
 		},
 		mounted () {
-			this.$nextTick(() => {  
-				console.log(this.$refs.uForm)
-				this.$refs.uForm.setRules(this.rules);  
+			console.log(new Date() * 1 , new Date('2024/3/21 14:00:00') * 1)
+			if (new Date() * 1 > new Date('2024/3/21 12:30:00') * 1) {
+				this.showForm = true
+			}
+			this.getMusterAdressPage()
+			this.$nextTick(() => {
+				if (this.showForm) {
+					this.$refs.uForm.setRules(this.rules);  
+				}
+				
 			});  
 		},
 		onReady() {
 			this.$nextTick(() => {  
-				this.$refs.uForm.setRules(this.rules);  
+				if (this.showForm) {
+					this.$refs.uForm.setRules(this.rules);  
+				}
+				
 			});  
 		},
 		methods: {
+			// 获取地址
+			async getMusterAdressPage () {
+				const res = await musterAdressPage({
+					status: -1,
+					name: ''
+				})
+				console.log(res);
+			},
 			async beforeUpload (index, list) {
 				console.log(index, list);
 			},
@@ -500,6 +547,9 @@
 										...this.userInfo
 									}
 									this.$store.state.loading = true
+									if ( e === 'join') {
+										delete data.id
+									}
 									const res = e === 'join' ? await signUpAdd(data) : await signUpAddUpdate(data)
 									this.$store.state.loading = false
 									if (res.code === 1000 ) {
@@ -536,6 +586,8 @@
 
 	.contaier {
 		height: 100%;
+		padding-bottom: 120upx;
+		box-sizing: border-box;
 	}
 
 	.nav-header {
@@ -557,13 +609,29 @@
 		left: 0%;
 	}
 	.btns {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
 		.btn {
 			width: 48%;
 		}
 	}
-
+	.btnsJoin {
+		.btn {
+			width: 100%;
+		}
+	}
+	.btnsJoin,.btns {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		height: 120upx;
+		position: fixed;
+		padding: 0upx 20upx;
+		box-sizing: border-box;
+		left: 0;
+		bottom: 0;
+		background-color: #fff;
+		z-index: 9;
+		border-top: 1px solid #ccc;
+	}
 	
 </style>

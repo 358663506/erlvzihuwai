@@ -1,0 +1,100 @@
+2024-03-18 22:46:12,907 INFO 41732 [egg:logger] init all loggers with options: {"dir":"E:\\newELv\\erlvzihuwai\\donkeys-server\\logs\\cool-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"midway-web.log","coreLogName":"midway-core.log","agentLogName":"midway-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"INFO"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"type":"application"}
+2024-03-18 22:46:12,907 INFO 41732 [egg:core] dump config after load, 17ms
+2024-03-18 22:46:13,724 INFO 41732 [egg-multipart] file mode enable
+2024-03-18 22:46:13,724 INFO 41732 [egg-multipart] will save temporary files to "C:\\Users\\刘渊火\\AppData\\Local\\Temp\\egg-multipart-tmp\\cool-admin", cleanup job cron: "0 30 4 * * *"
+2024-03-18 22:46:14,611 INFO 41732 [@midwayjs/view-nunjucks] loading templates from ["E:\\newELv\\erlvzihuwai\\donkeys-server\\src\\app\\view"]
+2024-03-18 22:46:15,215 INFO 41732 [36m [cool:core] midwayjs cool core func handler [0m
+2024-03-18 22:46:15,266 INFO 41732 [36m [cool:core] midwayjs cool core cache register [0m
+2024-03-18 22:46:15,387 INFO 41732 [36m [cool:core] midwayjs cool core router prefix handler [0m
+2024-03-18 22:46:15,392 INFO 41732 [36m [cool:core] midwayjs cool core eps ready [0m
+2024-03-18 22:46:15,393 INFO 41732 [36m [cool:core] midwayjs cool core eps ready [0m
+2024-03-18 22:46:15,395 INFO 41732 [36m [cool:core] auto router prefix "/admin/demo/user"  [0m
+2024-03-18 22:46:15,398 INFO 41732 [36m [cool:core] auto router prefix "/admin/applets/agreement"  [0m
+2024-03-18 22:46:15,399 INFO 41732 [36m [cool:core] auto router prefix "/admin/applets/autograph"  [0m
+2024-03-18 22:46:15,399 INFO 41732 [36m [cool:core] auto router prefix "/admin/applets/carousel"  [0m
+2024-03-18 22:46:15,399 INFO 41732 [36m [cool:core] auto router prefix "/admin/applets/photoWall"  [0m
+2024-03-18 22:46:15,400 INFO 41732 [36m [cool:core] auto router prefix "/admin/applets/photoWallType"  [0m
+2024-03-18 22:46:15,400 INFO 41732 [36m [cool:core] auto router prefix "/admin/applets/post"  [0m
+2024-03-18 22:46:15,401 INFO 41732 [36m [cool:core] auto router prefix "/admin/applets/user"  [0m
+2024-03-18 22:46:15,401 INFO 41732 [36m [cool:core] auto router prefix "/admin/base/sys/department"  [0m
+2024-03-18 22:46:15,401 INFO 41732 [36m [cool:core] auto router prefix "/admin/base/sys/log"  [0m
+2024-03-18 22:46:15,401 INFO 41732 [36m [cool:core] auto router prefix "/admin/base/sys/menu"  [0m
+2024-03-18 22:46:15,402 INFO 41732 [36m [cool:core] auto router prefix "/admin/base/sys/param"  [0m
+2024-03-18 22:46:15,402 INFO 41732 [36m [cool:core] auto router prefix "/admin/base/sys/role"  [0m
+2024-03-18 22:46:15,402 INFO 41732 [36m [cool:core] auto router prefix "/admin/base/sys/user"  [0m
+2024-03-18 22:46:15,403 INFO 41732 [36m [cool:core] auto router prefix "/admin/demo/goods"  [0m
+2024-03-18 22:46:15,403 INFO 41732 [36m [cool:core] auto router prefix "/app/demo/goods"  [0m
+2024-03-18 22:46:15,403 INFO 41732 [36m [cool:core] auto router prefix "/admin/space/info"  [0m
+2024-03-18 22:46:15,403 INFO 41732 [36m [cool:core] auto router prefix "/admin/space/type"  [0m
+2024-03-18 22:46:15,404 INFO 41732 [36m [cool:core] auto router prefix "/admin/task/info"  [0m
+2024-03-18 22:46:15,404 INFO 41732 [36m [cool:core] midwayjs cool core crud handler [0m
+2024-03-18 22:46:15,404 INFO 41732 [36m [cool:core] midwayjs cool core component ready [0m
+2024-03-18 22:46:15,452 INFO 41732 [egg-static] starting static serve  -> E:\newELv\erlvzihuwai\donkeys-server\public
+2024-03-18 22:46:15,464 INFO 41732 [egg-security] use methodnoallow middleware
+2024-03-18 22:46:15,474 INFO 41732 [egg-security] use noopen middleware
+2024-03-18 22:46:15,486 INFO 41732 [egg-security] use nosniff middleware
+2024-03-18 22:46:15,496 INFO 41732 [egg-security] use xssProtection middleware
+2024-03-18 22:46:15,504 INFO 41732 [egg-security] use xframe middleware
+2024-03-18 22:46:15,514 INFO 41732 [egg-security] use dta middleware
+2024-03-18 22:46:15,515 INFO 41732 [egg-security] compose 6 middlewares into one security middleware
+2024-03-18 22:46:15,537 INFO 41732 [egg:core] dump config after ready, 6ms
+2024-03-18 22:46:15,631 INFO 41732 [36m [cool:core] midwayjs cool redis connect [0m
+2024-03-18 22:46:15,633 INFO 41732 [36m [cool:core] midwayjs cool redis connect [0m
+2024-03-18 22:46:15,634 INFO 41732 [36m [cool:core] midwayjs cool redis connect [0m
+2024-03-18 22:46:15,636 INFO 41732 [36m [cool:core] midwayjs cool qiniu component ready [0m
+2024-03-18 22:46:15,737 INFO 41732 [36m [cool:core] midwayjs cool redis component ready [0m
+2024-03-18 22:46:15,770 INFO 41732 [36m [cool:core] midwayjs cool queue component status 1 [0m
+2024-03-18 22:46:16,749 INFO 41732 [36m [cool:core] create demoCommQueue queue  [0m
+2024-03-18 22:46:16,750 INFO 41732 [36m [cool:core] create demoGetterQueue queue  [0m
+2024-03-18 22:46:16,766 INFO 41732 [36m [cool:core] create taskInfoQueue queue  [0m
+2024-03-18 22:46:25,405 INFO 41732 [36m [cool:core] location clean [0m
+2024-03-18 23:07:36,057 INFO 24844 [egg:logger] init all loggers with options: {"dir":"E:\\newELv\\erlvzihuwai\\donkeys-server\\logs\\cool-admin","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"midway-web.log","coreLogName":"midway-core.log","agentLogName":"midway-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"INFO"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"type":"application"}
+2024-03-18 23:07:36,058 INFO 24844 [egg:core] dump config after load, 10ms
+2024-03-18 23:07:36,183 INFO 24844 [egg-multipart] file mode enable
+2024-03-18 23:07:36,184 INFO 24844 [egg-multipart] will save temporary files to "C:\\Users\\刘渊火\\AppData\\Local\\Temp\\egg-multipart-tmp\\cool-admin", cleanup job cron: "0 30 4 * * *"
+2024-03-18 23:07:36,311 INFO 24844 [@midwayjs/view-nunjucks] loading templates from ["E:\\newELv\\erlvzihuwai\\donkeys-server\\src\\app\\view"]
+2024-03-18 23:07:36,667 INFO 24844 [36m [cool:core] midwayjs cool core func handler [0m
+2024-03-18 23:07:36,697 INFO 24844 [36m [cool:core] midwayjs cool core cache register [0m
+2024-03-18 23:07:36,812 INFO 24844 [36m [cool:core] midwayjs cool core router prefix handler [0m
+2024-03-18 23:07:36,815 INFO 24844 [36m [cool:core] midwayjs cool core eps ready [0m
+2024-03-18 23:07:36,816 INFO 24844 [36m [cool:core] midwayjs cool core eps ready [0m
+2024-03-18 23:07:36,816 INFO 24844 [36m [cool:core] auto router prefix "/admin/demo/user"  [0m
+2024-03-18 23:07:36,817 INFO 24844 [36m [cool:core] auto router prefix "/admin/applets/agreement"  [0m
+2024-03-18 23:07:36,818 INFO 24844 [36m [cool:core] auto router prefix "/admin/applets/autograph"  [0m
+2024-03-18 23:07:36,818 INFO 24844 [36m [cool:core] auto router prefix "/admin/applets/carousel"  [0m
+2024-03-18 23:07:36,819 INFO 24844 [36m [cool:core] auto router prefix "/admin/applets/photoWall"  [0m
+2024-03-18 23:07:36,819 INFO 24844 [36m [cool:core] auto router prefix "/admin/applets/photoWallType"  [0m
+2024-03-18 23:07:36,819 INFO 24844 [36m [cool:core] auto router prefix "/admin/applets/post"  [0m
+2024-03-18 23:07:36,820 INFO 24844 [36m [cool:core] auto router prefix "/admin/applets/user"  [0m
+2024-03-18 23:07:36,820 INFO 24844 [36m [cool:core] auto router prefix "/admin/base/sys/department"  [0m
+2024-03-18 23:07:36,820 INFO 24844 [36m [cool:core] auto router prefix "/admin/base/sys/log"  [0m
+2024-03-18 23:07:36,820 INFO 24844 [36m [cool:core] auto router prefix "/admin/base/sys/menu"  [0m
+2024-03-18 23:07:36,820 INFO 24844 [36m [cool:core] auto router prefix "/admin/base/sys/param"  [0m
+2024-03-18 23:07:36,821 INFO 24844 [36m [cool:core] auto router prefix "/admin/base/sys/role"  [0m
+2024-03-18 23:07:36,821 INFO 24844 [36m [cool:core] auto router prefix "/admin/base/sys/user"  [0m
+2024-03-18 23:07:36,821 INFO 24844 [36m [cool:core] auto router prefix "/admin/demo/goods"  [0m
+2024-03-18 23:07:36,821 INFO 24844 [36m [cool:core] auto router prefix "/app/demo/goods"  [0m
+2024-03-18 23:07:36,821 INFO 24844 [36m [cool:core] auto router prefix "/admin/space/info"  [0m
+2024-03-18 23:07:36,822 INFO 24844 [36m [cool:core] auto router prefix "/admin/space/type"  [0m
+2024-03-18 23:07:36,822 INFO 24844 [36m [cool:core] auto router prefix "/admin/task/info"  [0m
+2024-03-18 23:07:36,822 INFO 24844 [36m [cool:core] midwayjs cool core crud handler [0m
+2024-03-18 23:07:36,822 INFO 24844 [36m [cool:core] midwayjs cool core component ready [0m
+2024-03-18 23:07:36,839 INFO 24844 [egg-static] starting static serve  -> E:\newELv\erlvzihuwai\donkeys-server\public
+2024-03-18 23:07:36,843 INFO 24844 [egg-security] use methodnoallow middleware
+2024-03-18 23:07:36,844 INFO 24844 [egg-security] use noopen middleware
+2024-03-18 23:07:36,845 INFO 24844 [egg-security] use nosniff middleware
+2024-03-18 23:07:36,846 INFO 24844 [egg-security] use xssProtection middleware
+2024-03-18 23:07:36,847 INFO 24844 [egg-security] use xframe middleware
+2024-03-18 23:07:36,847 INFO 24844 [egg-security] use dta middleware
+2024-03-18 23:07:36,848 INFO 24844 [egg-security] compose 6 middlewares into one security middleware
+2024-03-18 23:07:36,867 INFO 24844 [egg:core] dump config after ready, 6ms
+2024-03-18 23:07:36,958 INFO 24844 [36m [cool:core] midwayjs cool redis connect [0m
+2024-03-18 23:07:36,961 INFO 24844 [36m [cool:core] midwayjs cool redis connect [0m
+2024-03-18 23:07:36,964 INFO 24844 [36m [cool:core] midwayjs cool redis connect [0m
+2024-03-18 23:07:36,974 INFO 24844 [36m [cool:core] midwayjs cool qiniu component ready [0m
+2024-03-18 23:07:37,072 INFO 24844 [36m [cool:core] midwayjs cool redis component ready [0m
+2024-03-18 23:07:37,110 INFO 24844 [36m [cool:core] midwayjs cool queue component status 1 [0m
+2024-03-18 23:07:38,090 INFO 24844 [36m [cool:core] create demoCommQueue queue  [0m
+2024-03-18 23:07:38,091 INFO 24844 [36m [cool:core] create demoGetterQueue queue  [0m
+2024-03-18 23:07:38,107 INFO 24844 [36m [cool:core] create taskInfoQueue queue  [0m
+2024-03-18 23:07:46,826 INFO 24844 [36m [cool:core] location clean [0m

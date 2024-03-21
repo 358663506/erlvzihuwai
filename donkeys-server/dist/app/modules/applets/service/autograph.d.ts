@@ -10,11 +10,11 @@ export declare class AppletsAutographService extends BaseService {
     appletsUserEntity: Repository<AppletsUserEntity>;
     appletsAgreementEntity: Repository<AppletsAgreementEntity>;
     /** 新增签名 */
-    addAutograph(param: AutographAddDTO): Promise<void>;
+    addAutograph(param: AutographAddDTO): Promise<AppletsAutographEntity>;
     /** 查询签名 */
     getAutograph(agreementId: number): Promise<AppletsAutographEntity>;
     /** 更新签名 */
-    updateAutograph(param: AutographUpdateDTO): Promise<void>;
+    updateAutograph(param: AutographUpdateDTO): Promise<AppletsAutographEntity>;
     /**
      * 分页查询
      * @param query

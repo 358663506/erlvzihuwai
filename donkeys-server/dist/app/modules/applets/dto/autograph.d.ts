@@ -13,6 +13,7 @@ export declare class AutographAddDTO {
 }
 export declare class AutographUpdateDTO {
     id: number;
+    agreementId: number;
     content: string;
 }
 export declare class AutographDelDTO {

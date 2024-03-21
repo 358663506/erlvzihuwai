@@ -4,7 +4,7 @@
             <!-- 成员列表 -->
             <div class="user">
                 <div class="header">
-                    <span>活动文章</span>
+                    <span>参与人员</span>
                 </div>
                 <div class="container">
                     <cl-crud :ref="setRefs('crud')" :on-refresh="onRefresh" @load="onLoad">
@@ -175,6 +175,7 @@ export default defineComponent({
 
         // crud 加载
         function onLoad({ ctx, app }: any) {
+            console.log('加载', service)
             ctx.service(service.applets.post).done();
             app.refresh();
         }
