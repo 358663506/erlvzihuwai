@@ -6,6 +6,7 @@ import { AppletsPostLablelEntity } from './post_label';
 import { AppletsCollectEntity } from './collect';
 import { BaseEntity } from '@cool-midway/core';
 import { AppletsHistoryEntity } from './history';
+import {AppletsEnrollMusterAddressEntity} from "./enroll_muster_address";
 
 /**
  * 回复
@@ -90,4 +91,6 @@ export class AppletsPostEntity extends BaseEntity {
 
     @Column({ comment: '可以回复:1 不可以回复0', default: 0 })
     canReply: number;
+
+    addressList: AppletsEnrollMusterAddressEntity[];
 }

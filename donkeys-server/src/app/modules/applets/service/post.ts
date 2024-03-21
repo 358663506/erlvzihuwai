@@ -182,6 +182,9 @@ export class AppletsPostService extends BaseService {
         if (!info) {
             throw new CoolCommException('文章不存在');
         }
+
+        info.addressList = await  this.appletsEnrollMusterAddressEntity.createQueryBuilder("p").where("p.enroll_id=:id",{id}).getMany();
+
         return info;
     }
 

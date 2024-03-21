@@ -1,7 +1,11 @@
 /* 微信用户 */
 import {Inject, Provide, Get, Post, Body, ALL, Query} from '@midwayjs/decorator';
-import {CoolController, BaseController} from '@cool-midway/core';
+import {CoolController, BaseController, CoolCommException} from '@cool-midway/core';
 import {EnrollUserService} from "../../service/enrollUserService";
+import {InjectEntityModel} from "@midwayjs/orm";
+import {AppletsPostEntity} from "../../entity/post";
+import {Repository} from "typeorm";
+import {AppletsEnrollMusterAddressEntity} from "../../entity/enroll_muster_address";
 
 
 
@@ -12,8 +16,11 @@ import {EnrollUserService} from "../../service/enrollUserService";
 export class EnrollUserController extends BaseController {
     @Inject()
     enrollUserService: EnrollUserService;
+    @InjectEntityModel(AppletsPostEntity)
+    appletsPostEntity: Repository<AppletsPostEntity>;
 
-
+    @InjectEntityModel(AppletsEnrollMusterAddressEntity)
+    appletsEnrollMusterAddressEntity:Repository<AppletsEnrollMusterAddressEntity>
     /**
      * 活动成员列表
      * @returns
@@ -21,7 +28,27 @@ export class EnrollUserController extends BaseController {
     @Get('/list', { summary: '活动成员列表' })
     public async carouselList() {
 
-        return this.ok("123455566OK");
+        const  id = 51;
+        if (!id) {
+            throw new CoolCommException('非法操作~');
+        }
+
+        let info = await this.appletsPostEntity
+            .createQueryBuilder('p')
+            .leftJoinAndSelect('p.user', 'user')
+            .loadRelationCountAndMap('p.replyCount', 'p.replys')
+            .loadRelationCountAndMap('p.collectCount', 'p.collects')
+            .where('p.id = :id', { id })
+            .getOne();
+
+        info.addressList = await  this.appletsEnrollMusterAddressEntity.createQueryBuilder("p").where("p.enroll_id=:id",{id}).getMany();
+
+        console.log(info);
+
+        if (!info) {
+            throw new CoolCommException('文章不存在');
+        }
+        return this.ok(info);
     }
 
     /**
